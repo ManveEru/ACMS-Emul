@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
@@ -18,6 +15,7 @@ namespace ACMSE
         public List<Person> EmpFullList { get; }
         List<Person> empFilteredList;
 
+        //событие, высылаемое при изменении модели
         public event PropertyChangedEventHandler PropertyChanged;
 
         public List<Person> EmpFilteredList
@@ -32,6 +30,7 @@ namespace ACMSE
 
         public EmployeesModelView () 
         {
+            //заменить на запрос к БД
             EmpFullList = new List<Person>();
             EmpFullList.Add(new Person(1, "Иван", "Иванов", "Иванович"));
             EmpFullList.Add(new Person(2, "Роман", "Батькович", "Девупсень"));
@@ -45,6 +44,7 @@ namespace ACMSE
             EmpFilteredList = EmpFullList.FindAll(p => p.NSP.Contains(filter));
         }
 
+        //сигнал об изменении модели
         public void OnPropertyChanged([CallerMemberName] string prop = "")
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(prop));
