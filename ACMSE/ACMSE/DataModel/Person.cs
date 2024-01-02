@@ -1,0 +1,19 @@
+﻿namespace ACMSE
+{
+    public class Person
+    {
+        //ФИО - Name Surname Patronim
+        public string NSP { get; set; }
+        public int Id { get; set; }
+
+        public Person () {}
+
+        public Person (int id, string name, string surname, string patronim)
+        {
+            NSP = surname + " " + name + " " + patronim;
+            Id = id;
+        }
+
+        public override string ToString() => NSP;
+    }
+}
