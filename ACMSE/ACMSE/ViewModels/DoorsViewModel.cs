@@ -7,7 +7,7 @@ namespace ACMSE
 {
     public class DoorsViewModel : INotifyPropertyChanged
     {
-        // выбранный объект Person для отображения
+        // выбранный объект Door для отображения
         public Door SelectedDoor { get => DoorsFilteredList.FirstOrDefault(p => p.Id == SelectedId); }
         // id выбранного объекта
         public int SelectedId { get; set; }
@@ -28,13 +28,9 @@ namespace ACMSE
             }
         }
 
-        public DoorsViewModel()
+        public DoorsViewModel(List<Door> doors)
         {
-            //заменить на запрос к БД
-            DoorsFullList = new List<Door>();
-            DoorsFullList.Add(new Door(1, "Дверь 1", 1));
-            DoorsFullList.Add(new Door(2, "Дверь 2", 2));
-            DoorsFullList.Add(new Door(3, "Дверь 3", 3));
+            DoorsFullList = doors;
             DoorsFilteredList = DoorsFullList;
             SelectedId = 2;
         }

@@ -1,15 +1,14 @@
-﻿
-namespace ACMSE
+﻿namespace ACMSE
 {
     public class Door
     {
         public string Name { get; set; }
         public int Id { get; set; }
-        public int LocationId { get; set; }
+        public int? LocationId { get; set; }
 
         public Door() { }
 
-        public Door(int id, string name, int location)
+        public Door(int id, string name, int? location)
         {
             Name = name;
             Id = id;
