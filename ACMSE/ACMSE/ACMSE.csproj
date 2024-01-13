@@ -66,6 +66,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CopyMe.SqlServer.tt</DependentUpon>
     </Compile>
+    <Compile Include="DataModel\CurrentLocation.cs" />
     <Compile Include="DataModel\Door.cs" />
     <Compile Include="DataModel\Location.cs" />
     <Compile Include="DBHelper.cs" />

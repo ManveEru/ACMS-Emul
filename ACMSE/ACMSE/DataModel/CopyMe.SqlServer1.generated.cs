@@ -30,8 +30,203 @@ namespace ACMSE
 	{
 		public ITable<AccessZone>                                      AccessZones                             { get { return this.GetTable<AccessZone>(); } }
 		public ITable<AcessPoint>                                      AcessPoints                             { get { return this.GetTable<AcessPoint>(); } }
+		public ITable<Adc>                                             Adcs                                    { get { return this.GetTable<Adc>(); } }
+		public ITable<ApplicationModifData>                            ApplicationModifData                    { get { return this.GetTable<ApplicationModifData>(); } }
+		public ITable<Authority>                                       Authorities                             { get { return this.GetTable<Authority>(); } }
+		public ITable<BindingCommandScenario>                          BindingCommandScenarios                 { get { return this.GetTable<BindingCommandScenario>(); } }
+		public ITable<BindingConditionStepScen>                        BindingConditionStepScens               { get { return this.GetTable<BindingConditionStepScen>(); } }
+		public ITable<BindingGrObjectsStepScen>                        BindingGrObjectsStepScens               { get { return this.GetTable<BindingGrObjectsStepScen>(); } }
+		public ITable<BindingItemsDevScenario>                         BindingItemsDevScenarios                { get { return this.GetTable<BindingItemsDevScenario>(); } }
+		public ITable<BindingItemsScenario>                            BindingItemsScenarios                   { get { return this.GetTable<BindingItemsScenario>(); } }
+		public ITable<BindingItemsZonePT>                              BindingItemsZonePts                     { get { return this.GetTable<BindingItemsZonePT>(); } }
+		public ITable<BindingObjectsStepScen>                          BindingObjectsStepScens                 { get { return this.GetTable<BindingObjectsStepScen>(); } }
+		public ITable<Camera>                                          Cameras                                 { get { return this.GetTable<Camera>(); } }
+		public ITable<CameraMatrix>                                    CameraMatrices                          { get { return this.GetTable<CameraMatrix>(); } }
+		public ITable<ClientFieldsName>                                ClientFieldsNames                       { get { return this.GetTable<ClientFieldsName>(); } }
+		public ITable<ClientFieldsValue>                               ClientFieldsValues                      { get { return this.GetTable<ClientFieldsValue>(); } }
+		public ITable<CodesList>                                       CodesLists                              { get { return this.GetTable<CodesList>(); } }
+		public ITable<CodesT12>                                        CodesT12                                { get { return this.GetTable<CodesT12>(); } }
+		public ITable<Comp>                                            Comps                                   { get { return this.GetTable<Comp>(); } }
+		public ITable<ComPort>                                         ComPorts                                { get { return this.GetTable<ComPort>(); } }
+		public ITable<CompTrn>                                         CompTrns                                { get { return this.GetTable<CompTrn>(); } }
+		public ITable<ConditionStepScenario>                           ConditionStepScenarios                  { get { return this.GetTable<ConditionStepScenario>(); } }
+		public ITable<ControlItem>                                     ControlItems                            { get { return this.GetTable<ControlItem>(); } }
+		public ITable<Counter>                                         Counters                                { get { return this.GetTable<Counter>(); } }
+		public ITable<DevCamerasItem>                                  DevCamerasItems                         { get { return this.GetTable<DevCamerasItem>(); } }
+		public ITable<DevElm>                                          DevElms                                 { get { return this.GetTable<DevElm>(); } }
+		public ITable<Devicemasterslave>                               Devicemasterslaves                      { get { return this.GetTable<Devicemasterslave>(); } }
+		public ITable<DeviceToLine>                                    DeviceToLines                           { get { return this.GetTable<DeviceToLine>(); } }
+		public ITable<DeviceTypesLine>                                 DeviceTypesLines                        { get { return this.GetTable<DeviceTypesLine>(); } }
+		public ITable<DevItem>                                         DevItems                                { get { return this.GetTable<DevItem>(); } }
+		public ITable<DirectoryParamSetting>                           DirectoryParamSettings                  { get { return this.GetTable<DirectoryParamSetting>(); } }
+		public ITable<Driver>                                          Drivers                                 { get { return this.GetTable<Driver>(); } }
+		public ITable<DriversComp>                                     DriversComps                            { get { return this.GetTable<DriversComp>(); } }
+		public ITable<DType>                                           DTypes                                  { get { return this.GetTable<DType>(); } }
+		public ITable<DTypesElement>                                   DTypesElements                          { get { return this.GetTable<DTypesElement>(); } }
+		public ITable<DvsMass>                                         DvsMasses                               { get { return this.GetTable<DvsMass>(); } }
+		public ITable<ElementsTypesGroup>                              ElementsTypesGroups                     { get { return this.GetTable<ElementsTypesGroup>(); } }
+		public ITable<Event>                                           Events                                  { get { return this.GetTable<Event>(); } }
+		public ITable<EventGroup>                                      EventGroups                             { get { return this.GetTable<EventGroup>(); } }
+		public ITable<EventGroupCont>                                  EventGroupConts                         { get { return this.GetTable<EventGroupCont>(); } }
+		public ITable<EventOnModificationData>                         EventOnModificationData                 { get { return this.GetTable<EventOnModificationData>(); } }
+		public ITable<EventsCategory>                                  EventsCategories                        { get { return this.GetTable<EventsCategory>(); } }
+		public ITable<EventsCategoryToEvent>                           EventsCategoryToEvents                  { get { return this.GetTable<EventsCategoryToEvent>(); } }
+		public ITable<EvReply>                                         EvReplies                               { get { return this.GetTable<EvReply>(); } }
+		public ITable<ExternalEvent>                                   ExternalEvents                          { get { return this.GetTable<ExternalEvent>(); } }
+		public ITable<fix_FixVersionRsLine>                            FixVersionRsLines                       { get { return this.GetTable<fix_FixVersionRsLine>(); } }
+		public ITable<GrAccess>                                        GrAccesses                              { get { return this.GetTable<GrAccess>(); } }
+		public ITable<GrObjCont>                                       GrObjConts                              { get { return this.GetTable<GrObjCont>(); } }
+		public ITable<Group>                                           Groups                                  { get { return this.GetTable<Group>(); } }
+		public ITable<GroupObj>                                        GroupObjs                               { get { return this.GetTable<GroupObj>(); } }
+		public ITable<GroupsParamSetting>                              GroupsParamSettings                     { get { return this.GetTable<GroupsParamSetting>(); } }
+		public ITable<GsmSetting>                                      GsmSettings                             { get { return this.GetTable<GsmSetting>(); } }
+		public ITable<GTime>                                           GTimes                                  { get { return this.GetTable<GTime>(); } }
+		public ITable<Guest>                                           Guests                                  { get { return this.GetTable<Guest>(); } }
+		public ITable<Holiday>                                         Holidays                                { get { return this.GetTable<Holiday>(); } }
+		public ITable<Interface>                                       Interfaces                              { get { return this.GetTable<Interface>(); } }
+		public ITable<Interfaceprotocol>                               Interfaceprotocols                      { get { return this.GetTable<Interfaceprotocol>(); } }
+		public ITable<InterfaceSetting>                                InterfaceSettings                       { get { return this.GetTable<InterfaceSetting>(); } }
+		public ITable<InterfaceSettingsDictionary>                     InterfaceSettingsDictionaries           { get { return this.GetTable<InterfaceSettingsDictionary>(); } }
+		public ITable<ItemEvent>                                       ItemEvents                              { get { return this.GetTable<ItemEvent>(); } }
+		public ITable<KeyObj>                                          KeyObjs                                 { get { return this.GetTable<KeyObj>(); } }
+		public ITable<Reporter_KeysSelectiveParamsForReportNotUsedKey> KeysSelectiveParamsForReportNotUsedKeys { get { return this.GetTable<Reporter_KeysSelectiveParamsForReportNotUsedKey>(); } }
+		public ITable<KoneAllAccessMask>                               KoneAllAccessMasks                      { get { return this.GetTable<KoneAllAccessMask>(); } }
+		public ITable<KoneCop>                                         KoneCops                                { get { return this.GetTable<KoneCop>(); } }
+		public ITable<KoneCopAccess>                                   KoneCopAccesses                         { get { return this.GetTable<KoneCopAccess>(); } }
+		public ITable<KoneCOPGlobalDefaultAccessMask>                  KoneCOPGlobalDefaultAccessMasks         { get { return this.GetTable<KoneCOPGlobalDefaultAccessMask>(); } }
+		public ITable<KoneCOPSpecificMask>                             KoneCOPSpecificMasks                    { get { return this.GetTable<KoneCOPSpecificMask>(); } }
+		public ITable<KoneDestinationAccessMask>                       KoneDestinationAccessMasks              { get { return this.GetTable<KoneDestinationAccessMask>(); } }
+		public ITable<KoneDop>                                         KoneDops                                { get { return this.GetTable<KoneDop>(); } }
+		public ITable<KoneDopAccess>                                   KoneDopAccesses                         { get { return this.GetTable<KoneDopAccess>(); } }
+		public ITable<KoneDOPGlobalDefaultAccessMask>                  KoneDOPGlobalDefaultAccessMasks         { get { return this.GetTable<KoneDOPGlobalDefaultAccessMask>(); } }
+		public ITable<KoneDOPSpecificMask>                             KoneDOPSpecificMasks                    { get { return this.GetTable<KoneDOPSpecificMask>(); } }
+		public ITable<KoneKg>                                          KoneKgs                                 { get { return this.GetTable<KoneKg>(); } }
+		public ITable<Line>                                            Lines                                   { get { return this.GetTable<Line>(); } }
+		public ITable<LinesBroadcast>                                  LinesBroadcasts                         { get { return this.GetTable<LinesBroadcast>(); } }
+		public ITable<ListComment>                                     ListComments                            { get { return this.GetTable<ListComment>(); } }
+		public ITable<ListComponent>                                   ListComponents                          { get { return this.GetTable<ListComponent>(); } }
+		public ITable<Log>                                             Logs                                    { get { return this.GetTable<Log>(); } }
+		public ITable<LogsChangeBd>                                    LogsChangeBds                           { get { return this.GetTable<LogsChangeBd>(); } }
+		public ITable<MAlarm>                                          MAlarms                                 { get { return this.GetTable<MAlarm>(); } }
+		public ITable<MapElement>                                      MapElements                             { get { return this.GetTable<MapElement>(); } }
+		public ITable<MapElementsLink>                                 MapElementsLinks                        { get { return this.GetTable<MapElementsLink>(); } }
+		public ITable<MapElementsRegion>                               MapElementsRegions                      { get { return this.GetTable<MapElementsRegion>(); } }
+		public ITable<MapElm>                                          MapElms                                 { get { return this.GetTable<MapElm>(); } }
+		public ITable<MapIndicator>                                    MapIndicators                           { get { return this.GetTable<MapIndicator>(); } }
+		public ITable<MapIndicatorsDefault>                            MapIndicatorsDefaults                   { get { return this.GetTable<MapIndicatorsDefault>(); } }
+		public ITable<MapInfoMarker>                                   MapInfoMarkers                          { get { return this.GetTable<MapInfoMarker>(); } }
+		public ITable<MasterKeyListDevice>                             MasterKeyListDevices                    { get { return this.GetTable<MasterKeyListDevice>(); } }
+		public ITable<MasterSlave>                                     MasterSlaves                            { get { return this.GetTable<MasterSlave>(); } }
+		public ITable<McpMasterKey>                                    McpMasterKeys                           { get { return this.GetTable<McpMasterKey>(); } }
+		public ITable<McpUserKeyLink>                                  McpUserKeyLinks                         { get { return this.GetTable<McpUserKeyLink>(); } }
+		public ITable<NodeRepl>                                        NodeRepls                               { get { return this.GetTable<NodeRepl>(); } }
+		public ITable<OrionGlobalValue>                                OrionGlobalValues                       { get { return this.GetTable<OrionGlobalValue>(); } }
+		public ITable<ParamsettingsValue>                              ParamsettingsValues                     { get { return this.GetTable<ParamsettingsValue>(); } }
+		public ITable<PBioAccess>                                      PBioAccesses                            { get { return this.GetTable<PBioAccess>(); } }
+		public ITable<PBioDevicesTypePassword>                         PBioDevicesTypePasswords                { get { return this.GetTable<PBioDevicesTypePassword>(); } }
+		public ITable<PBioParam>                                       PBioParams                              { get { return this.GetTable<PBioParam>(); } }
+		public ITable<PBioTypePassword>                                PBioTypePasswords                       { get { return this.GetTable<PBioTypePassword>(); } }
+		public ITable<PCar>                                            PCars                                   { get { return this.GetTable<PCar>(); } }
+		public ITable<PCompany>                                        PCompanies                              { get { return this.GetTable<PCompany>(); } }
+		public ITable<PDivision>                                       PDivisions                              { get { return this.GetTable<PDivision>(); } }
+		public ITable<PersonsPhoto>                                    PersonsPhotos                           { get { return this.GetTable<PersonsPhoto>(); } }
+		public ITable<PGroupExit>                                      PGroupExits                             { get { return this.GetTable<PGroupExit>(); } }
+		public ITable<PGroupReport>                                    PGroupReports                           { get { return this.GetTable<PGroupReport>(); } }
+		public ITable<PhoneNumber>                                     PhoneNumbers                            { get { return this.GetTable<PhoneNumber>(); } }
 		public ITable<PList>                                           PLists                                  { get { return this.GetTable<PList>(); } }
+		public ITable<PListNetPort>                                    PListNetPorts                           { get { return this.GetTable<PListNetPort>(); } }
+		public ITable<PListStatus>                                     PListStatus                             { get { return this.GetTable<PListStatus>(); } }
 		public ITable<PLogData>                                        PLogData                                { get { return this.GetTable<PLogData>(); } }
+		public ITable<PMap>                                            PMaps                                   { get { return this.GetTable<PMap>(); } }
+		public ITable<PMark>                                           PMarks                                  { get { return this.GetTable<PMark>(); } }
+		public ITable<PObjCont>                                        PObjConts                               { get { return this.GetTable<PObjCont>(); } }
+		public ITable<PObject>                                         PObjects                                { get { return this.GetTable<PObject>(); } }
+		public ITable<PPost>                                           PPosts                                  { get { return this.GetTable<PPost>(); } }
+		public ITable<PReason>                                         PReasons                                { get { return this.GetTable<PReason>(); } }
+		public ITable<PReport>                                         PReports                                { get { return this.GetTable<PReport>(); } }
+		public ITable<ProFile>                                         ProFiles                                { get { return this.GetTable<ProFile>(); } }
+		public ITable<PRoom>                                           PRooms                                  { get { return this.GetTable<PRoom>(); } }
+		public ITable<Protocol>                                        Protocols                               { get { return this.GetTable<Protocol>(); } }
+		public ITable<Protocoldevice>                                  Protocoldevices                         { get { return this.GetTable<Protocoldevice>(); } }
+		public ITable<ProtocolSetting>                                 ProtocolSettings                        { get { return this.GetTable<ProtocolSetting>(); } }
+		public ITable<ProtocolSettingsDictionary>                      ProtocolSettingsDictionaries            { get { return this.GetTable<ProtocolSettingsDictionary>(); } }
+		public ITable<PTypePassword>                                   PTypePasswords                          { get { return this.GetTable<PTypePassword>(); } }
+		public ITable<QueryLog>                                        QueryLogs                               { get { return this.GetTable<QueryLog>(); } }
+		public ITable<RdrAccessPoint>                                  RdrAccessPoints                         { get { return this.GetTable<RdrAccessPoint>(); } }
+		public ITable<Reason>                                          Reasons                                 { get { return this.GetTable<Reason>(); } }
+		public ITable<ReferenceCommandScenario>                        ReferenceCommandScenarios               { get { return this.GetTable<ReferenceCommandScenario>(); } }
+		public ITable<ReferenceItemsScenario>                          ReferenceItemsScenarios                 { get { return this.GetTable<ReferenceItemsScenario>(); } }
+		public ITable<ReferenceItemsZonePT>                            ReferenceItemsZonePts                   { get { return this.GetTable<ReferenceItemsZonePT>(); } }
+		public ITable<ReferenceScenariosType>                          ReferenceScenariosTypes                 { get { return this.GetTable<ReferenceScenariosType>(); } }
+		public ITable<ReferenceTactic>                                 ReferenceTactics                        { get { return this.GetTable<ReferenceTactic>(); } }
+		public ITable<RelatedCamera>                                   RelatedCameras                          { get { return this.GetTable<RelatedCamera>(); } }
+		public ITable<RelationDiv>                                     RelationDivs                            { get { return this.GetTable<RelationDiv>(); } }
+		public ITable<RelationPhoneIdDev>                              RelationPhoneIdDevs                     { get { return this.GetTable<RelationPhoneIdDev>(); } }
+		public ITable<RelationRep>                                     RelationReps                            { get { return this.GetTable<RelationRep>(); } }
+		public ITable<RelationsListCar>                                RelationsListCars                       { get { return this.GetTable<RelationsListCar>(); } }
+		public ITable<RelParamGroupsparamsetting>                      RelParamGroupsparamsettings             { get { return this.GetTable<RelParamGroupsparamsetting>(); } }
+		public ITable<RelProf>                                         RelProfs                                { get { return this.GetTable<RelProf>(); } }
+		public ITable<RemoteControlCategory>                           RemoteControlCategories                 { get { return this.GetTable<RemoteControlCategory>(); } }
+		public ITable<RemoteControlCategoryToDTypesElement>            RemoteControlCategoryToDTypesElements   { get { return this.GetTable<RemoteControlCategoryToDTypesElement>(); } }
+		public ITable<ReservLine>                                      ReservLines                             { get { return this.GetTable<ReservLine>(); } }
+		public ITable<RSBioParam>                                      RSBioParams                             { get { return this.GetTable<RSBioParam>(); } }
+		public ITable<RSLine>                                          RSLines                                 { get { return this.GetTable<RSLine>(); } }
+		public ITable<ScanDoc>                                         ScanDocs                                { get { return this.GetTable<ScanDoc>(); } }
+		public ITable<ScenariosDevice>                                 ScenariosDevices                        { get { return this.GetTable<ScenariosDevice>(); } }
+		public ITable<ScenariosFilterDevice>                           ScenariosFilterDevices                  { get { return this.GetTable<ScenariosFilterDevice>(); } }
+		public ITable<Schedule>                                        Schedules                               { get { return this.GetTable<Schedule>(); } }
+		public ITable<Script>                                          Scripts                                 { get { return this.GetTable<Script>(); } }
+		public ITable<Setting>                                         Settings                                { get { return this.GetTable<Setting>(); } }
+		public ITable<SettingsGroup>                                   SettingsGroups                          { get { return this.GetTable<SettingsGroup>(); } }
+		public ITable<SettingsValue>                                   SettingsValues                          { get { return this.GetTable<SettingsValue>(); } }
+		public ITable<SirAccessGroup>                                  SirAccessGroups                         { get { return this.GetTable<SirAccessGroup>(); } }
+		public ITable<SirChangeLog>                                    SirChangeLogs                           { get { return this.GetTable<SirChangeLog>(); } }
+		public ITable<SirChannel>                                      SirChannels                             { get { return this.GetTable<SirChannel>(); } }
+		public ITable<SirController>                                   SirControllers                          { get { return this.GetTable<SirController>(); } }
+		public ITable<SirDevList>                                      SirDevLists                             { get { return this.GetTable<SirDevList>(); } }
+		public ITable<SirInput>                                        SirInputs                               { get { return this.GetTable<SirInput>(); } }
+		public ITable<SirOutput>                                       SirOutputs                              { get { return this.GetTable<SirOutput>(); } }
+		public ITable<SirReader>                                       SirReaders                              { get { return this.GetTable<SirReader>(); } }
+		public ITable<SirScript>                                       SirScripts                              { get { return this.GetTable<SirScript>(); } }
+		public ITable<SirSubdevList>                                   SirSubdevLists                          { get { return this.GetTable<SirSubdevList>(); } }
+		public ITable<SirUser>                                         SirUsers                                { get { return this.GetTable<SirUser>(); } }
+		public ITable<SirZone>                                         SirZones                                { get { return this.GetTable<SirZone>(); } }
+		public ITable<SirZoneGroup>                                    SirZoneGroups                           { get { return this.GetTable<SirZoneGroup>(); } }
+		public ITable<SmsGatesParam>                                   SmsGatesParams                          { get { return this.GetTable<SmsGatesParam>(); } }
+		public ITable<SSLCertificate>                                  SSLCertificates                         { get { return this.GetTable<SSLCertificate>(); } }
+		public ITable<StatesItem>                                      StatesItems                             { get { return this.GetTable<StatesItem>(); } }
+		public ITable<Sy>                                              Sys                                     { get { return this.GetTable<Sy>(); } }
+		public ITable<SysGroup>                                        SysGroups                               { get { return this.GetTable<SysGroup>(); } }
+		public ITable<SysParam>                                        SysParams                               { get { return this.GetTable<SysParam>(); } }
+		public ITable<SystemObject>                                    SystemObjects                           { get { return this.GetTable<SystemObject>(); } }
+		public ITable<TimeCont>                                        TimeConts                               { get { return this.GetTable<TimeCont>(); } }
+		public ITable<TimeTable>                                       TimeTables                              { get { return this.GetTable<TimeTable>(); } }
+		public ITable<TKBPenal>                                        TKBPenals                               { get { return this.GetTable<TKBPenal>(); } }
+		public ITable<TKBSection>                                      TKBSections                             { get { return this.GetTable<TKBSection>(); } }
+		public ITable<TKeyBox>                                         TKeyBoxes                               { get { return this.GetTable<TKeyBox>(); } }
+		public ITable<TPersonalStuff>                                  TPersonalStuffs                         { get { return this.GetTable<TPersonalStuff>(); } }
+		public ITable<TPStuffLogData>                                  TPStuffLogData                          { get { return this.GetTable<TPStuffLogData>(); } }
+		public ITable<TPStuffPhoto>                                    TPStuffPhotos                           { get { return this.GetTable<TPStuffPhoto>(); } }
+		public ITable<TreeCtrl>                                        TreeCtrls                               { get { return this.GetTable<TreeCtrl>(); } }
+		public ITable<TreeNode>                                        TreeNodes                               { get { return this.GetTable<TreeNode>(); } }
+		public ITable<TReferenceBook>                                  TReferenceBooks                         { get { return this.GetTable<TReferenceBook>(); } }
+		public ITable<TypeDocList>                                     TypeDocLists                            { get { return this.GetTable<TypeDocList>(); } }
+		public ITable<TypeShlDevice>                                   TypeShlDevices                          { get { return this.GetTable<TypeShlDevice>(); } }
+		public ITable<ValueDevItemsScenario>                           ValueDevItemsScenarios                  { get { return this.GetTable<ValueDevItemsScenario>(); } }
+		public ITable<ValueItemsScenario>                              ValueItemsScenarios                     { get { return this.GetTable<ValueItemsScenario>(); } }
+		public ITable<ValueItemsZonePT>                                ValueItemsZonePts                       { get { return this.GetTable<ValueItemsZonePT>(); } }
+		public ITable<VChangeLogForDB>                                 VChangeLogForDbs                        { get { return this.GetTable<VChangeLogForDB>(); } }
+		public ITable<VersionDB>                                       VersionDbs                              { get { return this.GetTable<VersionDB>(); } }
+		public ITable<VideoArchive>                                    VideoArchives                           { get { return this.GetTable<VideoArchive>(); } }
+		public ITable<VideoCamShot>                                    VideoCamShots                           { get { return this.GetTable<VideoCamShot>(); } }
+		public ITable<VideoEvent>                                      VideoEvents                             { get { return this.GetTable<VideoEvent>(); } }
+		public ITable<VideoRecognizeAccessPoint>                       VideoRecognizeAccessPoints              { get { return this.GetTable<VideoRecognizeAccessPoint>(); } }
+		public ITable<VideoRecognizeChannel>                           VideoRecognizeChannels                  { get { return this.GetTable<VideoRecognizeChannel>(); } }
+		public ITable<VideoRecognizeProfile>                           VideoRecognizeProfiles                  { get { return this.GetTable<VideoRecognizeProfile>(); } }
+		public ITable<VInsp>                                           VInsps                                  { get { return this.GetTable<VInsp>(); } }
+		public ITable<VInspType>                                       VInspTypes                              { get { return this.GetTable<VInspType>(); } }
+		public ITable<Weightcamera>                                    Weightcameras                           { get { return this.GetTable<Weightcamera>(); } }
+		public ITable<WorkTimeZone>                                    WorkTimeZones                           { get { return this.GetTable<WorkTimeZone>(); } }
 
 		public Demobase12037DB()
 		{
@@ -603,6 +798,1934 @@ namespace ACMSE
 		[Column,        Nullable] public int?   WeightTerminalID { get; set; } // int
 		[Column,        Nullable] public int?   OperatorID       { get; set; } // int
 		[Column,        Nullable] public string Workstation      { get; set; } // varchar(50)
+
+		#region Associations
+
+		/// <summary>
+		/// FK_KONE_Cop_FK_AñcessPoint_ID_BackReference (dbo.Kone_COP)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IdAcessPoint", CanBeNull=true)]
+		public IEnumerable<KoneCop> KONECopFKAñcessPointIds { get; set; }
+
+		/// <summary>
+		/// FK_KONE_Dop_FK_AñcessPoint_ID_BackReference (dbo.Kone_DOP)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IdAcessPoint", CanBeNull=true)]
+		public IEnumerable<KoneDop> KONEDopFKAñcessPointIds { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="adc")]
+	public partial class Adc
+	{
+		[Column,        Nullable] public DateTime? TimeVal     { get; set; } // datetime
+		[Column,        Nullable] public int?      IndexZone   { get; set; } // int
+		[Column,        Nullable] public int?      IndexDevice { get; set; } // int
+		[Column,        Nullable] public int?      ComputerID  { get; set; } // int
+		[Column,        Nullable] public int?      LogID       { get; set; } // int
+		[Column,        Nullable] public double?   ADC         { get; set; } // float
+		[Column,        Nullable] public int?      Status      { get; set; } // int
+		[PrimaryKey, NotNull    ] public Guid      GUID        { get; set; } // uniqueidentifier
+		[Column,        Nullable] public int?      TypeAdc     { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="ApplicationModifData")]
+	public partial class ApplicationModifData
+	{
+		[Column(),            PrimaryKey,  Identity] public int    ID       { get; set; } // int
+		[Column("ID_Parent"),    Nullable          ] public int?   IdParent { get; set; } // int
+		[Column(),            NotNull              ] public string Caption  { get; set; } // varchar(100)
+		[Column(),            NotNull              ] public string Code     { get; set; } // varchar(25)
+
+		#region Associations
+
+		/// <summary>
+		/// FK_EventOnModificationData_ID_Application_BackReference (dbo.EventOnModificationData)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IdApplication", CanBeNull=true)]
+		public IEnumerable<EventOnModificationData> EventOnModificationDataIDApplications { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="Authorities")]
+	public partial class Authority
+	{
+		[Column(),          PrimaryKey,  NotNull] public int  ID               { get; set; } // int
+		[Column(),                       NotNull] public int  GroupID          { get; set; } // int
+		[Column(),                       NotNull] public int  ProgramID        { get; set; } // int
+		[Column(),             Nullable         ] public int? ProgramSubItemID { get; set; } // int
+		[Column("aBrowse"),    Nullable         ] public int? ABrowse          { get; set; } // int
+		[Column("aInsert"),    Nullable         ] public int? AInsert          { get; set; } // int
+		[Column("aEdit"),      Nullable         ] public int? AEdit            { get; set; } // int
+		[Column("aDelete"),    Nullable         ] public int? ADelete          { get; set; } // int
+		[Column(),             Nullable         ] public int? Archive          { get; set; } // int
+
+		#region Associations
+
+		/// <summary>
+		/// FK_RelationDiv_IdAuto_BackReference (dbo.RelationDiv)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IdAuth", CanBeNull=true)]
+		public IEnumerable<RelationDiv> RelationDivIdAutoes { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="BindingCommandScenarios")]
+	public partial class BindingCommandScenario
+	{
+		[Column("ID_ItemsScenarios"),   PrimaryKey(1), NotNull] public int    IdItemsScenarios   { get; set; } // int
+		[Column("ID_CommandScenarios"), PrimaryKey(2), NotNull] public int    IdCommandScenarios { get; set; } // int
+		[Column("ID_Level"),            PrimaryKey(3), NotNull] public byte   IdLevel            { get; set; } // tinyint
+		[Column(),                                     NotNull] public int    Sort               { get; set; } // int
+		[Column(),                                     NotNull] public bool   Def                { get; set; } // bit
+		[Column(),                         Nullable           ] public object DevValue           { get; set; } // sql_variant
+		[Column("isNumber"),                           NotNull] public bool   IsNumber           { get; set; } // bit
+
+		#region Associations
+
+		/// <summary>
+		/// FK_BindingCommandScenarios_ID_CommandScenarios (dbo.ReferenceCommandScenarios)
+		/// </summary>
+		[Association(ThisKey="IdCommandScenarios", OtherKey="ID", CanBeNull=false)]
+		public ReferenceCommandScenario IDCommandScenario { get; set; }
+
+		/// <summary>
+		/// FK_BindingCommandScenarios_ID_ItemsScenarios (dbo.ReferenceItemsScenarios)
+		/// </summary>
+		[Association(ThisKey="IdItemsScenarios", OtherKey="ID", CanBeNull=false)]
+		public ReferenceItemsScenario IDItemsScenario { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="BindingConditionStepScen")]
+	public partial class BindingConditionStepScen
+	{
+		[Column(),                   Identity              ] public int  ID              { get; set; } // int
+		[Column("ID_ScenDevice"),    PrimaryKey(2), NotNull] public int  IdScenDevice    { get; set; } // int
+		[Column(),                   PrimaryKey(3), NotNull] public bool Access          { get; set; } // bit
+		[Column("ID_ConditionScen"), PrimaryKey(1), NotNull] public int  IdConditionScen { get; set; } // int
+
+		#region Associations
+
+		/// <summary>
+		/// FK_BindingConditionStepScen_ID_ConditionScen (dbo.ConditionStepScenarios)
+		/// </summary>
+		[Association(ThisKey="IdConditionScen", OtherKey="ID", CanBeNull=false)]
+		public ConditionStepScenario IDConditionScen { get; set; }
+
+		/// <summary>
+		/// FK_BindingConditionStepScen_ID_ScenDevice (dbo.ScenariosDevice)
+		/// </summary>
+		[Association(ThisKey="IdScenDevice", OtherKey="ID", CanBeNull=false)]
+		public ScenariosDevice IDScenDevice { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="BindingGrObjectsStepScen")]
+	public partial class BindingGrObjectsStepScen
+	{
+		[Column(),                Identity              ] public int  ID           { get; set; } // int
+		[Column("ID_ScenDevice"), PrimaryKey(2), NotNull] public int  IdScenDevice { get; set; } // int
+		[Column(),                PrimaryKey(3), NotNull] public bool Access       { get; set; } // bit
+		[Column("ID_GrObject"),   PrimaryKey(1), NotNull] public int  IdGrObject   { get; set; } // int
+
+		#region Associations
+
+		/// <summary>
+		/// FK_BindingGrObjectsStepScen_ID_Object (dbo.GroupObj)
+		/// </summary>
+		[Association(ThisKey="IdGrObject", OtherKey="ID", CanBeNull=false)]
+		public GroupObj IDObject { get; set; }
+
+		/// <summary>
+		/// FK_BindingGrObjectsStepScen_ID_ScenDevice (dbo.ScenariosDevice)
+		/// </summary>
+		[Association(ThisKey="IdScenDevice", OtherKey="ID", CanBeNull=false)]
+		public ScenariosDevice IDScenDevice { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="BindingItemsDevScenarios")]
+	public partial class BindingItemsDevScenario
+	{
+		[Column("ID_ElementType"),    PrimaryKey(1), NotNull] public int    IdElementType    { get; set; } // int
+		[Column("ID_ItemsScenarios"), PrimaryKey(2), NotNull] public int    IdItemsScenarios { get; set; } // int
+		[Column(),                                   NotNull] public object DefValue         { get; set; } // sql_variant
+		[Column(),                                   NotNull] public int    Sort             { get; set; } // int
+		[Column(),                                   NotNull] public bool   ReadOnly         { get; set; } // bit
+
+		#region Associations
+
+		/// <summary>
+		/// FK_BindingItemsDevScenarios_ID_ItemsScenarios (dbo.ReferenceItemsScenarios)
+		/// </summary>
+		[Association(ThisKey="IdItemsScenarios", OtherKey="ID", CanBeNull=false)]
+		public ReferenceItemsScenario IDItemsScenario { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="BindingItemsScenarios")]
+	public partial class BindingItemsScenario
+	{
+		[Column("ID_ScenariosTypes"), PrimaryKey(1), NotNull] public int    IdScenariosTypes { get; set; } // int
+		[Column("ID_ItemsScenarios"), PrimaryKey(2), NotNull] public int    IdItemsScenarios { get; set; } // int
+		[Column("ID_Level"),          PrimaryKey(3), NotNull] public byte   IdLevel          { get; set; } // tinyint
+		[Column(),                                   NotNull] public bool   Def              { get; set; } // bit
+		[Column(),                                   NotNull] public int    Sort             { get; set; } // int
+		[Column(),                                   NotNull] public bool   ReadOnly         { get; set; } // bit
+		[Column(),                       Nullable           ] public string RegExp           { get; set; } // varchar(50)
+		[Column(),                       Nullable           ] public int?   SortExp          { get; set; } // int
+
+		#region Associations
+
+		/// <summary>
+		/// FK_BindingItemsScenarios_ID_ItemsScenarios (dbo.ReferenceItemsScenarios)
+		/// </summary>
+		[Association(ThisKey="IdItemsScenarios", OtherKey="ID", CanBeNull=false)]
+		public ReferenceItemsScenario IDItemsScenario { get; set; }
+
+		/// <summary>
+		/// FK_BindingItemsScenarios_ID_ScenariosTypes (dbo.ReferenceScenariosTypes)
+		/// </summary>
+		[Association(ThisKey="IdScenariosTypes", OtherKey="ID", CanBeNull=false)]
+		public ReferenceScenariosType IDScenariosType { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="BindingItemsZonePT")]
+	public partial class BindingItemsZonePT
+	{
+		[Column("ID_ItemZonePT"), PrimaryKey(2), NotNull] public int    IdItemZonePT    { get; set; } // int
+		[Column(),                               NotNull] public int    SiriusGroupType { get; set; } // int
+		[Column(),                PrimaryKey(1), NotNull] public string ItemType        { get; set; } // varchar(25)
+		[Column(),                               NotNull] public int    Sort            { get; set; } // int
+		[Column(),                               NotNull] public bool   ReadOnly        { get; set; } // bit
+		[Column(),                   Nullable           ] public object DefValue        { get; set; } // sql_variant
+		[Column(),                               NotNull] public bool   Visible         { get; set; } // bit
+
+		#region Associations
+
+		/// <summary>
+		/// FK_BindingItemsZonePT_ID_ItemZonePT (dbo.ReferenceItemsZonePT)
+		/// </summary>
+		[Association(ThisKey="IdItemZonePT", OtherKey="ID", CanBeNull=false)]
+		public ReferenceItemsZonePT IDItemZonePT { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="BindingObjectsStepScen")]
+	public partial class BindingObjectsStepScen
+	{
+		[Column(),                Identity              ] public int  ID           { get; set; } // int
+		[Column("ID_ScenDevice"), PrimaryKey(2), NotNull] public int  IdScenDevice { get; set; } // int
+		[Column(),                PrimaryKey(3), NotNull] public bool Access       { get; set; } // bit
+		[Column("ID_Object"),     PrimaryKey(1), NotNull] public int  IdObject     { get; set; } // int
+
+		#region Associations
+
+		/// <summary>
+		/// FK_BindingObjectsStepScen_ID_Object (dbo.pObjects)
+		/// </summary>
+		[Association(ThisKey="IdObject", OtherKey="ID", CanBeNull=false)]
+		public PObject IDObject { get; set; }
+
+		/// <summary>
+		/// FK_BindingObjectsStepScen_ID_ScenDevice (dbo.ScenariosDevice)
+		/// </summary>
+		[Association(ThisKey="IdScenDevice", OtherKey="ID", CanBeNull=false)]
+		public ScenariosDevice IDScenDevice { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="Cameras")]
+	public partial class Camera
+	{
+		[PrimaryKey, NotNull    ] public int       ID                { get; set; } // int
+		[Column,        Nullable] public string    Name              { get; set; } // varchar(50)
+		[Column,        Nullable] public int?      CamNumber         { get; set; } // int
+		[Column,        Nullable] public int?      MonNumber         { get; set; } // int
+		[Column,        Nullable] public int?      GType             { get; set; } // int
+		[Column,        Nullable] public int?      FAlertRecord      { get; set; } // int
+		[Column,        Nullable] public int?      RecTimeAfterAlarm { get; set; } // int
+		[Column,        Nullable] public byte[]    Settings          { get; set; } // image
+		[Column,        Nullable] public string    IPCamParams       { get; set; } // varchar(128)
+		[Column,        Nullable] public DateTime? ChangeTime        { get; set; } // datetime
+		[Column,        Nullable] public int?      AutoTakeOff       { get; set; } // int
+		[Column,        Nullable] public int?      GIndex            { get; set; } // int
+		[Column,        Nullable] public string    IPAddr            { get; set; } // varchar(64)
+		[Column,        Nullable] public int?      OperatorID        { get; set; } // int
+		[Column,        Nullable] public string    Workstation       { get; set; } // varchar(50)
+		[Column,        Nullable] public string    Comment           { get; set; } // varchar(250)
+		[Column,        Nullable] public int?      LiteGIndex        { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="CameraMatrix")]
+	public partial class CameraMatrix
+	{
+		[PrimaryKey, NotNull    ] public int       ID         { get; set; } // int
+		[Column,        Nullable] public string    Name       { get; set; } // varchar(50)
+		[Column,        Nullable] public byte[]    Matrix     { get; set; } // image
+		[Column,        Nullable] public DateTime? CreateDate { get; set; } // datetime
+		[Column,        Nullable] public int?      Reserv     { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="ClientFieldsNames")]
+	public partial class ClientFieldsName
+	{
+		[PrimaryKey, NotNull    ] public int    ID   { get; set; } // int
+		[Column,        Nullable] public string Name { get; set; } // varchar(50)
+
+		#region Associations
+
+		/// <summary>
+		/// FK_ClientFieldsValues_ClientFieldsNames_BackReference (dbo.ClientFieldsValues)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="FieldId", CanBeNull=true)]
+		public IEnumerable<ClientFieldsValue> ClientFieldsValues { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="ClientFieldsValues")]
+	public partial class ClientFieldsValue
+	{
+		[Column(),           PrimaryKey,  NotNull] public int    ID      { get; set; } // int
+		[Column("field_id"),              NotNull] public int    FieldId { get; set; } // int
+		[Column("owner"),                 NotNull] public int    Owner   { get; set; } // int
+		[Column("value"),       Nullable         ] public string Value   { get; set; } // varchar(250)
+
+		#region Associations
+
+		/// <summary>
+		/// FK_ClientFieldsValues_ClientFieldsNames (dbo.ClientFieldsNames)
+		/// </summary>
+		[Association(ThisKey="FieldId", OtherKey="ID", CanBeNull=false)]
+		public ClientFieldsName Field { get; set; }
+
+		/// <summary>
+		/// FK_ClientFieldsValues_pList (dbo.pList)
+		/// </summary>
+		[Association(ThisKey="Owner", OtherKey="ID", CanBeNull=false)]
+		public PList PList { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="CodesList")]
+	public partial class CodesList
+	{
+		[PrimaryKey, NotNull] public int    ID     { get; set; } // int
+		[Column,     NotNull] public string Letter { get; set; } // varchar(4)
+	}
+
+	[Table(Schema="dbo", Name="Codes_T12")]
+	public partial class CodesT12
+	{
+		[Column, NotNull] public DateTime DateC      { get; set; } // datetime
+		[Column, NotNull] public int      IDHOZORGAN { get; set; } // int
+		[Column, NotNull] public int      LetterID   { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="Comps")]
+	public partial class Comp
+	{
+		[Column(),         PrimaryKey,  NotNull] public int    ID              { get; set; } // int
+		[Column(),                      NotNull] public int    Gindex          { get; set; } // int
+		[Column(),                      NotNull] public string Name            { get; set; } // varchar(25)
+		[Column(),            Nullable         ] public string Psevdonim       { get; set; } // varchar(40)
+		[Column("TCP_IP"),    Nullable         ] public string TcpIp           { get; set; } // varchar(15)
+		[Column(),                      NotNull] public int    Gtype           { get; set; } // int
+		[Column(),            Nullable         ] public int?   Priority        { get; set; } // int
+		[Column(),            Nullable         ] public int?   Works           { get; set; } // int
+		[Column(),            Nullable         ] public int?   TypeEvents      { get; set; } // int
+		[Column(),            Nullable         ] public string IpReservSrv     { get; set; } // varchar(20)
+		[Column(),            Nullable         ] public string AbonentNumber   { get; set; } // varchar(15)
+		[Column(),            Nullable         ] public string Comment         { get; set; } // varchar(200)
+		[Column(),            Nullable         ] public Guid?  ApplicationGuid { get; set; } // uniqueidentifier
+		[Column(),            Nullable         ] public int?   OperatorID      { get; set; } // int
+		[Column(),            Nullable         ] public string Workstation     { get; set; } // varchar(50)
+
+		#region Associations
+
+		/// <summary>
+		/// FK_LINES_REFERENCE_COMPS_BackReference (dbo.Lines)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="CompID", CanBeNull=true)]
+		public IEnumerable<Line> LINESREFERENCECOMPS { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="ComPorts")]
+	public partial class ComPort
+	{
+		[Column(),           PrimaryKey,  NotNull] public int    ID             { get; set; } // int
+		[Column(),                        NotNull] public int    ComputerID     { get; set; } // int
+		[Column(),                        NotNull] public int    Number         { get; set; } // int
+		[Column(),                        NotNull] public int    Adaptor        { get; set; } // int
+		[Column(),                        NotNull] public int    PrAdaptor      { get; set; } // int
+		[Column(),                        NotNull] public int    PortType       { get; set; } // int
+		[Column(),              Nullable         ] public string AdaptorAddress { get; set; } // varchar(32)
+		[Column(),              Nullable         ] public string IPAddress      { get; set; } // varchar(16)
+		[Column(),                        NotNull] public int    Protokoltype   { get; set; } // int
+		[Column(),              Nullable         ] public int?   TypeLine       { get; set; } // int
+		[Column(),              Nullable         ] public int?   Baud           { get; set; } // int
+		[Column(),              Nullable         ] public int?   OperatorID     { get; set; } // int
+		[Column(),              Nullable         ] public string Workstation    { get; set; } // varchar(50)
+		[Column(),              Nullable         ] public string Comment        { get; set; } // varchar(200)
+		[Column("exported"),    Nullable         ] public bool?  Exported       { get; set; } // bit
+	}
+
+	[Table(Schema="dbo", Name="CompTrns")]
+	public partial class CompTrn
+	{
+		[PrimaryKey, NotNull] public int ID         { get; set; } // int
+		[Column,     NotNull] public int SenderID   { get; set; } // int
+		[Column,     NotNull] public int ReceptorID { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="ConditionStepScenarios")]
+	public partial class ConditionStepScenario
+	{
+		[PrimaryKey, NotNull    ] public int    ID       { get; set; } // int
+		[Column,        Nullable] public int?   ParentID { get; set; } // int
+		[Column,     NotNull    ] public string Name     { get; set; } // varchar(250)
+		[Column,        Nullable] public string LatName  { get; set; } // varchar(250)
+		[Column,        Nullable] public string Version  { get; set; } // varchar(10)
+
+		#region Associations
+
+		/// <summary>
+		/// FK_BindingConditionStepScen_ID_ConditionScen_BackReference (dbo.BindingConditionStepScen)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IdConditionScen", CanBeNull=true)]
+		public IEnumerable<BindingConditionStepScen> BindingConditionStepScenIDConditionScens { get; set; }
+
+		/// <summary>
+		/// FK_ConditionStepScenarios_ParentID_BackReference (dbo.ConditionStepScenarios)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="ParentID", CanBeNull=true)]
+		public IEnumerable<ConditionStepScenario> FkConditionStepScenariosParentIDBackReferences { get; set; }
+
+		/// <summary>
+		/// FK_ConditionStepScenarios_ParentID (dbo.ConditionStepScenarios)
+		/// </summary>
+		[Association(ThisKey="ParentID", OtherKey="ID", CanBeNull=true)]
+		public ConditionStepScenario Parent { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="ControlItems")]
+	public partial class ControlItem
+	{
+		[Column("item_type"),               NotNull] public int      ItemType    { get; set; } // int
+		[Column("item_id"),                 NotNull] public int      ItemId      { get; set; } // int
+		[Column("tmvl"),                    NotNull] public DateTime Tmvl        { get; set; } // datetime
+		[Column("cmd"),                     NotNull] public int      Cmd         { get; set; } // int
+		[Column("action"),                  NotNull] public int      Action      { get; set; } // int
+		[Column("guid_cmd"),   PrimaryKey,  NotNull] public string   GuidCmd     { get; set; } // varchar(64)
+		[Column("id_owner"),      Nullable         ] public int?     IdOwner     { get; set; } // int
+		[Column("result_cmd"),    Nullable         ] public int?     ResultCmd   { get; set; } // int
+		[Column(),                          NotNull] public int      OwnercompId { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="Counters")]
+	public partial class Counter
+	{
+		[Column(),          PrimaryKey(1), NotNull] public string TableName     { get; set; } // varchar(20)
+		[Column(),          PrimaryKey(2), NotNull] public string FieldName     { get; set; } // varchar(20)
+		[Column("Counter"),                NotNull] public int    CounterColumn { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="DevCamerasItems")]
+	public partial class DevCamerasItem
+	{
+		[PrimaryKey, NotNull    ] public Guid   GUID        { get; set; } // uniqueidentifier
+		[Column,     NotNull    ] public int    ObjType     { get; set; } // int
+		[Column,     NotNull    ] public int    GIndex      { get; set; } // int
+		[Column,     NotNull    ] public int    CamIndex    { get; set; } // int
+		[Column,        Nullable] public int?   Param       { get; set; } // int
+		[Column,        Nullable] public int?   IsEventRec  { get; set; } // int
+		[Column,        Nullable] public int?   OperatorID  { get; set; } // int
+		[Column,        Nullable] public string Workstation { get; set; } // varchar(50)
+	}
+
+	[Table(Schema="dbo", Name="DevElms")]
+	public partial class DevElm
+	{
+		[PrimaryKey, NotNull    ] public int    ID          { get; set; } // int
+		[Column,     NotNull    ] public int    DevID       { get; set; } // int
+		[Column,     NotNull    ] public int    GType       { get; set; } // int
+		[Column,     NotNull    ] public int    UnitID      { get; set; } // int
+		[Column,        Nullable] public int?   PhonesId    { get; set; } // int
+		[Column,        Nullable] public int?   OperatorID  { get; set; } // int
+		[Column,        Nullable] public string Workstation { get; set; } // varchar(50)
+	}
+
+	[Table(Schema="dbo", Name="devicemasterslave")]
+	public partial class Devicemasterslave
+	{
+		[Column("mastertype"), PrimaryKey(1), NotNull] public int Mastertype { get; set; } // int
+		[Column("slavetype"),  PrimaryKey(2), NotNull] public int Slavetype  { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="DeviceToLine")]
+	public partial class DeviceToLine
+	{
+		[Column,     NotNull    ] public int    LineID      { get; set; } // int
+		[Column,     NotNull    ] public int    DeviceID    { get; set; } // int
+		[Column,     NotNull    ] public int    DevType     { get; set; } // int
+		[Column,        Nullable] public int?   OperatorID  { get; set; } // int
+		[Column,        Nullable] public string Workstation { get; set; } // varchar(50)
+		[PrimaryKey, NotNull    ] public int    ID          { get; set; } // int
+
+		#region Associations
+
+		/// <summary>
+		/// FK_DEVICE_TO_LINE (dbo.Lines)
+		/// </summary>
+		[Association(ThisKey="LineID", OtherKey="ID", CanBeNull=false)]
+		public Line Line { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="DeviceTypesLines")]
+	public partial class DeviceTypesLine
+	{
+		[Column(),           PrimaryKey,  NotNull] public int    ID           { get; set; } // int
+		[Column(),              Nullable         ] public int?   DeviceTypeID { get; set; } // int
+		[Column(),              Nullable         ] public int?   InterfaceID  { get; set; } // int
+		[Column(),              Nullable         ] public int?   ProtocolID   { get; set; } // int
+		[Column(),              Nullable         ] public int?   LineType     { get; set; } // int
+		[Column(),              Nullable         ] public int?   MainID       { get; set; } // int
+		[Column(),              Nullable         ] public int?   Static       { get; set; } // int
+		[Column("idreserv"),    Nullable         ] public int?   Idreserv     { get; set; } // int
+		[Column(),              Nullable         ] public string NameLine     { get; set; } // varchar(60)
+		[Column(),              Nullable         ] public int?   Number       { get; set; } // int
+		[Column(),              Nullable         ] public int?   Range        { get; set; } // int
+		[Column(),              Nullable         ] public int?   ModeDeviceId { get; set; } // int
+		[Column(),              Nullable         ] public int?   OwnerD       { get; set; } // int
+
+		#region Associations
+
+		/// <summary>
+		/// FK_DEVTYPESLINES_REFERENCE_DEVTYPEID (dbo.dTypesElement)
+		/// </summary>
+		[Association(ThisKey="DeviceTypeID", OtherKey="ID", CanBeNull=true)]
+		public DTypesElement DeviceType { get; set; }
+
+		/// <summary>
+		/// FK_DEVTYPESLINES_REFERENCE_INTERFACEID (dbo.interfaces)
+		/// </summary>
+		[Association(ThisKey="InterfaceID", OtherKey="Id", CanBeNull=true)]
+		public Interface Interface { get; set; }
+
+		/// <summary>
+		/// FK_DEVTYPESLINES_REFERENCE_PROTOCOLID (dbo.protocols)
+		/// </summary>
+		[Association(ThisKey="ProtocolID", OtherKey="Id", CanBeNull=true)]
+		public Protocol Protocol { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="DevItems")]
+	public partial class DevItem
+	{
+		[PrimaryKey, NotNull    ] public int    ID                { get; set; } // int
+		[Column,     NotNull    ] public int    ComputerID        { get; set; } // int
+		[Column,     NotNull    ] public int    DeviceID          { get; set; } // int
+		[Column,     NotNull    ] public int    Address           { get; set; } // int
+		[Column,     NotNull    ] public int    GIndex            { get; set; } // int
+		[Column,        Nullable] public string Name              { get; set; } // varchar(45)
+		[Column,        Nullable] public string Comment           { get; set; } // varchar(200)
+		[Column,        Nullable] public int?   GType             { get; set; } // int
+		[Column,     NotNull    ] public int    ItemType          { get; set; } // int
+		[Column,        Nullable] public int?   State             { get; set; } // int
+		[Column,        Nullable] public int?   Command           { get; set; } // int
+		[Column,        Nullable] public int?   TimeOutControl    { get; set; } // int
+		[Column,        Nullable] public int?   TimeOutConfig     { get; set; } // int
+		[Column,        Nullable] public int?   Config            { get; set; } // int
+		[Column,        Nullable] public int?   Flags             { get; set; } // int
+		[Column,        Nullable] public int?   IndexForContactId { get; set; } // int
+		[Column,        Nullable] public int?   OperatorID        { get; set; } // int
+		[Column,        Nullable] public string Workstation       { get; set; } // varchar(50)
+	}
+
+	[Table(Schema="dbo", Name="DirectoryParamSetting")]
+	public partial class DirectoryParamSetting
+	{
+		[Column(),            PrimaryKey,  NotNull] public int    ID        { get; set; } // int
+		[Column(),               Nullable         ] public string Name      { get; set; } // varchar(30)
+		[Column(),               Nullable         ] public string Comment   { get; set; } // varchar(200)
+		[Column("typeParam"),    Nullable         ] public int?   TypeParam { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="drivers")]
+	public partial class Driver
+	{
+		[Column(),                PrimaryKey, NotNull] public int    ID           { get; set; } // int
+		[Column("name"),                      NotNull] public string Name         { get; set; } // varchar(50)
+		[Column("port"),                      NotNull] public int    Port         { get; set; } // int
+		[Column(),                            NotNull] public string IP           { get; set; } // varchar(15)
+		[Column("mac"),                       NotNull] public string Mac          { get; set; } // varchar(18)
+		[Column("files"),                     NotNull] public string Files        { get; set; } // varchar(255)
+		[Column("mainfile"),                  NotNull] public string Mainfile     { get; set; } // varchar(50)
+		[Column("inifile"),                   NotNull] public string Inifile      { get; set; } // varchar(50)
+		[Column("parameters"),                NotNull] public string Parameters   { get; set; } // varchar(255)
+		[Column("start_cmd"),                 NotNull] public string StartCmd     { get; set; } // varchar(50)
+		[Column("stop_cmd"),                  NotNull] public string StopCmd      { get; set; } // varchar(50)
+		[Column("install_cmd"),               NotNull] public string InstallCmd   { get; set; } // varchar(50)
+		[Column("uninstall_cmd"),             NotNull] public string UninstallCmd { get; set; } // varchar(50)
+		[Column("folder"),                    NotNull] public string Folder       { get; set; } // varchar(255)
+	}
+
+	[Table(Schema="dbo", Name="drivers_comps")]
+	public partial class DriversComp
+	{
+		[Column("id_computer"), PrimaryKey(1), NotNull] public int IdComputer { get; set; } // int
+		[Column("id_driver"),   PrimaryKey(2), NotNull] public int IdDriver   { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="dTypes")]
+	public partial class DType
+	{
+		[PrimaryKey, NotNull    ] public int    ID           { get; set; } // int
+		[Column,        Nullable] public string Name         { get; set; } // varchar(45)
+		[Column,        Nullable] public int?   CountShl     { get; set; } // int
+		[Column,        Nullable] public int?   CountKey     { get; set; } // int
+		[Column,        Nullable] public int?   CountReader  { get; set; } // int
+		[Column,        Nullable] public string Comment      { get; set; } // varchar(200)
+		[Column,        Nullable] public int?   Face         { get; set; } // int
+		[Column,        Nullable] public int?   Icon         { get; set; } // int
+		[Column,        Nullable] public int?   ProtokolType { get; set; } // int
+		[Column,        Nullable] public int?   Interfaces   { get; set; } // int
+		[Column,        Nullable] public string WorkLib      { get; set; } // varchar(50)
+	}
+
+	[Table(Schema="dbo", Name="dTypesElement")]
+	public partial class DTypesElement
+	{
+		[PrimaryKey, NotNull    ] public int    ID                   { get; set; } // int
+		[Column,     NotNull    ] public int    DeviceType           { get; set; } // int
+		[Column,        Nullable] public int?   DeviceVersion        { get; set; } // int
+		[Column,        Nullable] public int?   ElementType          { get; set; } // int
+		[Column,     NotNull    ] public string Name                 { get; set; } // varchar(50)
+		[Column,     NotNull    ] public int    CountShl             { get; set; } // int
+		[Column,     NotNull    ] public int    CountKey             { get; set; } // int
+		[Column,     NotNull    ] public int    CountReader          { get; set; } // int
+		[Column,     NotNull    ] public string Comment              { get; set; } // varchar(200)
+		[Column,     NotNull    ] public int    EventGroupID         { get; set; } // int
+		[Column,        Nullable] public string DeviceVersionStr     { get; set; } // varchar(250)
+		[Column,        Nullable] public int?   Property             { get; set; } // int
+		[Column,        Nullable] public int?   ElementsTypesGroupId { get; set; } // int
+		[Column,        Nullable] public int?   SortingNum           { get; set; } // int
+
+		#region Associations
+
+		/// <summary>
+		/// FK_DEVTYPESLINES_REFERENCE_DEVTYPEID_BackReference (dbo.DeviceTypesLines)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="DeviceTypeID", CanBeNull=true)]
+		public IEnumerable<DeviceTypesLine> Devtypeslinesreferencedevtypeids { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="DvsMass")]
+	public partial class DvsMass
+	{
+		[Identity                  ] public int    ID               { get; set; } // int
+		[PrimaryKey(2), NotNull    ] public byte   IconGroup        { get; set; } // tinyint
+		[Column,           Nullable] public int?   GroupSort        { get; set; } // int
+		[PrimaryKey(1), NotNull    ] public int    Number           { get; set; } // int
+		[Column,        NotNull    ] public int    Left             { get; set; } // int
+		[Column,        NotNull    ] public int    Top              { get; set; } // int
+		[Column,        NotNull    ] public int    Width            { get; set; } // int
+		[Column,        NotNull    ] public int    Height           { get; set; } // int
+		[PrimaryKey(3), NotNull    ] public bool   LargeIcon        { get; set; } // bit
+		[Column,           Nullable] public int?   NumberRelation   { get; set; } // int
+		[Column,           Nullable] public byte[] ResourceIco      { get; set; } // varbinary(max)
+		[Column,           Nullable] public int?   ResWidth         { get; set; } // int
+		[Column,           Nullable] public int?   ResHeight        { get; set; } // int
+		[Column,           Nullable] public int?   ResCountIco      { get; set; } // int
+		[Column,           Nullable] public bool?  DefaultLargeIcon { get; set; } // bit
+		[Column,           Nullable] public string Description      { get; set; } // varchar(150)
+	}
+
+	[Table(Schema="dbo", Name="ElementsTypesGroups")]
+	public partial class ElementsTypesGroup
+	{
+		[PrimaryKey, NotNull    ] public int    ID   { get; set; } // int
+		[Column,        Nullable] public string Name { get; set; } // varchar(40)
+	}
+
+	[Table(Schema="dbo", Name="Events")]
+	public partial class Event
+	{
+		[Column("Event"), PrimaryKey,  NotNull] public int    EventColumn      { get; set; } // int
+		[Column(),           Nullable         ] public string CharID           { get; set; } // varchar(2)
+		[Column(),           Nullable         ] public string Contents         { get; set; } // varchar(60)
+		[Column(),           Nullable         ] public string Comment          { get; set; } // varchar(80)
+		[Column(),           Nullable         ] public int?   RealEvent        { get; set; } // int
+		[Column(),           Nullable         ] public int?   State            { get; set; } // int
+		[Column(),           Nullable         ] public int?   Category         { get; set; } // int
+		[Column(),           Nullable         ] public int?   FormatView       { get; set; } // int
+		[Column(),           Nullable         ] public int?   SoundNumber      { get; set; } // int
+		[Column(),           Nullable         ] public int?   AlarmLevel       { get; set; } // int
+		[Column(),           Nullable         ] public int?   GpEvent          { get; set; } // int
+		[Column(),           Nullable         ] public int?   EventsCategoryID { get; set; } // int
+		[Column(),           Nullable         ] public int?   IsAlarm          { get; set; } // int
+
+		#region Associations
+
+		/// <summary>
+		/// FK_EventsCategoryToEvent_EventId_BackReference (dbo.EventsCategoryToEvent)
+		/// </summary>
+		[Association(ThisKey="EventColumn", OtherKey="EventId", CanBeNull=true)]
+		public IEnumerable<EventsCategoryToEvent> EventsCategoryToEventEventIds { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="EventGroup")]
+	public partial class EventGroup
+	{
+		[PrimaryKey, NotNull    ] public int    ID      { get; set; } // int
+		[Column,     NotNull    ] public string Name    { get; set; } // varchar(100)
+		[Column,        Nullable] public string Comment { get; set; } // varchar(200)
+	}
+
+	[Table(Schema="dbo", Name="EventGroupCont")]
+	public partial class EventGroupCont
+	{
+		[PrimaryKey, NotNull] public int ID           { get; set; } // int
+		[Column,     NotNull] public int EventGroupID { get; set; } // int
+		[Column,     NotNull] public int EventID      { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="EventOnModificationData")]
+	public partial class EventOnModificationData
+	{
+		[Column(),                 PrimaryKey(2), Identity] public int      ID            { get; set; } // int
+		[Column(),                 PrimaryKey(1), NotNull ] public DateTime ChangeDate    { get; set; } // datetime
+		[Column("ID_Application"),                NotNull ] public int      IdApplication { get; set; } // int
+		[Column(),                                NotNull ] public int      UpdateStatus  { get; set; } // int
+		[Column(),                    Nullable            ] public string   AGuid         { get; set; } // nvarchar(500)
+		[Column("ID_Subj"),           Nullable            ] public int?     IdSubj        { get; set; } // int
+		[Column(),                    Nullable            ] public string   Subj          { get; set; } // varchar(50)
+		[Column(),                    Nullable            ] public string   AData         { get; set; } // xml
+
+		#region Associations
+
+		/// <summary>
+		/// FK_EventOnModificationData_ID_Application (dbo.ApplicationModifData)
+		/// </summary>
+		[Association(ThisKey="IdApplication", OtherKey="ID", CanBeNull=false)]
+		public ApplicationModifData IDApplication { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="EventsCategories")]
+	public partial class EventsCategory
+	{
+		[PrimaryKey, NotNull    ] public int    ID       { get; set; } // int
+		[Column,        Nullable] public string Name     { get; set; } // varchar(40)
+		[Column,        Nullable] public string HexColor { get; set; } // varchar(7)
+
+		#region Associations
+
+		/// <summary>
+		/// FK_EventsCategoryToEvent_EventsCategoriesId_BackReference (dbo.EventsCategoryToEvent)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="EventsCategoriesId", CanBeNull=true)]
+		public IEnumerable<EventsCategoryToEvent> EventsCategoryToEventEventsCategoriesIds { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="EventsCategoryToEvent")]
+	public partial class EventsCategoryToEvent
+	{
+		[PrimaryKey(1), NotNull] public int EventsCategoriesId { get; set; } // int
+		[PrimaryKey(2), NotNull] public int EventId            { get; set; } // int
+
+		#region Associations
+
+		/// <summary>
+		/// FK_EventsCategoryToEvent_EventId (dbo.Events)
+		/// </summary>
+		[Association(ThisKey="EventId", OtherKey="EventColumn", CanBeNull=false)]
+		public Event Event { get; set; }
+
+		/// <summary>
+		/// FK_EventsCategoryToEvent_EventsCategoriesId (dbo.EventsCategories)
+		/// </summary>
+		[Association(ThisKey="EventsCategoriesId", OtherKey="ID", CanBeNull=false)]
+		public EventsCategory EventsCategory { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="EvReply")]
+	public partial class EvReply
+	{
+		[PrimaryKey, NotNull    ] public int  ID         { get; set; } // int
+		[Column,     NotNull    ] public int  ComputerID { get; set; } // int
+		[Column,     NotNull    ] public int  Source     { get; set; } // int
+		[Column,     NotNull    ] public int  EventType  { get; set; } // int
+		[Column,     NotNull    ] public int  UnitID     { get; set; } // int
+		[Column,     NotNull    ] public int  ScriptID   { get; set; } // int
+		[Column,        Nullable] public int? Data       { get; set; } // int
+		[Column,        Nullable] public int? DataType   { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="ExternalEvents")]
+	public partial class ExternalEvent
+	{
+		[PrimaryKey, NotNull    ] public int      ID         { get; set; } // int
+		[Column,     NotNull    ] public int      ItemID     { get; set; } // int
+		[Column,     NotNull    ] public int      ItemType   { get; set; } // int
+		[Column,     NotNull    ] public int      Event      { get; set; } // int
+		[Column,     NotNull    ] public DateTime TimeStamp  { get; set; } // datetime
+		[Column,        Nullable] public int?     PersonID   { get; set; } // int
+		[Column,        Nullable] public int?     PasswordID { get; set; } // int
+		[Column,        Nullable] public string   Text       { get; set; } // varchar(65)
+	}
+
+	[Table(Schema="fix", Name="FixVersionRsLine")]
+	public partial class fix_FixVersionRsLine
+	{
+		[Column("ID_RsLine"), NotNull    ] public int       IdRsLine         { get; set; } // int
+		[Column(),               Nullable] public int?      DeviceType       { get; set; } // int
+		[Column(),               Nullable] public int?      DeviceVersionOld { get; set; } // int
+		[Column(),               Nullable] public int?      DeviceVersionNew { get; set; } // int
+		[Column(),               Nullable] public DateTime? ChangeDateTme    { get; set; } // datetime
+	}
+
+	[Table(Schema="dbo", Name="GrAccess")]
+	public partial class GrAccess
+	{
+		[PrimaryKey, NotNull    ] public int       ID           { get; set; } // int
+		[Column,     NotNull    ] public int       GroupID      { get; set; } // int
+		[Column,     NotNull    ] public int       Mode         { get; set; } // int
+		[Column,     NotNull    ] public int       AccessID     { get; set; } // int
+		[Column,        Nullable] public int?      Config       { get; set; } // int
+		[Column,     NotNull    ] public int       TimeZone     { get; set; } // int
+		[Column,        Nullable] public int?      Antipassback { get; set; } // int
+		[Column,        Nullable] public DateTime? PardonTime   { get; set; } // datetime
+		[Column,        Nullable] public int?      ConfirmID    { get; set; } // int
+		[Column,        Nullable] public int?      ConfirmID2   { get; set; } // int
+		[Column,        Nullable] public int?      Flags        { get; set; } // int
+		[Column,        Nullable] public int?      CodeType     { get; set; } // int
+		[Column,        Nullable] public string    Code         { get; set; } // varchar(30)
+		[Column,        Nullable] public int?      Config2      { get; set; } // int
+		[Column,        Nullable] public int?      PswAddCode   { get; set; } // int
+		[Column,        Nullable] public int?      OperatorID   { get; set; } // int
+		[Column,        Nullable] public string    Workstation  { get; set; } // varchar(50)
+
+		#region Associations
+
+		/// <summary>
+		/// FK_KONE_DopAccess_FK_GRAccess_ID_BackReference (dbo.Kone_DopAccess)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IdAccess", CanBeNull=true)]
+		public IEnumerable<KoneDopAccess> KONEDopAccessFKGRAccessIds { get; set; }
+
+		/// <summary>
+		/// FK_KONE_ÑopAccess_FK_GRAccess_ID_BackReference (dbo.Kone_CopAccess)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IdAccess", CanBeNull=true)]
+		public IEnumerable<KoneCopAccess> KONEÑopAccessFKGRAccessIds { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="GrObjCont")]
+	public partial class GrObjCont
+	{
+		[PrimaryKey, NotNull    ] public int    ID          { get; set; } // int
+		[Column,     NotNull    ] public int    GrObjID     { get; set; } // int
+		[Column,     NotNull    ] public int    ObjID       { get; set; } // int
+		[Column,        Nullable] public int?   OperatorID  { get; set; } // int
+		[Column,        Nullable] public string Workstation { get; set; } // varchar(50)
+	}
+
+	[Table(Schema="dbo", Name="Groups")]
+	public partial class Group
+	{
+		[Column(),             PrimaryKey,  NotNull] public int    ID          { get; set; } // int
+		[Column(),                Nullable         ] public string Name        { get; set; } // varchar(100)
+		[Column(),                Nullable         ] public string Comment     { get; set; } // varchar(200)
+		[Column(),                Nullable         ] public int?   Flags       { get; set; } // int
+		[Column("GUID_1C"),       Nullable         ] public string Guid1c      { get; set; } // varchar(40)
+		[Column("isTemplate"),    Nullable         ] public int?   IsTemplate  { get; set; } // int
+		[Column(),                Nullable         ] public int?   OperatorID  { get; set; } // int
+		[Column(),                Nullable         ] public string Workstation { get; set; } // varchar(50)
+		[Column(),                          NotNull] public int    Flags2      { get; set; } // int
+		[Column(),                Nullable         ] public int?   LinkedID    { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="GroupObj")]
+	public partial class GroupObj
+	{
+		[Column(),                PrimaryKey,  NotNull] public int    ID                { get; set; } // int
+		[Column(),                             NotNull] public int    GIndex            { get; set; } // int
+		[Column(),                             NotNull] public int    ComputerID        { get; set; } // int
+		[Column(),                             NotNull] public string Name              { get; set; } // varchar(25)
+		[Column(),                   Nullable         ] public string Comment           { get; set; } // varchar(200)
+		[Column(),                   Nullable         ] public int?   State             { get; set; } // int
+		[Column(),                   Nullable         ] public int?   Config            { get; set; } // int
+		[Column(),                   Nullable         ] public int?   AlarmKey          { get; set; } // int
+		[Column(),                   Nullable         ] public int?   GuardKey          { get; set; } // int
+		[Column(),                   Nullable         ] public int?   OperatorID        { get; set; } // int
+		[Column(),                   Nullable         ] public string Workstation       { get; set; } // varchar(50)
+		[Column("is_interpanel"),    Nullable         ] public int?   IsInterpanel      { get; set; } // int
+		[Column(),                   Nullable         ] public int?   IndexForContactID { get; set; } // int
+
+		#region Associations
+
+		/// <summary>
+		/// FK_BindingGrObjectsStepScen_ID_Object_BackReference (dbo.BindingGrObjectsStepScen)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IdGrObject", CanBeNull=true)]
+		public IEnumerable<BindingGrObjectsStepScen> BindingGrObjectsStepScenIDObjects { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="GroupsParamSetting")]
+	public partial class GroupsParamSetting
+	{
+		[PrimaryKey, NotNull    ] public int    ID      { get; set; } // int
+		[Column,        Nullable] public string Name    { get; set; } // varchar(30)
+		[Column,        Nullable] public string Comment { get; set; } // varchar(200)
+	}
+
+	[Table(Schema="dbo", Name="GsmSettings")]
+	public partial class GsmSetting
+	{
+		[PrimaryKey, NotNull    ] public int    ID           { get; set; } // int
+		[Column,     NotNull    ] public int    RsLinesID    { get; set; } // int
+		[Column,        Nullable] public string Apn          { get; set; } // varchar(50)
+		[Column,        Nullable] public string Login        { get; set; } // varchar(50)
+		[Column,        Nullable] public string Passw        { get; set; } // varchar(50)
+		[Column,        Nullable] public string SmtpServer   { get; set; } // varchar(50)
+		[Column,        Nullable] public int?   SmtpPort     { get; set; } // int
+		[Column,        Nullable] public string SmtpLogin    { get; set; } // varchar(50)
+		[Column,        Nullable] public string SmtpPassw    { get; set; } // varchar(50)
+		[Column,        Nullable] public string SmtpMailFrom { get; set; } // varchar(50)
+		[Column,        Nullable] public string PopServer    { get; set; } // varchar(50)
+		[Column,        Nullable] public int?   PopPort      { get; set; } // int
+		[Column,        Nullable] public string PopLogin     { get; set; } // varchar(50)
+		[Column,        Nullable] public string PopPassw     { get; set; } // varchar(50)
+	}
+
+	[Table(Schema="dbo", Name="GTime")]
+	public partial class GTime
+	{
+		[PrimaryKey, NotNull    ] public int    ID          { get; set; } // int
+		[Column,        Nullable] public string Name        { get; set; } // varchar(50)
+		[Column,        Nullable] public string Comment     { get; set; } // varchar(200)
+		[Column,        Nullable] public byte[] Calendar    { get; set; } // image
+		[Column,        Nullable] public int?   TimeWinType { get; set; } // int
+		[Column,        Nullable] public int?   WorkMode    { get; set; } // int
+		[Column,        Nullable] public int?   OperatorID  { get; set; } // int
+		[Column,        Nullable] public string Workstation { get; set; } // varchar(50)
+	}
+
+	[Table(Schema="dbo", Name="Guest")]
+	public partial class Guest
+	{
+		[Column(),            PrimaryKey,  NotNull] public int       ID                     { get; set; } // int
+		[Column(),                         NotNull] public int       PListID                { get; set; } // int
+		[Column(),               Nullable         ] public int?      ReceiveListId          { get; set; } // int
+		[Column(),               Nullable         ] public int?      CompanyReceive         { get; set; } // int
+		[Column(),               Nullable         ] public int?      SectionReceive         { get; set; } // int
+		[Column(),               Nullable         ] public string    Comment                { get; set; } // varchar(240)
+		[Column(),               Nullable         ] public string    Avto                   { get; set; } // varchar(80)
+		[Column(),               Nullable         ] public string    AutoNumber             { get; set; } // varchar(80)
+		[Column(),               Nullable         ] public string    Automarka              { get; set; } // varchar(80)
+		[Column(),               Nullable         ] public string    AutoColor              { get; set; } // varchar(80)
+		[Column(),               Nullable         ] public int?      AutoNigth              { get; set; } // int
+		[Column(),               Nullable         ] public DateTime? DateVisit              { get; set; } // datetime
+		[Column(),               Nullable         ] public string    ReceiveGuestName       { get; set; } // varchar(50)
+		[Column(),               Nullable         ] public string    ReceiveGuestFamaly     { get; set; } // varchar(80)
+		[Column(),               Nullable         ] public string    ReceiveGuestSecondName { get; set; } // varchar(50)
+		[Column(),               Nullable         ] public string    ReceiveGuestRoom       { get; set; } // varchar(50)
+		[Column(),               Nullable         ] public string    ReceiveGuestPhone      { get; set; } // varchar(50)
+		[Column("goalvisit"),    Nullable         ] public string    Goalvisit              { get; set; } // varchar(100)
+		[Column(),               Nullable         ] public int?      RuleAccess             { get; set; } // int
+		[Column(),               Nullable         ] public int?      IDNoFace               { get; set; } // int
+		[Column(),               Nullable         ] public DateTime? DateVisitEnd           { get; set; } // datetime
+		[Column(),               Nullable         ] public int?      RecRoomID              { get; set; } // int
+
+		#region Associations
+
+		/// <summary>
+		/// FK_Guest_pList (dbo.pList)
+		/// </summary>
+		[Association(ThisKey="PListID", OtherKey="ID", CanBeNull=false)]
+		public PList PList { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="Holidays")]
+	public partial class Holiday
+	{
+		[PrimaryKey, NotNull    ] public int       ID    { get; set; } // int
+		[Column,     NotNull    ] public string    Name  { get; set; } // varchar(25)
+		[Column,        Nullable] public DateTime? GDate { get; set; } // datetime
+	}
+
+	[Table(Schema="dbo", Name="interfaces")]
+	public partial class Interface
+	{
+		[Column("id"),   PrimaryKey,  NotNull] public int    Id           { get; set; } // int
+		[Column("name"),              NotNull] public string Name         { get; set; } // varchar(50)
+		[Column(),          Nullable         ] public int?   GroupParamId { get; set; } // int
+
+		#region Associations
+
+		/// <summary>
+		/// FK_DEVTYPESLINES_REFERENCE_INTERFACEID_BackReference (dbo.DeviceTypesLines)
+		/// </summary>
+		[Association(ThisKey="Id", OtherKey="InterfaceID", CanBeNull=true)]
+		public IEnumerable<DeviceTypesLine> Devtypeslinesreferenceinterfaceids { get; set; }
+
+		/// <summary>
+		/// FK_LINES_REFERENCE_LINEINTE_BackReference (dbo.Lines)
+		/// </summary>
+		[Association(ThisKey="Id", OtherKey="InterfaceID", CanBeNull=true)]
+		public IEnumerable<Line> Linesreferencelineintes { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="interfaceprotocol")]
+	public partial class Interfaceprotocol
+	{
+		[Column("interface_id"), PrimaryKey(1), NotNull] public int InterfaceId { get; set; } // int
+		[Column("protocol_id"),  PrimaryKey(2), NotNull] public int ProtocolId  { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="InterfaceSettings")]
+	public partial class InterfaceSetting
+	{
+		[PrimaryKey(1), NotNull    ] public int    SettingID   { get; set; } // int
+		[PrimaryKey(2), NotNull    ] public int    LineID      { get; set; } // int
+		[Column,        NotNull    ] public string Value       { get; set; } // xml
+		[Column,           Nullable] public string StringValue { get; set; } // varchar(100)
+
+		#region Associations
+
+		/// <summary>
+		/// FK_INTERFACESETTINGS_REFERENCE_LINEID (dbo.Lines)
+		/// </summary>
+		[Association(ThisKey="LineID", OtherKey="ID", CanBeNull=false)]
+		public Line Line { get; set; }
+
+		/// <summary>
+		/// FK_INTERFACESETTINGS_REFERENCE_SETTINGID (dbo.InterfaceSettingsDictionary)
+		/// </summary>
+		[Association(ThisKey="SettingID", OtherKey="ID", CanBeNull=false)]
+		public InterfaceSettingsDictionary Setting { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="InterfaceSettingsDictionary")]
+	public partial class InterfaceSettingsDictionary
+	{
+		[PrimaryKey, NotNull    ] public int    ID           { get; set; } // int
+		[Column,     NotNull    ] public string Name         { get; set; } // varchar(255)
+		[Column,        Nullable] public string Description  { get; set; } // varchar(255)
+		[Column,     NotNull    ] public int    InterfaceID  { get; set; } // int
+		[Column,        Nullable] public int?   DeviceTypeID { get; set; } // int
+		[Column,        Nullable] public int?   Type         { get; set; } // int
+		[Column,        Nullable] public string ParamName    { get; set; } // varchar(50)
+		[Column,     NotNull    ] public string TypeInfo     { get; set; } // xml
+
+		#region Associations
+
+		/// <summary>
+		/// FK_INTERFACESETTINGS_REFERENCE_SETTINGID_BackReference (dbo.InterfaceSettings)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="SettingID", CanBeNull=true)]
+		public IEnumerable<InterfaceSetting> Interfacesettingsreferencesettingids { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="ItemEvents")]
+	public partial class ItemEvent
+	{
+		[Column(),            PrimaryKey,  NotNull] public int    ID              { get; set; } // int
+		[Column(),               Nullable         ] public int?   ItemType        { get; set; } // int
+		[Column(),                         NotNull] public int    ItemID          { get; set; } // int
+		[Column("ItemEvent"),              NotNull] public int    ItemEventColumn { get; set; } // int
+		[Column(),                         NotNull] public int    EventID         { get; set; } // int
+		[Column(),               Nullable         ] public int?   OperatorID      { get; set; } // int
+		[Column(),               Nullable         ] public string Workstation     { get; set; } // varchar(50)
+	}
+
+	[Table(Schema="dbo", Name="KeyObjs")]
+	public partial class KeyObj
+	{
+		[PrimaryKey, NotNull    ] public int    ID          { get; set; } // int
+		[Column,     NotNull    ] public int    Status      { get; set; } // int
+		[Column,     NotNull    ] public int    KeyID       { get; set; } // int
+		[Column,     NotNull    ] public int    ObjectID    { get; set; } // int
+		[Column,        Nullable] public int?   OperatorID  { get; set; } // int
+		[Column,        Nullable] public string Workstation { get; set; } // varchar(50)
+	}
+
+	[Table(Schema="Reporter", Name="KeysSelectiveParamsForReportNotUsedKeys")]
+	public partial class Reporter_KeysSelectiveParamsForReportNotUsedKey
+	{
+		[Column, NotNull] public int    ID         { get; set; } // int
+		[Column, NotNull] public string ReportName { get; set; } // varchar(50)
+		[Column, NotNull] public string ParamName  { get; set; } // varchar(50)
+		[Column, NotNull] public string Name       { get; set; } // varchar(200)
+	}
+
+	[Table(Schema="dbo", Name="Kone_AllAccessMask")]
+	public partial class KoneAllAccessMask
+	{
+		[PrimaryKey(1), NotNull] public int   ID    { get; set; } // int
+		[PrimaryKey(2), NotNull] public short Floor { get; set; } // smallint
+		[Column,        NotNull] public short SF    { get; set; } // smallint
+		[Column,        NotNull] public short SR    { get; set; } // smallint
+		[Column,        NotNull] public short DF    { get; set; } // smallint
+		[Column,        NotNull] public short DR    { get; set; } // smallint
+
+		#region Associations
+
+		/// <summary>
+		/// FK_Kone_AllAccessMask_Kone_DOPGlobalDefaultAccessMask (dbo.Kone_DOPGlobalDefaultAccessMask)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="ID", CanBeNull=false)]
+		public KoneDOPGlobalDefaultAccessMask KoneDOPGlobalDefaultAccessMask { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="Kone_COP")]
+	public partial class KoneCop
+	{
+		[Column(),                PrimaryKey,  NotNull] public int  ID           { get; set; } // int
+		[Column("ID_KGS"),                     NotNull] public int  IdKgs        { get; set; } // int
+		[Column("ID_AcessPoint"),              NotNull] public int  IdAcessPoint { get; set; } // int
+		[Column("elevator_id"),                NotNull] public int  ElevatorId   { get; set; } // int
+		[Column("group_id"),         Nullable         ] public int? GroupId      { get; set; } // int
+		[Column("open_timeout"),     Nullable         ] public int? OpenTimeout  { get; set; } // int
+
+		#region Associations
+
+		/// <summary>
+		/// FK_KONE_Cop_FK_AñcessPoint_ID (dbo.AcessPoint)
+		/// </summary>
+		[Association(ThisKey="IdAcessPoint", OtherKey="ID", CanBeNull=false)]
+		public AcessPoint KONECopFKAñcessPointID { get; set; }
+
+		/// <summary>
+		/// FK_KONE_COP_FK_KONE_C_KONE_COP_BackReference (dbo.Kone_CopAccess)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IdElevator", CanBeNull=true)]
+		public IEnumerable<KoneCopAccess> Konecopfkkoneckonecops { get; set; }
+
+		/// <summary>
+		/// FK_KONE_COP_FK_KONE_E_KONE_KGS (dbo.Kone_KGS)
+		/// </summary>
+		[Association(ThisKey="IdKgs", OtherKey="ID", CanBeNull=false)]
+		public KoneKg KONECOPFKKONEEKONEKG { get; set; }
+
+		/// <summary>
+		/// FK_Kone_COPSpecificMask_Kone_Elevator_BackReference (dbo.Kone_COPSpecificMask)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IdElevator", CanBeNull=true)]
+		public IEnumerable<KoneCOPSpecificMask> KoneCOPSpecificMaskKoneElevators { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="Kone_CopAccess")]
+	public partial class KoneCopAccess
+	{
+		[Column("ID_Elevator"), PrimaryKey(1), NotNull] public int   IdElevator { get; set; } // int
+		[Column("ID_Access"),   PrimaryKey(2), NotNull] public int   IdAccess   { get; set; } // int
+		[Column(),                             NotNull] public short Floor      { get; set; } // smallint
+		[Column(),                             NotNull] public short DF         { get; set; } // smallint
+		[Column(),                             NotNull] public short DR         { get; set; } // smallint
+
+		#region Associations
+
+		/// <summary>
+		/// FK_KONE_COP_FK_KONE_C_KONE_COP (dbo.Kone_COP)
+		/// </summary>
+		[Association(ThisKey="IdElevator", OtherKey="ID", CanBeNull=false)]
+		public KoneCop KONECOPFKKONECKONECOP { get; set; }
+
+		/// <summary>
+		/// FK_KONE_ÑopAccess_FK_GRAccess_ID (dbo.GrAccess)
+		/// </summary>
+		[Association(ThisKey="IdAccess", OtherKey="ID", CanBeNull=false)]
+		public GrAccess KONEÑopAccessFKGRAccessID { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="Kone_COPGlobalDefaultAccessMask")]
+	public partial class KoneCOPGlobalDefaultAccessMask
+	{
+		[Column("ID_KGS"),             NotNull] public int   IdKgs       { get; set; } // int
+		[Column(),         PrimaryKey, NotNull] public int   ID          { get; set; } // int
+		[Column(),                     NotNull] public short SystemState { get; set; } // smallint
+
+		#region Associations
+
+		/// <summary>
+		/// FK_Kone_COPGlobalDefaultAccessMask_Kone_KGS (dbo.Kone_KGS)
+		/// </summary>
+		[Association(ThisKey="IdKgs", OtherKey="ID", CanBeNull=false)]
+		public KoneKg KoneCOPGlobalDefaultAccessMaskKoneKG { get; set; }
+
+		/// <summary>
+		/// FK_Kone_DestinationAccessMask_Kone_COPGlobalDefaultAccessMask_BackReference (dbo.Kone_DestinationAccessMask)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="ID", CanBeNull=true)]
+		public IEnumerable<KoneDestinationAccessMask> KoneDestinationAccessMaskKoneCOPGlobalDefaultAccessMasks { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="Kone_COPSpecificMask")]
+	public partial class KoneCOPSpecificMask
+	{
+		[Column("ID_Elevator"),             NotNull] public int IdElevator             { get; set; } // int
+		[Column(),              PrimaryKey, NotNull] public int ID                     { get; set; } // int
+		[Column(),                          NotNull] public int CopSpecificSystemState { get; set; } // int
+
+		#region Associations
+
+		/// <summary>
+		/// FK_Kone_COPSpecificMask_Kone_Elevator (dbo.Kone_COP)
+		/// </summary>
+		[Association(ThisKey="IdElevator", OtherKey="ID", CanBeNull=false)]
+		public KoneCop KoneCOPSpecificMaskKoneElevator { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="Kone_DestinationAccessMask")]
+	public partial class KoneDestinationAccessMask
+	{
+		[PrimaryKey(1), NotNull] public int   ID    { get; set; } // int
+		[PrimaryKey(2), NotNull] public short Floor { get; set; } // smallint
+		[Column,        NotNull] public short DF    { get; set; } // smallint
+		[Column,        NotNull] public short DR    { get; set; } // smallint
+
+		#region Associations
+
+		/// <summary>
+		/// FK_Kone_DestinationAccessMask_Kone_COPGlobalDefaultAccessMask (dbo.Kone_COPGlobalDefaultAccessMask)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="ID", CanBeNull=false)]
+		public KoneCOPGlobalDefaultAccessMask KoneCOPGlobalDefaultAccessMask { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="Kone_DOP")]
+	public partial class KoneDop
+	{
+		[Column(),                NotNull    ] public int  ID           { get; set; } // int
+		[Column("ID_KGS"),        NotNull    ] public int  IdKgs        { get; set; } // int
+		[Column("ID_AcessPoint"), NotNull    ] public int  IdAcessPoint { get; set; } // int
+		[Column("dop_id"),        NotNull    ] public int  DopId        { get; set; } // int
+		[Column("dop_floor_id"),  NotNull    ] public int  DopFloorId   { get; set; } // int
+		[Column("open_timeout"),     Nullable] public int? OpenTimeout  { get; set; } // int
+
+		#region Associations
+
+		/// <summary>
+		/// FK_KONE_Dop_FK_AñcessPoint_ID (dbo.AcessPoint)
+		/// </summary>
+		[Association(ThisKey="IdAcessPoint", OtherKey="ID", CanBeNull=false)]
+		public AcessPoint KONEDopFKAñcessPointID { get; set; }
+
+		/// <summary>
+		/// FK_KONE_DOP_FK_KONE_D_KONE_DOP_BackReference (dbo.Kone_DopAccess)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IdDop", CanBeNull=true)]
+		public IEnumerable<KoneDopAccess> Konedopfkkonedkonedops { get; set; }
+
+		/// <summary>
+		/// FK_KONE_DOP_FK_KONE_D_KONE_KGS (dbo.Kone_KGS)
+		/// </summary>
+		[Association(ThisKey="IdKgs", OtherKey="ID", CanBeNull=false)]
+		public KoneKg KONEDOPFKKONEDKONEKG { get; set; }
+
+		/// <summary>
+		/// FK_KONE_DOP_REFERENCE_KONE_DOP2_BackReference (dbo.Kone_DOPSpecificMask)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IdDop", CanBeNull=true)]
+		public IEnumerable<KoneDOPSpecificMask> Konedopreferencekonedops { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="Kone_DopAccess")]
+	public partial class KoneDopAccess
+	{
+		[Column("ID_Dop"),    PrimaryKey(1), NotNull] public int   IdDop    { get; set; } // int
+		[Column("ID_Access"), PrimaryKey(2), NotNull] public int   IdAccess { get; set; } // int
+		[Column(),            PrimaryKey(3), NotNull] public short Floor    { get; set; } // smallint
+		[Column(),                           NotNull] public short DF       { get; set; } // smallint
+		[Column(),                           NotNull] public short DR       { get; set; } // smallint
+
+		#region Associations
+
+		/// <summary>
+		/// FK_KONE_DopAccess_FK_GRAccess_ID (dbo.GrAccess)
+		/// </summary>
+		[Association(ThisKey="IdAccess", OtherKey="ID", CanBeNull=false)]
+		public GrAccess KONEDopAccessFKGRAccessID { get; set; }
+
+		/// <summary>
+		/// FK_KONE_DOP_FK_KONE_D_KONE_DOP (dbo.Kone_DOP)
+		/// </summary>
+		[Association(ThisKey="IdDop", OtherKey="ID", CanBeNull=false)]
+		public KoneDop KONEDOPFKKONEDKONEDOP { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="Kone_DOPGlobalDefaultAccessMask")]
+	public partial class KoneDOPGlobalDefaultAccessMask
+	{
+		[Column("ID_KGS"),             NotNull] public int   IdKgs       { get; set; } // int
+		[Column(),         PrimaryKey, NotNull] public int   ID          { get; set; } // int
+		[Column(),                     NotNull] public short SystemState { get; set; } // smallint
+
+		#region Associations
+
+		/// <summary>
+		/// FK_Kone_AllAccessMask_Kone_DOPGlobalDefaultAccessMask_BackReference (dbo.Kone_AllAccessMask)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="ID", CanBeNull=true)]
+		public IEnumerable<KoneAllAccessMask> KoneAllAccessMaskKoneDOPGlobalDefaultAccessMasks { get; set; }
+
+		/// <summary>
+		/// FK_Kone_DOPGlobalDefaultAccessMask_Kone_KGS (dbo.Kone_KGS)
+		/// </summary>
+		[Association(ThisKey="IdKgs", OtherKey="ID", CanBeNull=false)]
+		public KoneKg KoneDOPGlobalDefaultAccessMaskKoneKG { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="Kone_DOPSpecificMask")]
+	public partial class KoneDOPSpecificMask
+	{
+		[Column("ID_DOP"),             NotNull] public int   IdDop                  { get; set; } // int
+		[Column(),         PrimaryKey, NotNull] public int   ID                     { get; set; } // int
+		[Column(),                     NotNull] public short DopSpecificSystemState { get; set; } // smallint
+
+		#region Associations
+
+		/// <summary>
+		/// FK_KONE_DOP_REFERENCE_KONE_DOP2 (dbo.Kone_DOP)
+		/// </summary>
+		[Association(ThisKey="IdDop", OtherKey="ID", CanBeNull=false)]
+		public KoneDop KONEDOPREFERENCEKONEDOP { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="Kone_KGS")]
+	public partial class KoneKg
+	{
+		[Column(),             PrimaryKey,  NotNull] public int    ID                  { get; set; } // int
+		[Column("RSLines_ID"),              NotNull] public int    RSLinesId           { get; set; } // int
+		[Column(),                          NotNull] public string Name                { get; set; } // nvarchar(50)
+		[Column(),                          NotNull] public string PrimaryHost         { get; set; } // nchar(15)
+		[Column(),                          NotNull] public int    PrimaryPort         { get; set; } // int
+		[Column(),                          NotNull] public string BackupHost          { get; set; } // nchar(15)
+		[Column(),                          NotNull] public int    BackupPort          { get; set; } // int
+		[Column(),                Nullable         ] public int?   Floors              { get; set; } // int
+		[Column(),                          NotNull] public short  ByteOrder           { get; set; } // smallint
+		[Column(),                          NotNull] public int    HeartBeatOutTimeOut { get; set; } // int
+		[Column(),                          NotNull] public int    HeartBeatInTimeOut  { get; set; } // int
+		[Column(),                          NotNull] public int    ReConnectTimeOut    { get; set; } // int
+
+		#region Associations
+
+		/// <summary>
+		/// FK_KONE_COP_FK_KONE_E_KONE_KGS_BackReference (dbo.Kone_COP)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IdKgs", CanBeNull=true)]
+		public IEnumerable<KoneCop> KONECOPFKKONEEKONEKGS { get; set; }
+
+		/// <summary>
+		/// FK_Kone_COPGlobalDefaultAccessMask_Kone_KGS_BackReference (dbo.Kone_COPGlobalDefaultAccessMask)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IdKgs", CanBeNull=true)]
+		public IEnumerable<KoneCOPGlobalDefaultAccessMask> KoneCOPGlobalDefaultAccessMaskKoneKGS { get; set; }
+
+		/// <summary>
+		/// FK_KONE_DOP_FK_KONE_D_KONE_KGS_BackReference (dbo.Kone_DOP)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IdKgs", CanBeNull=true)]
+		public IEnumerable<KoneDop> KONEDOPFKKONEDKONEKGS { get; set; }
+
+		/// <summary>
+		/// FK_Kone_DOPGlobalDefaultAccessMask_Kone_KGS_BackReference (dbo.Kone_DOPGlobalDefaultAccessMask)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IdKgs", CanBeNull=true)]
+		public IEnumerable<KoneDOPGlobalDefaultAccessMask> KoneDOPGlobalDefaultAccessMaskKoneKGS { get; set; }
+
+		/// <summary>
+		/// FK_KONE_KGS_FK_RSLINES_ID (dbo.RSLines)
+		/// </summary>
+		[Association(ThisKey="RSLinesId", OtherKey="ID", CanBeNull=false)]
+		public RSLine RSLine { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="Lines")]
+	public partial class Line
+	{
+		[PrimaryKey, NotNull    ] public int    ID          { get; set; } // int
+		[Column,        Nullable] public string Name        { get; set; } // varchar(60)
+		[Column,     NotNull    ] public int    CompID      { get; set; } // int
+		[Column,        Nullable] public int?   DevType     { get; set; } // int
+		[Column,        Nullable] public int?   DeviceID    { get; set; } // int
+		[Column,     NotNull    ] public int    InterfaceID { get; set; } // int
+		[Column,     NotNull    ] public int    ProtocolID  { get; set; } // int
+		[Column,     NotNull    ] public int    LineType    { get; set; } // int
+		[Column,        Nullable] public int?   MainLineID  { get; set; } // int
+		[Column,        Nullable] public int?   GIndex      { get; set; } // int
+		[Column,        Nullable] public int?   OperatorID  { get; set; } // int
+		[Column,        Nullable] public string Workstation { get; set; } // varchar(50)
+		[Column,        Nullable] public string Comment     { get; set; } // varchar(255)
+
+		#region Associations
+
+		/// <summary>
+		/// FK_LINES_REFERENCE_COMPS (dbo.Comps)
+		/// </summary>
+		[Association(ThisKey="CompID", OtherKey="ID", CanBeNull=false)]
+		public Comp Comp { get; set; }
+
+		/// <summary>
+		/// FK_DEVICE_TO_LINE_BackReference (dbo.DeviceToLine)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="LineID", CanBeNull=true)]
+		public IEnumerable<DeviceToLine> Devicetolines { get; set; }
+
+		/// <summary>
+		/// FK_LINES_REFERENCE_LINEINTE (dbo.interfaces)
+		/// </summary>
+		[Association(ThisKey="InterfaceID", OtherKey="Id", CanBeNull=false)]
+		public Interface Interface { get; set; }
+
+		/// <summary>
+		/// FK_INTERFACESETTINGS_REFERENCE_LINEID_BackReference (dbo.InterfaceSettings)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="LineID", CanBeNull=true)]
+		public IEnumerable<InterfaceSetting> Interfacesettingsreferencelineids { get; set; }
+
+		/// <summary>
+		/// FK_LINES_REFERENCE_LINEPROT (dbo.protocols)
+		/// </summary>
+		[Association(ThisKey="ProtocolID", OtherKey="Id", CanBeNull=false)]
+		public Protocol Protocol { get; set; }
+
+		/// <summary>
+		/// FK_PROTOCOLSETTINGS_REFERENCE_LINEID_BackReference (dbo.ProtocolSettings)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="LineID", CanBeNull=true)]
+		public IEnumerable<ProtocolSetting> Protocolsettingsreferencelineids { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="LinesBroadcast")]
+	public partial class LinesBroadcast
+	{
+		[PrimaryKey, NotNull    ] public int    ID           { get; set; } // int
+		[Column,     NotNull    ] public int    EventGroupID { get; set; } // int
+		[Column,     NotNull    ] public int    DeviceID     { get; set; } // int
+		[Column,        Nullable] public int?   PhonesId     { get; set; } // int
+		[Column,        Nullable] public int?   OperatorID   { get; set; } // int
+		[Column,        Nullable] public string Workstation  { get; set; } // varchar(50)
+	}
+
+	[Table(Schema="dbo", Name="list_comments")]
+	public partial class ListComment
+	{
+		[PrimaryKey, NotNull] public int    ID      { get; set; } // int
+		[Column,     NotNull] public string Comment { get; set; } // varchar(250)
+	}
+
+	[Table(Schema="dbo", Name="ListComponents")]
+	public partial class ListComponent
+	{
+		[PrimaryKey, NotNull    ] public int    ID       { get; set; } // int
+		[Column,     NotNull    ] public int    TypePage { get; set; } // int
+		[Column,        Nullable] public string Caption  { get; set; } // varchar(200)
+
+		#region Associations
+
+		/// <summary>
+		/// FK_RelationsList_Components_BackReference (dbo.RelProf)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IDListComp", CanBeNull=true)]
+		public IEnumerable<RelProf> RelationsListComponents { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="logs")]
+	public partial class Log
+	{
+		[Column(),           PrimaryKey,  NotNull] public int       ID           { get; set; } // int
+		[Column("tpChange"),    Nullable         ] public int?      TpChange     { get; set; } // int
+		[Column(),              Nullable         ] public string    OperatorName { get; set; } // varchar(50)
+		[Column(),              Nullable         ] public int?      OperatorID   { get; set; } // int
+		[Column(),              Nullable         ] public string    ComputerName { get; set; } // varchar(50)
+		[Column(),              Nullable         ] public int?      ComputerIP   { get; set; } // int
+		[Column(),              Nullable         ] public DateTime? TimeVal      { get; set; } // datetime
+		[Column(),              Nullable         ] public byte[]    RuquestDATA  { get; set; } // image
+		[Column(),              Nullable         ] public int?      Reserv0      { get; set; } // int
+		[Column(),              Nullable         ] public int?      Reserv1      { get; set; } // int
+		[Column(),              Nullable         ] public string    Reserv2      { get; set; } // varchar(20)
+	}
+
+	[Table(Schema="dbo", Name="logs_change_bd")]
+	public partial class LogsChangeBd
+	{
+		[Column(),               PrimaryKey,  NotNull] public Guid     ID           { get; set; } // uniqueidentifier
+		[Column("timeVal"),                   NotNull] public DateTime TimeVal      { get; set; } // datetime
+		[Column("state_record"),              NotNull] public int      StateRecord  { get; set; } // int
+		[Column("table_name"),                NotNull] public string   TableName    { get; set; } // varchar(60)
+		[Column(),                            NotNull] public int      ValueId      { get; set; } // int
+		[Column(),                            NotNull] public int      OperatorId   { get; set; } // int
+		[Column(),                            NotNull] public string   InsideSystem { get; set; } // varchar(30)
+		[Column("xml_data"),                  NotNull] public string   XmlData      { get; set; } // varchar(400)
+		[Column(),               Identity            ] public int      Num          { get; set; } // int
+		[Column(),                  Nullable         ] public string   Workstation  { get; set; } // varchar(50)
+	}
+
+	[Table(Schema="dbo", Name="m_alarm")]
+	public partial class MAlarm
+	{
+		[Column(),             Nullable         ] public DateTime? Time0           { get; set; } // datetime
+		[Column(),             Nullable         ] public int?      NumCom          { get; set; } // int
+		[Column(),             Nullable         ] public int?      IDComp          { get; set; } // int
+		[Column(),             Nullable         ] public int?      Operator0       { get; set; } // int
+		[Column(),             Nullable         ] public string    OperatorName    { get; set; } // varchar(50)
+		[Column(),             Nullable         ] public string    EventName       { get; set; } // varchar(25)
+		[Column(),             Nullable         ] public string    ZoneName        { get; set; } // varchar(50)
+		[Column(),             Nullable         ] public string    ObjectName      { get; set; } // varchar(50)
+		[Column(),                       NotNull] public int       Event           { get; set; } // int
+		[Column(),             Nullable         ] public int?      AddrCOM         { get; set; } // int
+		[Column(),             Nullable         ] public int?      Address         { get; set; } // int
+		[Column(),             Nullable         ] public int?      Object          { get; set; } // int
+		[Column(),             Nullable         ] public string    Action1         { get; set; } // varchar(25)
+		[Column(),             Nullable         ] public DateTime? Time1           { get; set; } // datetime
+		[Column(),             Nullable         ] public int?      Operator1       { get; set; } // int
+		[Column(),             Nullable         ] public string    Action2         { get; set; } // varchar(25)
+		[Column(),             Nullable         ] public DateTime? Time2           { get; set; } // datetime
+		[Column(),             Nullable         ] public int?      Operator2       { get; set; } // int
+		[Column(),             Nullable         ] public string    Action3         { get; set; } // varchar(25)
+		[Column(),             Nullable         ] public DateTime? Time3           { get; set; } // datetime
+		[Column(),             Nullable         ] public int?      Operator3       { get; set; } // int
+		[Column(),             Nullable         ] public string    Action4         { get; set; } // varchar(25)
+		[Column(),             Nullable         ] public DateTime? Time4           { get; set; } // datetime
+		[Column(),             Nullable         ] public int?      Operator4       { get; set; } // int
+		[Column(),             Nullable         ] public string    Action5         { get; set; } // varchar(25)
+		[Column(),             Nullable         ] public DateTime? Time5           { get; set; } // datetime
+		[Column(),             Nullable         ] public int?      Operator5       { get; set; } // int
+		[Column(),             Nullable         ] public string    Action6         { get; set; } // varchar(25)
+		[Column(),             Nullable         ] public DateTime? Time6           { get; set; } // datetime
+		[Column(),             Nullable         ] public int?      Operator6       { get; set; } // int
+		[Column(),             Nullable         ] public int?      Stage           { get; set; } // int
+		[Column(),             Nullable         ] public int?      DoorID          { get; set; } // int
+		[Column(),             Nullable         ] public int?      ZoneType        { get; set; } // int
+		[Column(),             Nullable         ] public int?      AccessZoneIndex { get; set; } // int
+		[Column(),             Nullable         ] public int?      VEvent          { get; set; } // int
+		[Column(),             Nullable         ] public int?      ZReserv         { get; set; } // int
+		[Column(),             Nullable         ] public int?      Zone            { get; set; } // int
+		[Column(),             Nullable         ] public int?      IndexZone       { get; set; } // int
+		[Column("tpIndex"),    Nullable         ] public int?      TpIndex         { get; set; } // int
+		[Column(),          PrimaryKey,  NotNull] public Guid      GUID            { get; set; } // uniqueidentifier
+		[Column(),             Nullable         ] public string    StrAddr         { get; set; } // varchar(250)
+	}
+
+	[Table(Schema="dbo", Name="MapElements")]
+	public partial class MapElement
+	{
+		[Column(),             PrimaryKey, NotNull] public int    ID        { get; set; } // int
+		[Column("table"),                  NotNull] public int    Table     { get; set; } // int
+		[Column("map_id"),                 NotNull] public int    MapId     { get; set; } // int
+		[Column("item_id"),                NotNull] public int    ItemId    { get; set; } // int
+		[Column("x"),                      NotNull] public double X         { get; set; } // float
+		[Column("y"),                      NotNull] public double Y         { get; set; } // float
+		[Column("rotate"),                 NotNull] public double Rotate    { get; set; } // float
+		[Column("scale"),                  NotNull] public double Scale     { get; set; } // float
+		[Column("state_name"),             NotNull] public string StateName { get; set; } // varchar(80)
+		[Column("item_type"),              NotNull] public int    ItemType  { get; set; } // int
+		[Column("item_color"),             NotNull] public int    ItemColor { get; set; } // int
+		[Column("value_off"),              NotNull] public int    ValueOff  { get; set; } // int
+		[Column("value_pos"),              NotNull] public int    ValuePos  { get; set; } // int
+		[Column("text_off"),               NotNull] public int    TextOff   { get; set; } // int
+		[Column("text_pos"),               NotNull] public int    TextPos   { get; set; } // int
+		[Column("value_x"),                NotNull] public double ValueX    { get; set; } // float
+		[Column("value_y"),                NotNull] public double ValueY    { get; set; } // float
+	}
+
+	[Table(Schema="dbo", Name="MapElementsLinks")]
+	public partial class MapElementsLink
+	{
+		[Column(),    PrimaryKey, NotNull] public int    ID            { get; set; } // int
+		[Column(),                NotNull] public int    MapElementsID { get; set; } // int
+		[Column("x"),             NotNull] public double X             { get; set; } // float
+		[Column("y"),             NotNull] public double Y             { get; set; } // float
+	}
+
+	[Table(Schema="dbo", Name="MapElementsRegions")]
+	public partial class MapElementsRegion
+	{
+		[Column(),    PrimaryKey, NotNull] public int    ID            { get; set; } // int
+		[Column(),                NotNull] public int    MapElementsID { get; set; } // int
+		[Column("x"),             NotNull] public double X             { get; set; } // float
+		[Column("y"),             NotNull] public double Y             { get; set; } // float
+	}
+
+	[Table(Schema="dbo", Name="Map_Elm")]
+	public partial class MapElm
+	{
+		[PrimaryKey, NotNull    ] public int       ID              { get; set; } // int
+		[Column,     NotNull    ] public int       MapID           { get; set; } // int
+		[Column,     NotNull    ] public int       GType           { get; set; } // int
+		[Column,        Nullable] public int?      Num             { get; set; } // int
+		[Column,     NotNull    ] public int       UnitID          { get; set; } // int
+		[Column,        Nullable] public int?      PictureCount    { get; set; } // int
+		[Column,        Nullable] public byte[]    Pictures        { get; set; } // image
+		[Column,        Nullable] public DateTime? ChangeTime      { get; set; } // datetime
+		[Column,        Nullable] public int?      Flags           { get; set; } // int
+		[Column,        Nullable] public int?      Link2Obj        { get; set; } // int
+		[Column,        Nullable] public Guid?     ApplicationGuid { get; set; } // uniqueidentifier
+
+		#region Associations
+
+		/// <summary>
+		/// FK_Map_indicators_MapElementID_BackReference (dbo.map_indicators)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="MapElmId", CanBeNull=true)]
+		public IEnumerable<MapIndicator> MapindicatorsMapElementIds { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="map_indicators")]
+	public partial class MapIndicator
+	{
+		[Column(),               PrimaryKey(2), NotNull] public int    Id          { get; set; } // int
+		[Column(),               PrimaryKey(1), NotNull] public int    MapElmId    { get; set; } // int
+		[Column("range_min"),                   NotNull] public double RangeMin    { get; set; } // float
+		[Column("range_max"),                   NotNull] public double RangeMax    { get; set; } // float
+		[Column("range_color"),                 NotNull] public int    RangeColor  { get; set; } // int
+		[Column("status_range"),                NotNull] public int    StatusRange { get; set; } // int
+
+		#region Associations
+
+		/// <summary>
+		/// FK_Map_indicators_MapElementID (dbo.Map_Elm)
+		/// </summary>
+		[Association(ThisKey="MapElmId", OtherKey="ID", CanBeNull=false)]
+		public MapElm MapElm { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="MapIndicatorsDefault")]
+	public partial class MapIndicatorsDefault
+	{
+		[Column("ID_Indicator"), PrimaryKey(1), NotNull] public int    IdIndicator { get; set; } // int
+		[Column(),               PrimaryKey(2), NotNull] public double RangeMin    { get; set; } // float
+		[Column(),               PrimaryKey(3), NotNull] public double RangeMax    { get; set; } // float
+		[Column(),                              NotNull] public int    RangeColor  { get; set; } // int
+		[Column(),                              NotNull] public int    StatusRange { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="MapInfoMarker")]
+	public partial class MapInfoMarker
+	{
+		[Column("ID_MapInfMark"), PrimaryKey, Identity] public int    IdMapInfMark { get; set; } // int
+		[Column(),                Nullable            ] public string Text         { get; set; } // varchar(500)
+		[Column(),                Nullable            ] public byte[] Image        { get; set; } // image
+	}
+
+	[Table(Schema="dbo", Name="Master_key_list_device")]
+	public partial class MasterKeyListDevice
+	{
+		[Column(),            PrimaryKey,  NotNull] public int    ID       { get; set; } // int
+		[Column(),               Nullable         ] public int?   DeviceID { get; set; } // int
+		[Column("Hash_Code"),    Nullable         ] public string HashCode { get; set; } // varchar(64)
+	}
+
+	[Table(Schema="dbo", Name="MasterSlave")]
+	public partial class MasterSlave
+	{
+		[PrimaryKey(1), NotNull] public int MasterType { get; set; } // int
+		[PrimaryKey(2), NotNull] public int SlaveType  { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="mcpMasterKeys")]
+	public partial class McpMasterKey
+	{
+		[Column(),            PrimaryKey,  NotNull] public int       ID        { get; set; } // int
+		[Column(),               Nullable         ] public int?      PMarkID   { get; set; } // int
+		[Column(),                         NotNull] public string    Name      { get; set; } // varchar(200)
+		[Column(),                         NotNull] public string    SectorKey { get; set; } // varchar(16)
+		[Column(),                         NotNull] public int       Mode      { get; set; } // int
+		[Column(),                         NotNull] public int       Sector    { get; set; } // int
+		[Column(),                         NotNull] public int       Block     { get; set; } // int
+		[Column(),               Nullable         ] public DateTime? Created   { get; set; } // datetime
+		[Column("isDeleted"),    Nullable         ] public int?      IsDeleted { get; set; } // int
+
+		#region Associations
+
+		/// <summary>
+		/// FK_mcpMasterKeys_mcpUserKeyLinksMKID_BackReference (dbo.mcpUserKeyLinks)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="MasterKeyID", CanBeNull=true)]
+		public IEnumerable<McpUserKeyLink> McpUserKeyLinksMkids { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="mcpUserKeyLinks")]
+	public partial class McpUserKeyLink
+	{
+		[PrimaryKey, NotNull] public int ID          { get; set; } // int
+		[Column,     NotNull] public int MasterKeyID { get; set; } // int
+		[Column,     NotNull] public int PMarkID     { get; set; } // int
+		[Column,     NotNull] public int LinkedWith  { get; set; } // int
+		[Column,     NotNull] public int CType       { get; set; } // int
+
+		#region Associations
+
+		/// <summary>
+		/// FK_mcpMasterKeys_mcpUserKeyLinksMKID (dbo.mcpMasterKeys)
+		/// </summary>
+		[Association(ThisKey="MasterKeyID", OtherKey="ID", CanBeNull=false)]
+		public McpMasterKey MasterKey { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="NodeRepl")]
+	public partial class NodeRepl
+	{
+		[PrimaryKey, NotNull    ] public int    ID          { get; set; } // int
+		[Column,     NotNull    ] public int    NodeID      { get; set; } // int
+		[Column,     NotNull    ] public int    ScriptID    { get; set; } // int
+		[Column,        Nullable] public int?   OperatorID  { get; set; } // int
+		[Column,        Nullable] public string Workstation { get; set; } // varchar(50)
+	}
+
+	[Table(Schema="dbo", Name="orion_globalValues")]
+	public partial class OrionGlobalValue
+	{
+		[Column("id_value"), PrimaryKey, NotNull] public string IdValue { get; set; } // varchar(25)
+		[Column("value"),                NotNull] public string Value   { get; set; } // varchar(250)
+	}
+
+	[Table(Schema="dbo", Name="paramsettings_value")]
+	public partial class ParamsettingsValue
+	{
+		[Column(),              PrimaryKey,  NotNull] public int    ID         { get; set; } // int
+		[Column("paramId"),                  NotNull] public int    ParamId    { get; set; } // int
+		[Column("param_value"),    Nullable         ] public string ParamValue { get; set; } // varchar(150)
+		[Column("objId"),          Nullable         ] public int?   ObjId      { get; set; } // int
+		[Column("objtype"),        Nullable         ] public int?   Objtype    { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="pBioAccess")]
+	public partial class PBioAccess
+	{
+		[Column(),           PrimaryKey,  Identity] public int    ID           { get; set; } // int
+		[Column("ID_pMark"), NotNull              ] public int    IdPMark      { get; set; } // int
+		[Column(),           NotNull              ] public int    GType        { get; set; } // int
+		[Column(),              Nullable          ] public string BioTemplate2 { get; set; } // varchar(max)
+		[Column(),              Nullable          ] public long?  Hash         { get; set; } // bigint
+
+		#region Associations
+
+		/// <summary>
+		/// FK_pBioAccess_To_pMark (dbo.pMark)
+		/// </summary>
+		[Association(ThisKey="IdPMark", OtherKey="ID", CanBeNull=false)]
+		public PMark TopMark { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="pBioDevicesTypePasswords")]
+	public partial class PBioDevicesTypePassword
+	{
+		[Column("ID_DeviceType"),    NotNull] public int IdDeviceType    { get; set; } // int
+		[Column("ID_TypePasswords"), NotNull] public int IdTypePasswords { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="pBioParams")]
+	public partial class PBioParam
+	{
+		[Column(),              PrimaryKey,  NotNull] public int    ID         { get; set; } // int
+		[Column("Device_Type"),              NotNull] public int    DeviceType { get; set; } // int
+		[Column(),                           NotNull] public int    Master     { get; set; } // int
+		[Column(),                           NotNull] public string Name       { get; set; } // varchar(128)
+		[Column(),                           NotNull] public string Caption    { get; set; } // varchar(128)
+		[Column(),                           NotNull] public int    Type       { get; set; } // int
+		[Column(),                 Nullable         ] public float? Min        { get; set; } // real
+		[Column(),                 Nullable         ] public float? Max        { get; set; } // real
+		[Column(),                 Nullable         ] public string DefValue   { get; set; } // varchar(128)
+		[Column(),                 Nullable         ] public string Values     { get; set; } // varchar(255)
+
+		#region Associations
+
+		/// <summary>
+		/// FK_RSBioParams_To_pBioParams_BackReference (dbo.RSBioParams)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IdParam", CanBeNull=true)]
+		public IEnumerable<RSBioParam> RSBioParamsToes { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="pBioTypePasswords")]
+	public partial class PBioTypePassword
+	{
+		[Column(),           PrimaryKey,  NotNull] public int    ID               { get; set; } // int
+		[Column(),                        NotNull] public string Name             { get; set; } // varchar(50)
+		[Column("isFinger"),    Nullable         ] public int?   IsFinger         { get; set; } // int
+		[Column("isFace"),      Nullable         ] public int?   IsFace           { get; set; } // int
+		[Column("isPalm"),      Nullable         ] public int?   IsPalm           { get; set; } // int
+		[Column("isPhoto"),     Nullable         ] public int?   IsPhoto          { get; set; } // int
+		[Column(),              Nullable         ] public int?   CanMakeFromPhoto { get; set; } // int
+		[Column("isQR"),        Nullable         ] public int?   IsQR             { get; set; } // int
+		[Column(),              Nullable         ] public int?   TypeTemplate     { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="pCar")]
+	public partial class PCar
+	{
+		[PrimaryKey, NotNull    ] public int    ID          { get; set; } // int
+		[Column,     NotNull    ] public string Model       { get; set; } // varchar(50)
+		[Column,     NotNull    ] public string Color       { get; set; } // varchar(50)
+		[Column,     NotNull    ] public string Number      { get; set; } // varchar(50)
+		[Column,     NotNull    ] public int    GIndex      { get; set; } // int
+		[Column,     NotNull    ] public string Vin         { get; set; } // varchar(50)
+		[Column,        Nullable] public int?   OperatorID  { get; set; } // int
+		[Column,        Nullable] public string Workstation { get; set; } // varchar(50)
+
+		#region Associations
+
+		/// <summary>
+		/// FK_RelationsListCar_pCar_BackReference (dbo.RelationsListCar)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IdCar", CanBeNull=true)]
+		public IEnumerable<RelationsListCar> RelationsListCars { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="PCompany")]
+	public partial class PCompany
+	{
+		[Column(),                    PrimaryKey,  NotNull] public int    ID              { get; set; } // int
+		[Column(),                                 NotNull] public string Name            { get; set; } // varchar(100)
+		[Column(),                       Nullable         ] public string Address         { get; set; } // varchar(150)
+		[Column(),                       Nullable         ] public string Phone           { get; set; } // varchar(30)
+		[Column("Id_Number_Company"),    Nullable         ] public string IdNumberCompany { get; set; } // varchar(50)
+		[Column("GUID_1C"),              Nullable         ] public string Guid1c          { get; set; } // varchar(40)
+		[Column(),                       Nullable         ] public int?   IsGuest         { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="PDivision")]
+	public partial class PDivision
+	{
+		[Column(),                     PrimaryKey,  NotNull] public int    ID               { get; set; } // int
+		[Column(),                                  NotNull] public string Name             { get; set; } // varchar(80)
+		[Column(),                        Nullable         ] public string Description      { get; set; } // varchar(100)
+		[Column(),                        Nullable         ] public int?   Shedule          { get; set; } // int
+		[Column(),                        Nullable         ] public int?   GroupID          { get; set; } // int
+		[Column(),                        Nullable         ] public int?   Number           { get; set; } // int
+		[Column("PCompany_ID"),           Nullable         ] public int?   PCompanyId       { get; set; } // int
+		[Column("ID_Number_Division"),    Nullable         ] public string IdNumberDivision { get; set; } // varchar(50)
+		[Column("ID_Owner_Division"),     Nullable         ] public int?   IdOwnerDivision  { get; set; } // int
+		[Column("Patterns_ID"),           Nullable         ] public int?   PatternsId       { get; set; } // int
+		[Column("GUID_1C"),               Nullable         ] public string Guid1c           { get; set; } // varchar(40)
+	}
+
+	[Table(Schema="dbo", Name="PersonsPhotos")]
+	public partial class PersonsPhoto
+	{
+		[PrimaryKey, Identity   ] public int    ID              { get; set; } // int
+		[Column,     NotNull    ] public int    PersonID        { get; set; } // int
+		[Column,        Nullable] public byte[] PhotoDescriptor { get; set; } // image
+		[Column,        Nullable] public int?   DescriptorType  { get; set; } // int
+		[Column,        Nullable] public int?   GroupID         { get; set; } // int
+		[Column,        Nullable] public int?   PhotoNum        { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="pGroupExit")]
+	public partial class PGroupExit
+	{
+		[PrimaryKey, NotNull] public int    ID      { get; set; } // int
+		[Column,     NotNull] public string NAme    { get; set; } // varchar(150)
+		[Column,     NotNull] public string Comment { get; set; } // varchar(200)
+	}
+
+	[Table(Schema="dbo", Name="PGroupReport")]
+	public partial class PGroupReport
+	{
+		[Column("id"), Nullable] public int?   Id   { get; set; } // int
+		[Column(),     Nullable] public string Name { get; set; } // varchar(100)
+	}
+
+	[Table(Schema="dbo", Name="phone_numbers")]
+	public partial class PhoneNumber
+	{
+		[Column(),                    PrimaryKey,  NotNull] public int    ID                { get; set; } // int
+		[Column("phone_number"),         Nullable         ] public string PhoneNumberColumn { get; set; } // varchar(25)
+		[Column("ip"),                   Nullable         ] public string Ip                { get; set; } // varchar(15)
+		[Column("port"),                 Nullable         ] public int?   Port              { get; set; } // int
+		[Column("email"),                Nullable         ] public string Email             { get; set; } // varchar(50)
+		[Column("translateProtocol"),    Nullable         ] public int?   TranslateProtocol { get; set; } // int
+		[Column("password"),             Nullable         ] public string Password          { get; set; } // varchar(5)
+		[Column("description"),          Nullable         ] public string Description       { get; set; } // varchar(255)
+		[Column(),                       Nullable         ] public int?   OperatorID        { get; set; } // int
+		[Column(),                       Nullable         ] public string Workstation       { get; set; } // varchar(50)
 	}
 
 	[Table(Schema="dbo", Name="pList")]
@@ -658,6 +2781,57 @@ namespace ACMSE
 		[Column(),                    Nullable         ] public int?      OperatorID        { get; set; } // int
 		[Column(),                    Nullable         ] public string    Workstation       { get; set; } // varchar(50)
 		[Column(),                    Nullable         ] public int?      RoomID            { get; set; } // int
+
+		#region Associations
+
+		/// <summary>
+		/// FK_ClientFieldsValues_pList_BackReference (dbo.ClientFieldsValues)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="Owner", CanBeNull=true)]
+		public IEnumerable<ClientFieldsValue> ClientFieldsValues { get; set; }
+
+		/// <summary>
+		/// FK_Guest_pList_BackReference (dbo.Guest)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="PListID", CanBeNull=true)]
+		public IEnumerable<Guest> Guests { get; set; }
+
+		/// <summary>
+		/// FK_PList_PStuff_BackReference (dbo.tPersonalStuff)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="PListID", CanBeNull=true)]
+		public IEnumerable<TPersonalStuff> PListPStuffs { get; set; }
+
+		/// <summary>
+		/// FK_PList_PStufPhoto_BackReference (dbo.tPStuffPhoto)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IDPLIST", CanBeNull=true)]
+		public IEnumerable<TPStuffPhoto> PListPStufPhotos { get; set; }
+
+		/// <summary>
+		/// FK_RelationsListCar_pList_BackReference (dbo.RelationsListCar)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IdList", CanBeNull=true)]
+		public IEnumerable<RelationsListCar> RelationsListCars { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="pListNetPorts")]
+	public partial class PListNetPort
+	{
+		[Column(),            PrimaryKey,  NotNull] public int    ID       { get; set; } // int
+		[Column("NAME_TASK"),    Nullable         ] public string NameTask { get; set; } // varchar(40)
+		[Column("PORT_TASK"),    Nullable         ] public int?   PortTask { get; set; } // int
+		[Column(),               Nullable         ] public string COMMENT  { get; set; } // varchar(100)
+	}
+
+	[Table(Schema="dbo", Name="pListStatus")]
+	public partial class PListStatus
+	{
+		[PrimaryKey, NotNull    ] public int    ID      { get; set; } // int
+		[Column,     NotNull    ] public string Name    { get; set; } // varchar(30)
+		[Column,        Nullable] public string LatName { get; set; } // varchar(30)
 	}
 
 	[Table(Schema="dbo", Name="pLogData")]
@@ -694,6 +2868,5853 @@ namespace ACMSE
 		[Column(),                Nullable         ] public string    StrAddr         { get; set; } // varchar(250)
 	}
 
+	[Table(Schema="dbo", Name="pMaps")]
+	public partial class PMap
+	{
+		[Column(),                PrimaryKey,  NotNull] public int       ID              { get; set; } // int
+		[Column(),                   Nullable         ] public string    Name            { get; set; } // varchar(25)
+		[Column(),                   Nullable         ] public string    Comment         { get; set; } // varchar(200)
+		[Column(),                             NotNull] public int       GIndex          { get; set; } // int
+		[Column(),                             NotNull] public int       ComputerID      { get; set; } // int
+		[Column(),                   Nullable         ] public int?      PlanChild       { get; set; } // int
+		[Column(),                   Nullable         ] public int?      Spack           { get; set; } // int
+		[Column(),                   Nullable         ] public byte[]    Contents        { get; set; } // image
+		[Column(),                   Nullable         ] public DateTime? ChangeTime      { get; set; } // datetime
+		[Column("design_width"),     Nullable         ] public int?      DesignWidth     { get; set; } // int
+		[Column("design_height"),    Nullable         ] public int?      DesignHeight    { get; set; } // int
+		[Column("design_scale"),     Nullable         ] public double?   DesignScale     { get; set; } // float
+		[Column(),                   Nullable         ] public string    SchemaExt       { get; set; } // varchar(5)
+		[Column(),                   Nullable         ] public Guid?     ApplicationGuid { get; set; } // uniqueidentifier
+	}
+
+	[Table(Schema="dbo", Name="pMark")]
+	public partial class PMark
+	{
+		[Column(),                 PrimaryKey,  NotNull] public int       ID                { get; set; } // int
+		[Column(),                              NotNull] public int       Gtype             { get; set; } // int
+		[Column(),                    Nullable         ] public int?      GTypeCodeAdd      { get; set; } // int
+		[Column(),                              NotNull] public int       Config            { get; set; } // int
+		[Column(),                    Nullable         ] public string    CodeP             { get; set; } // varchar(50)
+		[Column(),                    Nullable         ] public string    CodePAdd          { get; set; } // varchar(50)
+		[Column(),                    Nullable         ] public int?      Status            { get; set; } // int
+		[Column(),                              NotNull] public int       Owner             { get; set; } // int
+		[Column(),                    Nullable         ] public string    OwnerName         { get; set; } // varchar(30)
+		[Column(),                    Nullable         ] public int?      GrStatus          { get; set; } // int
+		[Column(),                              NotNull] public int       GroupID           { get; set; } // int
+		[Column(),                    Nullable         ] public DateTime? Start             { get; set; } // datetime
+		[Column(),                    Nullable         ] public DateTime? Finish            { get; set; } // datetime
+		[Column("fingertemplate"),    Nullable         ] public string    Fingertemplate    { get; set; } // varchar(2500)
+		[Column(),                    Nullable         ] public int?      IndexForContactId { get; set; } // int
+		[Column(),                    Nullable         ] public string    Comment           { get; set; } // varchar(250)
+		[Column(),                    Nullable         ] public string    Login             { get; set; } // varchar(100)
+		[Column(),                    Nullable         ] public int?      OperatorID        { get; set; } // int
+		[Column(),                    Nullable         ] public string    Workstation       { get; set; } // varchar(50)
+
+		#region Associations
+
+		/// <summary>
+		/// FK_pBioAccess_To_pMark_BackReference (dbo.pBioAccess)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IdPMark", CanBeNull=true)]
+		public IEnumerable<PBioAccess> PBioAccessToes { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="pObjCont")]
+	public partial class PObjCont
+	{
+		[PrimaryKey, NotNull    ] public int    ID              { get; set; } // int
+		[Column,     NotNull    ] public int    ObjectID        { get; set; } // int
+		[Column,     NotNull    ] public int    ShleifID        { get; set; } // int
+		[Column,     NotNull    ] public int    ItemType        { get; set; } // int
+		[Column,        Nullable] public int?   OperatorID      { get; set; } // int
+		[Column,        Nullable] public string Workstation     { get; set; } // varchar(50)
+		[Column,        Nullable] public int?   SiriusGroupType { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="pObjects")]
+	public partial class PObject
+	{
+		[Column(),                PrimaryKey,  NotNull] public int    ID                   { get; set; } // int
+		[Column(),                             NotNull] public int    GIndex               { get; set; } // int
+		[Column(),                   Nullable         ] public char?  SimIndex             { get; set; } // varchar(1)
+		[Column(),                             NotNull] public int    ComputerID           { get; set; } // int
+		[Column(),                   Nullable         ] public string Name                 { get; set; } // varchar(30)
+		[Column(),                   Nullable         ] public string Comment              { get; set; } // varchar(200)
+		[Column(),                   Nullable         ] public int?   State                { get; set; } // int
+		[Column(),                   Nullable         ] public int?   Config               { get; set; } // int
+		[Column(),                   Nullable         ] public int?   AlarmKey             { get; set; } // int
+		[Column(),                   Nullable         ] public int?   GuardKey             { get; set; } // int
+		[Column(),                   Nullable         ] public int?   OperatorID           { get; set; } // int
+		[Column(),                   Nullable         ] public string Workstation          { get; set; } // varchar(50)
+		[Column(),                   Nullable         ] public int?   ElementsTypesGroupId { get; set; } // int
+		[Column("is_interpanel"),    Nullable         ] public int?   IsInterpanel         { get; set; } // int
+		[Column(),                   Nullable         ] public int?   IndexForContactID    { get; set; } // int
+		[Column(),                   Nullable         ] public int?   DeviceZonePT         { get; set; } // int
+
+		#region Associations
+
+		/// <summary>
+		/// FK_BindingObjectsStepScen_ID_Object_BackReference (dbo.BindingObjectsStepScen)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IdObject", CanBeNull=true)]
+		public IEnumerable<BindingObjectsStepScen> BindingObjectsStepScenIDObjects { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="PPost")]
+	public partial class PPost
+	{
+		[Column(),                  PrimaryKey,  NotNull] public int    ID            { get; set; } // int
+		[Column(),                               NotNull] public string Name          { get; set; } // varchar(80)
+		[Column(),                     Nullable         ] public int?   Number        { get; set; } // int
+		[Column(),                     Nullable         ] public int?   StatusMark    { get; set; } // int
+		[Column("Company_ID"),         Nullable         ] public int?   CompanyId     { get; set; } // int
+		[Column("Id_Number_Ppost"),    Nullable         ] public string IdNumberPpost { get; set; } // varchar(50)
+		[Column("GUID_1C"),            Nullable         ] public string Guid1c        { get; set; } // varchar(40)
+	}
+
+	[Table(Schema="dbo", Name="PReason")]
+	public partial class PReason
+	{
+		[Column(),          PrimaryKey,  NotNull] public int    ID     { get; set; } // int
+		[Column(),                       NotNull] public string Name   { get; set; } // varchar(100)
+		[Column("GUID_1C"),    Nullable         ] public string Guid1c { get; set; } // varchar(40)
+	}
+
+	[Table(Schema="dbo", Name="pReport")]
+	public partial class PReport
+	{
+		[Column("id"), Nullable] public int?   Id      { get; set; } // int
+		[Column(),     Nullable] public string Name    { get; set; } // varchar(100)
+		[Column(),     Nullable] public int?   IDGroup { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="ProFiles")]
+	public partial class ProFile
+	{
+		[PrimaryKey, NotNull    ] public int    ID      { get; set; } // int
+		[Column,        Nullable] public string Name    { get; set; } // varchar(100)
+		[Column,        Nullable] public string Comment { get; set; } // varchar(200)
+
+		#region Associations
+
+		/// <summary>
+		/// FK_RelationsPro_Files_BackReference (dbo.RelProf)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IDProfiles", CanBeNull=true)]
+		public IEnumerable<RelProf> RelationsProFiles { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="PRooms")]
+	public partial class PRoom
+	{
+		[Column(),          PrimaryKey,  NotNull] public int    ID     { get; set; } // int
+		[Column(),                       NotNull] public string Name   { get; set; } // varchar(100)
+		[Column("GUID_1C"),    Nullable         ] public string Guid1c { get; set; } // varchar(100)
+	}
+
+	[Table(Schema="dbo", Name="protocols")]
+	public partial class Protocol
+	{
+		[Column("id"),   PrimaryKey,  NotNull] public int    Id           { get; set; } // int
+		[Column("name"),              NotNull] public string Name         { get; set; } // varchar(50)
+		[Column(),          Nullable         ] public int?   GroupParamId { get; set; } // int
+
+		#region Associations
+
+		/// <summary>
+		/// FK_DEVTYPESLINES_REFERENCE_PROTOCOLID_BackReference (dbo.DeviceTypesLines)
+		/// </summary>
+		[Association(ThisKey="Id", OtherKey="ProtocolID", CanBeNull=true)]
+		public IEnumerable<DeviceTypesLine> Devtypeslinesreferenceprotocolids { get; set; }
+
+		/// <summary>
+		/// FK_LINES_REFERENCE_LINEPROT_BackReference (dbo.Lines)
+		/// </summary>
+		[Association(ThisKey="Id", OtherKey="ProtocolID", CanBeNull=true)]
+		public IEnumerable<Line> Linesreferencelineprots { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="protocoldevices")]
+	public partial class Protocoldevice
+	{
+		[Column("protocol_id"),    PrimaryKey(1), NotNull] public int  ProtocolId   { get; set; } // int
+		[Column("device_type_id"), PrimaryKey(2), NotNull] public int  DeviceTypeId { get; set; } // int
+		[Column(),                    Nullable           ] public int? InterfaceId  { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="ProtocolSettings")]
+	public partial class ProtocolSetting
+	{
+		[PrimaryKey(1), NotNull    ] public int    SettingID   { get; set; } // int
+		[PrimaryKey(2), NotNull    ] public int    LineID      { get; set; } // int
+		[Column,        NotNull    ] public string Value       { get; set; } // xml
+		[Column,           Nullable] public string StringValue { get; set; } // varchar(100)
+
+		#region Associations
+
+		/// <summary>
+		/// FK_PROTOCOLSETTINGS_REFERENCE_LINEID (dbo.Lines)
+		/// </summary>
+		[Association(ThisKey="LineID", OtherKey="ID", CanBeNull=false)]
+		public Line Line { get; set; }
+
+		/// <summary>
+		/// FK_PROTOCOLSETTINGS_REFERENCE_SETTINGID (dbo.ProtocolSettingsDictionary)
+		/// </summary>
+		[Association(ThisKey="SettingID", OtherKey="ID", CanBeNull=false)]
+		public ProtocolSettingsDictionary Setting { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="ProtocolSettingsDictionary")]
+	public partial class ProtocolSettingsDictionary
+	{
+		[PrimaryKey, NotNull    ] public int    ID           { get; set; } // int
+		[Column,     NotNull    ] public string Name         { get; set; } // varchar(255)
+		[Column,        Nullable] public string Description  { get; set; } // varchar(255)
+		[Column,     NotNull    ] public int    ProtocolID   { get; set; } // int
+		[Column,        Nullable] public int?   DeviceTypeID { get; set; } // int
+		[Column,        Nullable] public int?   Type         { get; set; } // int
+		[Column,        Nullable] public string ParamName    { get; set; } // varchar(50)
+		[Column,     NotNull    ] public string TypeInfo     { get; set; } // xml
+
+		#region Associations
+
+		/// <summary>
+		/// FK_PROTOCOLSETTINGS_REFERENCE_SETTINGID_BackReference (dbo.ProtocolSettings)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="SettingID", CanBeNull=true)]
+		public IEnumerable<ProtocolSetting> Protocolsettingsreferencesettingids { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="pTypePasswords")]
+	public partial class PTypePassword
+	{
+		[Column, NotNull] public int    ID      { get; set; } // int
+		[Column, NotNull] public string Name    { get; set; } // varchar(200)
+		[Column, NotNull] public string Comment { get; set; } // varchar(200)
+	}
+
+	[Table(Schema="dbo", Name="QueryLog")]
+	public partial class QueryLog
+	{
+		[PrimaryKey, NotNull    ] public int       ID           { get; set; } // int
+		[Column,        Nullable] public DateTime? TimeVal      { get; set; } // datetime
+		[Column,        Nullable] public string    IP           { get; set; } // varchar(15)
+		[Column,        Nullable] public int?      OperatorID   { get; set; } // int
+		[Column,        Nullable] public string    OperatorName { get; set; } // varchar(100)
+		[Column,        Nullable] public int?      ProgramID    { get; set; } // int
+		[Column,        Nullable] public byte[]    Query        { get; set; } // image
+		[Column,        Nullable] public byte[]    Parameters   { get; set; } // image
+		[Column,        Nullable] public string    Action       { get; set; } // varchar(10)
+		[Column,        Nullable] public string    TableName    { get; set; } // varchar(30)
+	}
+
+	[Table(Schema="dbo", Name="RdrAccessPoint")]
+	public partial class RdrAccessPoint
+	{
+		[PrimaryKey, NotNull    ] public int    ID            { get; set; } // int
+		[Column,     NotNull    ] public int    ReaderID      { get; set; } // int
+		[Column,     NotNull    ] public int    Mode          { get; set; } // int
+		[Column,     NotNull    ] public int    AccessPointID { get; set; } // int
+		[Column,     NotNull    ] public int    ModeAcess     { get; set; } // int
+		[Column,        Nullable] public int?   PenalID       { get; set; } // int
+		[Column,        Nullable] public int?   OperatorID    { get; set; } // int
+		[Column,        Nullable] public string Workstation   { get; set; } // varchar(50)
+	}
+
+	[Table(Schema="dbo", Name="Reasons")]
+	public partial class Reason
+	{
+		[PrimaryKey, NotNull    ] public int       ID         { get; set; } // int
+		[Column,     NotNull    ] public int       EmployeeID { get; set; } // int
+		[Column,        Nullable] public DateTime? DateStart  { get; set; } // datetime
+		[Column,        Nullable] public DateTime? DateEnd    { get; set; } // datetime
+		[Column,        Nullable] public string    Comment    { get; set; } // varchar(255)
+		[Column,        Nullable] public DateTime? TimeStart  { get; set; } // datetime
+		[Column,        Nullable] public DateTime? TimeEnd    { get; set; } // datetime
+		[Column,        Nullable] public string    Operator   { get; set; } // varchar(100)
+		[Column,        Nullable] public int?      GoodTime   { get; set; } // int
+		[Column,        Nullable] public int?      BUTNOTCALC { get; set; } // int
+		[Column,        Nullable] public DateTime? Duration   { get; set; } // datetime
+		[Column,        Nullable] public int?      ReasonID   { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="ReferenceCommandScenarios")]
+	public partial class ReferenceCommandScenario
+	{
+		[PrimaryKey, NotNull    ] public int    ID         { get; set; } // int
+		[Column,     NotNull    ] public string Name       { get; set; } // varchar(100)
+		[Column,        Nullable] public string LatName    { get; set; } // varchar(100)
+		[Column,        Nullable] public object PProgValue { get; set; } // sql_variant
+
+		#region Associations
+
+		/// <summary>
+		/// FK_BindingCommandScenarios_ID_CommandScenarios_BackReference (dbo.BindingCommandScenarios)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IdCommandScenarios", CanBeNull=true)]
+		public IEnumerable<BindingCommandScenario> BindingCommandScenariosIDCommandScenarios { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="ReferenceItemsScenarios")]
+	public partial class ReferenceItemsScenario
+	{
+		[Column(),            PrimaryKey,  NotNull] public int      ID         { get; set; } // int
+		[Column(),                         NotNull] public string   Name       { get; set; } // varchar(50)
+		[Column(),               Nullable         ] public string   LatName    { get; set; } // varchar(50)
+		[Column(),                         NotNull] public string   TypeValue  { get; set; } // varchar(10)
+		[Column(),                         NotNull] public string   TypeContrl { get; set; } // varchar(10)
+		[Column(),               Nullable         ] public string   Code       { get; set; } // varchar(15)
+		[Column(),               Nullable         ] public string   RegExp     { get; set; } // varchar(50)
+		[Column(),               Nullable         ] public decimal? MaxValue   { get; set; } // numeric(14, 4)
+		[Column(),               Nullable         ] public decimal? MinValue   { get; set; } // numeric(14, 4)
+		[Column("isRefresh"),              NotNull] public bool     IsRefresh  { get; set; } // bit
+		[Column(),               Nullable         ] public string   ExpText    { get; set; } // varchar(50)
+		[Column(),               Nullable         ] public decimal? Increment  { get; set; } // numeric(18, 4)
+		[Column(),                         NotNull] public bool     IncrFixed  { get; set; } // bit
+
+		#region Associations
+
+		/// <summary>
+		/// FK_BindingCommandScenarios_ID_ItemsScenarios_BackReference (dbo.BindingCommandScenarios)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IdItemsScenarios", CanBeNull=true)]
+		public IEnumerable<BindingCommandScenario> BindingCommandScenariosIDItemsScenarios { get; set; }
+
+		/// <summary>
+		/// FK_BindingItemsDevScenarios_ID_ItemsScenarios_BackReference (dbo.BindingItemsDevScenarios)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IdItemsScenarios", CanBeNull=true)]
+		public IEnumerable<BindingItemsDevScenario> BindingItemsDevScenariosIDItemsScenarios { get; set; }
+
+		/// <summary>
+		/// FK_BindingItemsScenarios_ID_ItemsScenarios_BackReference (dbo.BindingItemsScenarios)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IdItemsScenarios", CanBeNull=true)]
+		public IEnumerable<BindingItemsScenario> BindingItemsScenariosIDItemsScenarios { get; set; }
+
+		/// <summary>
+		/// FK_ValueDevItemsScenarios_ID_RefItemsScen_BackReference (dbo.ValueDevItemsScenarios)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IdRefItemsScen", CanBeNull=true)]
+		public IEnumerable<ValueDevItemsScenario> ValueDevItemsScenariosIDRefItemsScens { get; set; }
+
+		/// <summary>
+		/// FK_ValueItemsScenarios_ID_RefItemsScen_BackReference (dbo.ValueItemsScenarios)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IdRefItemsScen", CanBeNull=true)]
+		public IEnumerable<ValueItemsScenario> ValueItemsScenariosIDRefItemsScens { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="ReferenceItemsZonePT")]
+	public partial class ReferenceItemsZonePT
+	{
+		[Column(),            PrimaryKey,  NotNull] public int      ID         { get; set; } // int
+		[Column(),                         NotNull] public string   Name       { get; set; } // varchar(50)
+		[Column(),               Nullable         ] public string   LatName    { get; set; } // varchar(50)
+		[Column(),                         NotNull] public string   TypeValue  { get; set; } // varchar(10)
+		[Column(),                         NotNull] public string   TypeContrl { get; set; } // varchar(10)
+		[Column(),               Nullable         ] public string   Code       { get; set; } // varchar(25)
+		[Column(),               Nullable         ] public decimal? MaxValue   { get; set; } // numeric(14, 4)
+		[Column(),               Nullable         ] public decimal? MinValue   { get; set; } // numeric(14, 4)
+		[Column("isRefresh"),              NotNull] public bool     IsRefresh  { get; set; } // bit
+		[Column(),               Nullable         ] public decimal? Increment  { get; set; } // numeric(18, 4)
+		[Column(),                         NotNull] public bool     IncrFixed  { get; set; } // bit
+		[Column(),               Nullable         ] public object   DefValue   { get; set; } // sql_variant
+
+		#region Associations
+
+		/// <summary>
+		/// FK_BindingItemsZonePT_ID_ItemZonePT_BackReference (dbo.BindingItemsZonePT)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IdItemZonePT", CanBeNull=true)]
+		public IEnumerable<BindingItemsZonePT> BindingItemsZonePTIDItemZonePts { get; set; }
+
+		/// <summary>
+		/// FK_ValueItemsZonePT_ID_ReferenceItemsZonePT_BackReference (dbo.ValueItemsZonePT)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IdReferenceItemsZonePT", CanBeNull=true)]
+		public IEnumerable<ValueItemsZonePT> ValueItemsZonePtids { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="ReferenceScenariosTypes")]
+	public partial class ReferenceScenariosType
+	{
+		[PrimaryKey, NotNull    ] public int    ID          { get; set; } // int
+		[Column,     NotNull    ] public string Name        { get; set; } // varchar(50)
+		[Column,        Nullable] public string LatName     { get; set; } // varchar(50)
+		[Column,     NotNull    ] public bool   Def         { get; set; } // bit
+		[Column,     NotNull    ] public int    Sort        { get; set; } // int
+		[Column,     NotNull    ] public int    ImageIndex  { get; set; } // int
+		[Column,     NotNull    ] public int    ImageIDScen { get; set; } // int
+		[Column,     NotNull    ] public int    ImageIDStep { get; set; } // int
+
+		#region Associations
+
+		/// <summary>
+		/// FK_BindingItemsScenarios_ID_ScenariosTypes_BackReference (dbo.BindingItemsScenarios)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IdScenariosTypes", CanBeNull=true)]
+		public IEnumerable<BindingItemsScenario> BindingItemsScenariosIDScenariosTypes { get; set; }
+
+		/// <summary>
+		/// FK_ScenariosDevice_ID_ScenariosTypes_BackReference (dbo.ScenariosDevice)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IdScenariosTypes", CanBeNull=true)]
+		public IEnumerable<ScenariosDevice> ScenariosDeviceIDScenariosTypes { get; set; }
+
+		/// <summary>
+		/// FK_ScenariosFilterDevice_ID_ScenariosType_BackReference (dbo.ScenariosFilterDevice)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IdScenariosType", CanBeNull=true)]
+		public IEnumerable<ScenariosFilterDevice> ScenariosFilterDeviceIDScenariosTypes { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="ReferenceTactics")]
+	public partial class ReferenceTactic
+	{
+		[PrimaryKey, NotNull    ] public int    ID      { get; set; } // int
+		[Column,     NotNull    ] public string Name    { get; set; } // varchar(100)
+		[Column,        Nullable] public string LatName { get; set; } // varchar(100)
+	}
+
+	[Table(Schema="dbo", Name="RelatedCameras")]
+	public partial class RelatedCamera
+	{
+		[PrimaryKey, NotNull] public int ID              { get; set; } // int
+		[Column,     NotNull] public int CameraID        { get; set; } // int
+		[Column,     NotNull] public int RelatedCameraID { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="RelationDiv")]
+	public partial class RelationDiv
+	{
+		[PrimaryKey, NotNull] public int ID     { get; set; } // int
+		[Column,     NotNull] public int IdAuth { get; set; } // int
+		[Column,     NotNull] public int IdDiv  { get; set; } // int
+
+		#region Associations
+
+		/// <summary>
+		/// FK_RelationDiv_IdAuto (dbo.Authorities)
+		/// </summary>
+		[Association(ThisKey="IdAuth", OtherKey="ID", CanBeNull=false)]
+		public Authority IdAuto { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="relation_phone_id_dev")]
+	public partial class RelationPhoneIdDev
+	{
+		[Column(),             PrimaryKey,  NotNull] public int    ID          { get; set; } // int
+		[Column("id_phone"),                NotNull] public int    IdPhone     { get; set; } // int
+		[Column("id_rslines"),              NotNull] public int    IdRslines   { get; set; } // int
+		[Column(),                Nullable         ] public int?   OperatorID  { get; set; } // int
+		[Column(),                Nullable         ] public string Workstation { get; set; } // varchar(50)
+	}
+
+	[Table(Schema="dbo", Name="RelationRep")]
+	public partial class RelationRep
+	{
+		[Column("id"), Nullable] public int? Id     { get; set; } // int
+		[Column(),     Nullable] public int? IDAuth { get; set; } // int
+		[Column(),     Nullable] public int? IDRep  { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="RelationsListCar")]
+	public partial class RelationsListCar
+	{
+		[PrimaryKey, NotNull    ] public int    ID          { get; set; } // int
+		[Column,     NotNull    ] public int    IdList      { get; set; } // int
+		[Column,     NotNull    ] public int    IdCar       { get; set; } // int
+		[Column,        Nullable] public int?   OperatorID  { get; set; } // int
+		[Column,        Nullable] public string Workstation { get; set; } // varchar(50)
+
+		#region Associations
+
+		/// <summary>
+		/// FK_RelationsListCar_pCar (dbo.pCar)
+		/// </summary>
+		[Association(ThisKey="IdCar", OtherKey="ID", CanBeNull=false)]
+		public PCar PCar { get; set; }
+
+		/// <summary>
+		/// FK_RelationsListCar_pList (dbo.pList)
+		/// </summary>
+		[Association(ThisKey="IdList", OtherKey="ID", CanBeNull=false)]
+		public PList PList { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="rel_param_groupsparamsetting")]
+	public partial class RelParamGroupsparamsetting
+	{
+		[Column("paramId"), PrimaryKey(1), NotNull] public int ParamId { get; set; } // int
+		[Column("groupId"), PrimaryKey(2), NotNull] public int GroupId { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="RelProf")]
+	public partial class RelProf
+	{
+		[PrimaryKey, NotNull    ] public int  ID         { get; set; } // int
+		[Column,     NotNull    ] public int  IDListComp { get; set; } // int
+		[Column,     NotNull    ] public int  IDProfiles { get; set; } // int
+		[Column,        Nullable] public int? Reserve    { get; set; } // int
+
+		#region Associations
+
+		/// <summary>
+		/// FK_RelationsList_Components (dbo.ListComponents)
+		/// </summary>
+		[Association(ThisKey="IDListComp", OtherKey="ID", CanBeNull=false)]
+		public ListComponent RelationsListComponent { get; set; }
+
+		/// <summary>
+		/// FK_RelationsPro_Files (dbo.ProFiles)
+		/// </summary>
+		[Association(ThisKey="IDProfiles", OtherKey="ID", CanBeNull=false)]
+		public ProFile RelationsProFile { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="RemoteControlCategories")]
+	public partial class RemoteControlCategory
+	{
+		[PrimaryKey, NotNull    ] public int    ID                      { get; set; } // int
+		[Column,        Nullable] public string Name                    { get; set; } // varchar(60)
+		[Column,        Nullable] public string Comment                 { get; set; } // varchar(200)
+		[Column,        Nullable] public int?   RemoteAction            { get; set; } // int
+		[Column,        Nullable] public int?   GroupByCategoryId       { get; set; } // int
+		[Column,        Nullable] public int?   IsVisibleInPersonalArea { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="RemoteControlCategoryToDTypesElement")]
+	public partial class RemoteControlCategoryToDTypesElement
+	{
+		[Column("dTypesElementId"), PrimaryKey(1), NotNull] public int    DTypesElementId { get; set; } // int
+		[Column(),                  PrimaryKey(2), NotNull] public int    CategoryId      { get; set; } // int
+		[Column(),                     Nullable           ] public string Comment         { get; set; } // varchar(150)
+	}
+
+	[Table(Schema="dbo", Name="ReservLine")]
+	public partial class ReservLine
+	{
+		[Column,        NotNull] public int ComputerId { get; set; } // int
+		[PrimaryKey(1), NotNull] public int MainId     { get; set; } // int
+		[PrimaryKey(2), NotNull] public int ReservId   { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="RSBioParams")]
+	public partial class RSBioParam
+	{
+		[Column(),            Identity   ] public int    ID       { get; set; } // int
+		[Column("ID_Device"), NotNull    ] public int    IdDevice { get; set; } // int
+		[Column("ID_Param"),  NotNull    ] public int    IdParam  { get; set; } // int
+		[Column(),               Nullable] public string Value    { get; set; } // varchar(128)
+
+		#region Associations
+
+		/// <summary>
+		/// FK_RSBioParams_To_pBioParams (dbo.pBioParams)
+		/// </summary>
+		[Association(ThisKey="IdParam", OtherKey="ID", CanBeNull=false)]
+		public PBioParam TopBioParam { get; set; }
+
+		/// <summary>
+		/// FK_RSBioParams_To_RSLines (dbo.RSLines)
+		/// </summary>
+		[Association(ThisKey="IdDevice", OtherKey="ID", CanBeNull=false)]
+		public RSLine ToRSLine { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="RSLines")]
+	public partial class RSLine
+	{
+		[Column(),                  PrimaryKey,  NotNull] public int    ID                { get; set; } // int
+		[Column(),                               NotNull] public int    GIndex            { get; set; } // int
+		[Column(),                               NotNull] public int    ComPortID         { get; set; } // int
+		[Column(),                               NotNull] public int    PKUID             { get; set; } // int
+		[Column(),                               NotNull] public int    GLineNo           { get; set; } // int
+		[Column(),                     Nullable         ] public string Name              { get; set; } // varchar(35)
+		[Column(),                     Nullable         ] public int?   DeviceType        { get; set; } // int
+		[Column(),                     Nullable         ] public string Comment           { get; set; } // varchar(200)
+		[Column(),                     Nullable         ] public int?   Priority          { get; set; } // int
+		[Column(),                     Nullable         ] public int?   Broadcast         { get; set; } // int
+		[Column(),                     Nullable         ] public int?   DeviceVersion     { get; set; } // int
+		[Column(),                     Nullable         ] public string IPAddress         { get; set; } // varchar(16)
+		[Column(),                     Nullable         ] public string MACAddress        { get; set; } // varchar(18)
+		[Column(),                     Nullable         ] public string GATEWAY           { get; set; } // varchar(16)
+		[Column(),                     Nullable         ] public string SUBMASK           { get; set; } // varchar(16)
+		[Column(),                     Nullable         ] public int?   Port              { get; set; } // int
+		[Column(),                     Nullable         ] public int?   UseDHCP           { get; set; } // int
+		[Column(),                     Nullable         ] public string IdContactName     { get; set; } // varchar(15)
+		[Column(),                     Nullable         ] public int?   IdDevice          { get; set; } // int
+		[Column(),                               NotNull] public int    DeviceInterface   { get; set; } // int
+		[Column(),                     Nullable         ] public int?   IndexForContactId { get; set; } // int
+		[Column(),                     Nullable         ] public string DeviceTypeBIO     { get; set; } // varchar(8)
+		[Column(),                     Nullable         ] public int?   AbonentType       { get; set; } // int
+		[Column(),                     Nullable         ] public int?   OperatorID        { get; set; } // int
+		[Column(),                     Nullable         ] public string Workstation       { get; set; } // varchar(50)
+		[Column(),                     Nullable         ] public string MasterKey         { get; set; } // varchar(255)
+		[Column(),                     Nullable         ] public string Login             { get; set; } // varchar(255)
+		[Column(),                     Nullable         ] public string Password          { get; set; } // varchar(255)
+		[Column(),                     Nullable         ] public int?   ModeDeviceId      { get; set; } // int
+		[Column("ownerdeviceid"),      Nullable         ] public int?   Ownerdeviceid     { get; set; } // int
+		[Column("interpanel_mode"),    Nullable         ] public int?   InterpanelMode    { get; set; } // int
+		[Column("mac_orion2"),         Nullable         ] public long?  MacOrion2         { get; set; } // bigint
+
+		#region Associations
+
+		/// <summary>
+		/// FK_KONE_KGS_FK_RSLINES_ID_BackReference (dbo.Kone_KGS)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="RSLinesId", CanBeNull=true)]
+		public IEnumerable<KoneKg> Konekgsfkrslinesids { get; set; }
+
+		/// <summary>
+		/// FK_RSBioParams_To_RSLines_BackReference (dbo.RSBioParams)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IdDevice", CanBeNull=true)]
+		public IEnumerable<RSBioParam> RSBioParamsToes { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="ScanDoc")]
+	public partial class ScanDoc
+	{
+		[PrimaryKey(1), NotNull    ] public int    ID      { get; set; } // int
+		[PrimaryKey(2), NotNull    ] public int    IDPLIST { get; set; } // int
+		[Column,           Nullable] public byte[] Picture { get; set; } // image
+		[PrimaryKey(3), NotNull    ] public int    Spack   { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="ScenariosDevice")]
+	public partial class ScenariosDevice
+	{
+		[Column(),                    PrimaryKey,  Identity] public int  ID               { get; set; } // int
+		[Column(),                       Nullable          ] public int? Num              { get; set; } // int
+		[Column("ID_Parent"),            Nullable          ] public int? IdParent         { get; set; } // int
+		[Column("ID_ScenariosTypes"), NotNull              ] public int  IdScenariosTypes { get; set; } // int
+		[Column("ID_Device"),         NotNull              ] public int  IdDevice         { get; set; } // int
+		[Column(),                    NotNull              ] public int  DeviceType       { get; set; } // int
+		[Column("ID_Level"),          NotNull              ] public int  IdLevel          { get; set; } // int
+
+		#region Associations
+
+		/// <summary>
+		/// FK_BindingConditionStepScen_ID_ScenDevice_BackReference (dbo.BindingConditionStepScen)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IdScenDevice", CanBeNull=true)]
+		public IEnumerable<BindingConditionStepScen> BindingConditionStepScenIDScenDevices { get; set; }
+
+		/// <summary>
+		/// FK_BindingGrObjectsStepScen_ID_ScenDevice_BackReference (dbo.BindingGrObjectsStepScen)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IdScenDevice", CanBeNull=true)]
+		public IEnumerable<BindingGrObjectsStepScen> BindingGrObjectsStepScenIDScenDevices { get; set; }
+
+		/// <summary>
+		/// FK_BindingObjectsStepScen_ID_ScenDevice_BackReference (dbo.BindingObjectsStepScen)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IdScenDevice", CanBeNull=true)]
+		public IEnumerable<BindingObjectsStepScen> BindingObjectsStepScenIDScenDevices { get; set; }
+
+		/// <summary>
+		/// FK_ScenariosDevice_ID_Parent_BackReference (dbo.ScenariosDevice)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IdParent", CanBeNull=true)]
+		public IEnumerable<ScenariosDevice> FkScenariosDeviceIdParentBackReferences { get; set; }
+
+		/// <summary>
+		/// FK_ScenariosDevice_ID_Parent (dbo.ScenariosDevice)
+		/// </summary>
+		[Association(ThisKey="IdParent", OtherKey="ID", CanBeNull=true)]
+		public ScenariosDevice IDParent { get; set; }
+
+		/// <summary>
+		/// FK_ScenariosDevice_ID_ScenariosTypes (dbo.ReferenceScenariosTypes)
+		/// </summary>
+		[Association(ThisKey="IdScenariosTypes", OtherKey="ID", CanBeNull=false)]
+		public ReferenceScenariosType IDScenariosType { get; set; }
+
+		/// <summary>
+		/// FK_ValueItemsScenarios_ID_ScenDevice_BackReference (dbo.ValueItemsScenarios)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="IdScenDevice", CanBeNull=true)]
+		public IEnumerable<ValueItemsScenario> ValueItemsScenariosIDScenDevices { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="ScenariosFilterDevice")]
+	public partial class ScenariosFilterDevice
+	{
+		[Column(),                   PrimaryKey(1), NotNull] public int DeviceType      { get; set; } // int
+		[Column(),                   PrimaryKey(2), NotNull] public int ElementType     { get; set; } // int
+		[Column("ID_ScenariosType"), PrimaryKey(4), NotNull] public int IdScenariosType { get; set; } // int
+		[Column(),                   PrimaryKey(3), NotNull] public int DeviceVersion   { get; set; } // int
+		[Column(),                   PrimaryKey(6), NotNull] public int NumberDevItem   { get; set; } // int
+		[Column(),                   PrimaryKey(5), NotNull] public int ParentDevType   { get; set; } // int
+
+		#region Associations
+
+		/// <summary>
+		/// FK_ScenariosFilterDevice_ID_ScenariosType (dbo.ReferenceScenariosTypes)
+		/// </summary>
+		[Association(ThisKey="IdScenariosType", OtherKey="ID", CanBeNull=false)]
+		public ReferenceScenariosType IDScenariosType { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="Schedule")]
+	public partial class Schedule
+	{
+		[PrimaryKey, NotNull    ] public int    ID          { get; set; } // int
+		[Column,        Nullable] public int?   ScriptID    { get; set; } // int
+		[Column,        Nullable] public byte[] Calendar    { get; set; } // image
+		[Column,        Nullable] public int?   TimeID      { get; set; } // int
+		[Column,        Nullable] public int?   OperatorID  { get; set; } // int
+		[Column,        Nullable] public string Workstation { get; set; } // varchar(50)
+	}
+
+	[Table(Schema="dbo", Name="Script")]
+	public partial class Script
+	{
+		[PrimaryKey, NotNull    ] public int    ID          { get; set; } // int
+		[Column,     NotNull    ] public string Name        { get; set; } // varchar(100)
+		[Column,        Nullable] public string Comment     { get; set; } // varchar(200)
+		[Column,        Nullable] public int?   HotKey      { get; set; } // int
+		[Column,        Nullable] public int?   Config      { get; set; } // int
+		[Column,        Nullable] public byte[] Content     { get; set; } // image
+		[Column,        Nullable] public int?   OperatorID  { get; set; } // int
+		[Column,        Nullable] public string Workstation { get; set; } // varchar(50)
+	}
+
+	[Table(Schema="dbo", Name="Settings")]
+	public partial class Setting
+	{
+		[PrimaryKey, NotNull    ] public int    ID         { get; set; } // int
+		[Column,     NotNull    ] public int    ComputerID { get; set; } // int
+		[Column,        Nullable] public byte[] Settings   { get; set; } // image
+	}
+
+	[Table(Schema="dbo", Name="Settings_group")]
+	public partial class SettingsGroup
+	{
+		[PrimaryKey, NotNull] public int    ID   { get; set; } // int
+		[Column,     NotNull] public string Name { get; set; } // varchar(60)
+
+		#region Associations
+
+		/// <summary>
+		/// FK_RelationsListSet_Group_BackReference (dbo.Settings_Value)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="GroupsId", CanBeNull=true)]
+		public IEnumerable<SettingsValue> RelationsListSetGroups { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="Settings_Value")]
+	public partial class SettingsValue
+	{
+		[Column(),            PrimaryKey,  NotNull] public int    ID        { get; set; } // int
+		[Column(),                         NotNull] public string Name      { get; set; } // varchar(60)
+		[Column("id_comp"),                NotNull] public int    IdComp    { get; set; } // int
+		[Column("Groups_Id"),              NotNull] public int    GroupsId  { get; set; } // int
+		[Column("settings"),     Nullable         ] public byte[] Settings  { get; set; } // image
+		[Column(),                         NotNull] public string Value     { get; set; } // varchar(200)
+		[Column(),                         NotNull] public int    TypeValue { get; set; } // int
+		[Column(),               Nullable         ] public int?   Reserve   { get; set; } // int
+
+		#region Associations
+
+		/// <summary>
+		/// FK_RelationsListSet_Group (dbo.Settings_group)
+		/// </summary>
+		[Association(ThisKey="GroupsId", OtherKey="ID", CanBeNull=false)]
+		public SettingsGroup Group { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="sir_access_groups")]
+	public partial class SirAccessGroup
+	{
+		[Column("id"),                  PrimaryKey,  Identity] public int    Id                { get; set; } // int
+		[Column("orion_item_id"),       NotNull              ] public int    OrionItemId       { get; set; } // int
+		[Column("sir_dev_list_id"),     NotNull              ] public int    SirDevListId      { get; set; } // int
+		[Column("index"),               NotNull              ] public int    Index             { get; set; } // int
+		[Column("admin_access_rights"), NotNull              ] public int    AdminAccessRights { get; set; } // int
+		[Column("zone_access_rights"),     Nullable          ] public byte[] ZoneAccessRights  { get; set; } // binary(128)
+		[Column("name"),                   Nullable          ] public string Name              { get; set; } // varchar(16)
+	}
+
+	[Table(Schema="dbo", Name="sir_change_log")]
+	public partial class SirChangeLog
+	{
+		[Column("id"),              PrimaryKey, Identity] public int Id            { get; set; } // int
+		[Column("sir_object_type"), NotNull             ] public int SirObjectType { get; set; } // int
+		[Column("sir_dev_id"),      NotNull             ] public int SirDevId      { get; set; } // int
+		[Column("index"),           NotNull             ] public int Index         { get; set; } // int
+		[Column("action"),          NotNull             ] public int Action        { get; set; } // int
+		[Column("is_done"),         NotNull             ] public int IsDone        { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="sir_channels")]
+	public partial class SirChannel
+	{
+		[Column("id"),                 PrimaryKey,  Identity] public int    Id              { get; set; } // int
+		[Column("orion_item_id"),      NotNull              ] public int    OrionItemId     { get; set; } // int
+		[Column("sir_dev_list_id"),    NotNull              ] public int    SirDevListId    { get; set; } // int
+		[Column("sir_subdev_list_id"), NotNull              ] public int    SirSubdevListId { get; set; } // int
+		[Column("index"),              NotNull              ] public int    Index           { get; set; } // int
+		[Column("device_index"),       NotNull              ] public int    DeviceIndex     { get; set; } // int
+		[Column("number"),             NotNull              ] public int    Number          { get; set; } // int
+		[Column("contact_id"),         NotNull              ] public int    ContactId       { get; set; } // int
+		[Column("zone_index"),         NotNull              ] public int    ZoneIndex       { get; set; } // int
+		[Column("name"),                  Nullable          ] public string Name            { get; set; } // varchar(16)
+	}
+
+	[Table(Schema="dbo", Name="sir_controllers")]
+	public partial class SirController
+	{
+		[Column("id"),              PrimaryKey,  Identity] public int    Id             { get; set; } // int
+		[Column("orion_device_id"), NotNull              ] public int    OrionDeviceId  { get; set; } // int
+		[Column("sir_dev_list_id"), NotNull              ] public int    SirDevListId   { get; set; } // int
+		[Column("index"),           NotNull              ] public int    Index          { get; set; } // int
+		[Column("ip"),              NotNull              ] public string Ip             { get; set; } // varchar(20)
+		[Column("interpanel_mode"), NotNull              ] public int    InterpanelMode { get; set; } // int
+		[Column("address"),         NotNull              ] public int    Address        { get; set; } // int
+		[Column("name"),               Nullable          ] public string Name           { get; set; } // varchar(16)
+	}
+
+	[Table(Schema="dbo", Name="sir_dev_list")]
+	public partial class SirDevList
+	{
+		[Column("id"),              PrimaryKey,  Identity] public int    Id            { get; set; } // int
+		[Column("orion_device_id"), NotNull              ] public int    OrionDeviceId { get; set; } // int
+		[Column("ip"),              NotNull              ] public string Ip            { get; set; } // varchar(20)
+		[Column("mac"),             NotNull              ] public string Mac           { get; set; } // varchar(20)
+		[Column("name"),               Nullable          ] public string Name          { get; set; } // varchar(16)
+		[Column("conf_crc32"),         Nullable          ] public int?   ConfCrc32     { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="sir_inputs")]
+	public partial class SirInput
+	{
+		[Column("id"),                 PrimaryKey,  Identity] public int    Id              { get; set; } // int
+		[Column("orion_item_id"),      NotNull              ] public int    OrionItemId     { get; set; } // int
+		[Column("sir_dev_list_id"),    NotNull              ] public int    SirDevListId    { get; set; } // int
+		[Column("sir_subdev_list_id"), NotNull              ] public int    SirSubdevListId { get; set; } // int
+		[Column("index"),              NotNull              ] public int    Index           { get; set; } // int
+		[Column("device_index"),       NotNull              ] public int    DeviceIndex     { get; set; } // int
+		[Column("number"),             NotNull              ] public int    Number          { get; set; } // int
+		[Column("contact_id"),         NotNull              ] public int    ContactId       { get; set; } // int
+		[Column("type"),               NotNull              ] public int    Type            { get; set; } // int
+		[Column("subtype"),            NotNull              ] public int    Subtype         { get; set; } // int
+		[Column("zone_index"),         NotNull              ] public int    ZoneIndex       { get; set; } // int
+		[Column("script_number"),      NotNull              ] public int    ScriptNumber    { get; set; } // int
+		[Column("name"),                  Nullable          ] public string Name            { get; set; } // varchar(16)
+	}
+
+	[Table(Schema="dbo", Name="sir_outputs")]
+	public partial class SirOutput
+	{
+		[Column("id"),                 PrimaryKey,  Identity] public int    Id              { get; set; } // int
+		[Column("orion_item_id"),      NotNull              ] public int    OrionItemId     { get; set; } // int
+		[Column("sir_dev_list_id"),    NotNull              ] public int    SirDevListId    { get; set; } // int
+		[Column("sir_subdev_list_id"), NotNull              ] public int    SirSubdevListId { get; set; } // int
+		[Column("index"),              NotNull              ] public int    Index           { get; set; } // int
+		[Column("device_index"),       NotNull              ] public int    DeviceIndex     { get; set; } // int
+		[Column("number"),             NotNull              ] public int    Number          { get; set; } // int
+		[Column("contact_id"),         NotNull              ] public int    ContactId       { get; set; } // int
+		[Column("type"),               NotNull              ] public int    Type            { get; set; } // int
+		[Column("program_index"),      NotNull              ] public int    ProgramIndex    { get; set; } // int
+		[Column("script_number"),      NotNull              ] public int    ScriptNumber    { get; set; } // int
+		[Column("delay1"),             NotNull              ] public int    Delay1          { get; set; } // int
+		[Column("delay2"),             NotNull              ] public int    Delay2          { get; set; } // int
+		[Column("activate_time"),      NotNull              ] public int    ActivateTime    { get; set; } // int
+		[Column("name"),                  Nullable          ] public string Name            { get; set; } // varchar(16)
+		[Column("zone_index"),         NotNull              ] public int    ZoneIndex       { get; set; } // int
+		[Column("related_zones"),         Nullable          ] public byte[] RelatedZones    { get; set; } // binary(128)
+	}
+
+	[Table(Schema="dbo", Name="sir_readers")]
+	public partial class SirReader
+	{
+		[Column("id"),                  PrimaryKey,  Identity] public int    Id                { get; set; } // int
+		[Column("orion_item_id"),       NotNull              ] public int    OrionItemId       { get; set; } // int
+		[Column("sir_dev_list_id"),     NotNull              ] public int    SirDevListId      { get; set; } // int
+		[Column("sir_subdev_list_id"),  NotNull              ] public int    SirSubdevListId   { get; set; } // int
+		[Column("index"),               NotNull              ] public int    Index             { get; set; } // int
+		[Column("device_index"),        NotNull              ] public int    DeviceIndex       { get; set; } // int
+		[Column("number"),              NotNull              ] public int    Number            { get; set; } // int
+		[Column("contact_id"),          NotNull              ] public int    ContactId         { get; set; } // int
+		[Column("zone_index"),          NotNull              ] public int    ZoneIndex         { get; set; } // int
+		[Column("script_number"),       NotNull              ] public int    ScriptNumber      { get; set; } // int
+		[Column("allowed_zones"),          Nullable          ] public byte[] AllowedZones      { get; set; } // binary(128)
+		[Column("allowed_zone_groups"),    Nullable          ] public byte[] AllowedZoneGroups { get; set; } // binary(16)
+		[Column("name"),                   Nullable          ] public string Name              { get; set; } // varchar(16)
+	}
+
+	[Table(Schema="dbo", Name="sir_scripts")]
+	public partial class SirScript
+	{
+		[Column("id"),                   PrimaryKey,  Identity] public int    Id                 { get; set; } // int
+		[Column("orion_item_id"),        NotNull              ] public int    OrionItemId        { get; set; } // int
+		[Column("sir_dev_list_id"),      NotNull              ] public int    SirDevListId       { get; set; } // int
+		[Column("index"),                NotNull              ] public int    Index              { get; set; } // int
+		[Column("type"),                 NotNull              ] public int    Type               { get; set; } // int
+		[Column("script_number"),        NotNull              ] public int    ScriptNumber       { get; set; } // int
+		[Column("condition_number"),     NotNull              ] public int    ConditionNumber    { get; set; } // int
+		[Column("next_condition_index"), NotNull              ] public int    NextConditionIndex { get; set; } // int
+		[Column("allowed_zones"),           Nullable          ] public byte[] AllowedZones       { get; set; } // binary(128)
+		[Column("allowed_states"),          Nullable          ] public byte[] AllowedStates      { get; set; } // binary(32)
+		[Column("prohibited_zones"),        Nullable          ] public byte[] ProhibitedZones    { get; set; } // binary(128)
+		[Column("prohibited_states"),       Nullable          ] public byte[] ProhibitedStates   { get; set; } // binary(128)
+		[Column("command"),              NotNull              ] public int    Command            { get; set; } // int
+		[Column("switch_mask"),          NotNull              ] public int    SwitchMask         { get; set; } // int
+		[Column("delay"),                NotNull              ] public int    Delay              { get; set; } // int
+		[Column("active_time"),          NotNull              ] public int    ActiveTime         { get; set; } // int
+		[Column("is_active"),            NotNull              ] public int    IsActive           { get; set; } // int
+		[Column("name"),                    Nullable          ] public string Name               { get; set; } // varchar(16)
+	}
+
+	[Table(Schema="dbo", Name="sir_subdev_list")]
+	public partial class SirSubdevList
+	{
+		[Column("id"),               PrimaryKey,  Identity] public int    Id              { get; set; } // int
+		[Column("orion_device_id"),  NotNull              ] public int    OrionDeviceId   { get; set; } // int
+		[Column("sir_dev_list_id"),  NotNull              ] public int    SirDevListId    { get; set; } // int
+		[Column("index"),            NotNull              ] public int    Index           { get; set; } // int
+		[Column("port"),             NotNull              ] public int    Port            { get; set; } // int
+		[Column("address"),          NotNull              ] public int    Address         { get; set; } // int
+		[Column("single_interface"), NotNull              ] public int    SingleInterface { get; set; } // int
+		[Column("contact_id"),       NotNull              ] public int    ContactId       { get; set; } // int
+		[Column("dev_type"),         NotNull              ] public int    DevType         { get; set; } // int
+		[Column("version"),          NotNull              ] public int    Version         { get; set; } // int
+		[Column("zone_index"),       NotNull              ] public int    ZoneIndex       { get; set; } // int
+		[Column("translate_format"), NotNull              ] public int    TranslateFormat { get; set; } // int
+		[Column("translate_mask"),   NotNull              ] public int    TranslateMask   { get; set; } // int
+		[Column("translate_zones"),     Nullable          ] public byte[] TranslateZones  { get; set; } // binary(128)
+		[Column("name"),                Nullable          ] public string Name            { get; set; } // varchar(16)
+	}
+
+	[Table(Schema="dbo", Name="sir_users")]
+	public partial class SirUser
+	{
+		[Column("id"),                 PrimaryKey,  Identity] public int    Id               { get; set; } // int
+		[Column("orion_item_id"),      NotNull              ] public int    OrionItemId      { get; set; } // int
+		[Column("sir_dev_list_id"),    NotNull              ] public int    SirDevListId     { get; set; } // int
+		[Column("index"),              NotNull              ] public int    Index            { get; set; } // int
+		[Column("number"),             NotNull              ] public int    Number           { get; set; } // int
+		[Column("contact_id"),         NotNull              ] public int    ContactId        { get; set; } // int
+		[Column("password"),           NotNull              ] public string Password         { get; set; } // varchar(16)
+		[Column("access_group_index"), NotNull              ] public int    AccessGroupIndex { get; set; } // int
+		[Column("name"),                  Nullable          ] public string Name             { get; set; } // varchar(16)
+	}
+
+	[Table(Schema="dbo", Name="sir_zones")]
+	public partial class SirZone
+	{
+		[Column("id"),               PrimaryKey,  Identity] public int    Id              { get; set; } // int
+		[Column("orion_item_id"),    NotNull              ] public int    OrionItemId     { get; set; } // int
+		[Column("sir_dev_list_id"),  NotNull              ] public int    SirDevListId    { get; set; } // int
+		[Column("index"),            NotNull              ] public int    Index           { get; set; } // int
+		[Column("controller_index"), NotNull              ] public int    ControllerIndex { get; set; } // int
+		[Column("is_interpanel"),    NotNull              ] public int    IsInterpanel    { get; set; } // int
+		[Column("number"),           NotNull              ] public int    Number          { get; set; } // int
+		[Column("contact_id"),       NotNull              ] public int    ContactId       { get; set; } // int
+		[Column("name"),                Nullable          ] public string Name            { get; set; } // varchar(16)
+	}
+
+	[Table(Schema="dbo", Name="sir_zone_groups")]
+	public partial class SirZoneGroup
+	{
+		[Column("id"),               PrimaryKey,  Identity] public int    Id              { get; set; } // int
+		[Column("orion_item_id"),    NotNull              ] public int    OrionItemId     { get; set; } // int
+		[Column("sir_dev_list_id"),  NotNull              ] public int    SirDevListId    { get; set; } // int
+		[Column("index"),            NotNull              ] public int    Index           { get; set; } // int
+		[Column("controller_index"), NotNull              ] public int    ControllerIndex { get; set; } // int
+		[Column("is_interpanel"),    NotNull              ] public int    IsInterpanel    { get; set; } // int
+		[Column("number"),           NotNull              ] public int    Number          { get; set; } // int
+		[Column("contact_id"),       NotNull              ] public int    ContactId       { get; set; } // int
+		[Column("included_zones"),      Nullable          ] public byte[] IncludedZones   { get; set; } // binary(128)
+		[Column("name"),                Nullable          ] public string Name            { get; set; } // varchar(16)
+	}
+
+	[Table(Schema="dbo", Name="SmsGatesParams")]
+	public partial class SmsGatesParam
+	{
+		[PrimaryKey, NotNull    ] public int    ID           { get; set; } // int
+		[Column,     NotNull    ] public string Login        { get; set; } // varchar(50)
+		[Column,        Nullable] public string Passw        { get; set; } // varchar(50)
+		[Column,        Nullable] public string SenderName   { get; set; } // varchar(50)
+		[Column,        Nullable] public string InboundPhone { get; set; } // varchar(50)
+		[Column,     NotNull    ] public int    RsLinesId    { get; set; } // int
+		[Column,     NotNull    ] public string ProxyServer  { get; set; } // varchar(50)
+		[Column,     NotNull    ] public int    ProxyPort    { get; set; } // int
+		[Column,     NotNull    ] public string ProxyLogin   { get; set; } // varchar(50)
+		[Column,     NotNull    ] public string ProxyPassw   { get; set; } // varchar(50)
+	}
+
+	[Table(Schema="dbo", Name="SSLCertificate")]
+	public partial class SSLCertificate
+	{
+		[PrimaryKey, NotNull    ] public int       ID         { get; set; } // int
+		[Column,        Nullable] public byte[]    RootCA     { get; set; } // image
+		[Column,        Nullable] public byte[]    CAKey      { get; set; } // image
+		[Column,        Nullable] public DateTime? CreateDate { get; set; } // datetime
+		[Column,        Nullable] public int?      Reserv     { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="states_item")]
+	public partial class StatesItem
+	{
+		[Column("item_type"),  PrimaryKey(1), NotNull] public int      ItemType  { get; set; } // int
+		[Column("item_id"),    PrimaryKey(2), NotNull] public int      ItemId    { get; set; } // int
+		[Column("tmvl"),                      NotNull] public DateTime Tmvl      { get; set; } // datetime
+		[Column("state_item"),    Nullable           ] public int?     StateItem { get; set; } // int
+		[Column("comps_id"),      Nullable           ] public int?     CompsId   { get; set; } // int
+		[Column("id_owner"),      Nullable           ] public int?     IdOwner   { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="Sys")]
+	public partial class Sy
+	{
+		[PrimaryKey, NotNull    ] public int    ID           { get; set; } // int
+		[Column,     NotNull    ] public int    Number       { get; set; } // int
+		[Column,     NotNull    ] public string Name         { get; set; } // varchar(200)
+		[Column,     NotNull    ] public int    Gtype        { get; set; } // int
+		[Column,     NotNull    ] public int    MinValue     { get; set; } // int
+		[Column,     NotNull    ] public int    MaxValue     { get; set; } // int
+		[Column,     NotNull    ] public int    DefaultValue { get; set; } // int
+		[Column,     NotNull    ] public int    Required     { get; set; } // int
+		[Column,     NotNull    ] public string Comments     { get; set; } // varchar(200)
+		[Column,     NotNull    ] public string Hint         { get; set; } // varchar(200)
+		[Column,        Nullable] public byte[] List         { get; set; } // image
+		[Column,        Nullable] public int?   GroupID      { get; set; } // int
+		[Column,        Nullable] public int?   SysOrder     { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="SysGroup")]
+	public partial class SysGroup
+	{
+		[PrimaryKey, NotNull] public int    ID       { get; set; } // int
+		[Column,     NotNull] public string Value    { get; set; } // varchar(200)
+		[Column,     NotNull] public int    SysOrder { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="SysParam")]
+	public partial class SysParam
+	{
+		[PrimaryKey, NotNull    ] public int    Num        { get; set; } // int
+		[Column,     NotNull    ] public int    ID         { get; set; } // int
+		[Column,     NotNull    ] public int    ComputerID { get; set; } // int
+		[Column,        Nullable] public string Name       { get; set; } // varchar(25)
+		[Column,        Nullable] public int?   Gtype      { get; set; } // int
+		[Column,        Nullable] public int?   GValue     { get; set; } // int
+		[Column,        Nullable] public int?   Required   { get; set; } // int
+		[Column,        Nullable] public string Comment    { get; set; } // varchar(200)
+	}
+
+	[Table(Schema="dbo", Name="SystemObjects")]
+	public partial class SystemObject
+	{
+		[PrimaryKey(1), NotNull] public int      GIndex     { get; set; } // int
+		[PrimaryKey(2), NotNull] public int      Type       { get; set; } // int
+		[Column,        NotNull] public int      State      { get; set; } // int
+		[Column,        NotNull] public int      ExState    { get; set; } // int
+		[Column,        NotNull] public DateTime ChangeTime { get; set; } // datetime
+		[Column,        NotNull] public int      Reserve1   { get; set; } // int
+		[Column,        NotNull] public int      Reserve2   { get; set; } // int
+		[Column,        NotNull] public int      Reserve3   { get; set; } // int
+		[Column,        NotNull] public int      Reserve4   { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="TimeCont")]
+	public partial class TimeCont
+	{
+		[PrimaryKey, NotNull    ] public int       ID          { get; set; } // int
+		[Column,     NotNull    ] public int       TimeID      { get; set; } // int
+		[Column,        Nullable] public int?      Num         { get; set; } // int
+		[Column,        Nullable] public DateTime? Start       { get; set; } // datetime
+		[Column,        Nullable] public DateTime? Finish      { get; set; } // datetime
+		[Column,        Nullable] public int?      Days        { get; set; } // int
+		[Column,        Nullable] public int?      OperatorID  { get; set; } // int
+		[Column,        Nullable] public string    Workstation { get; set; } // varchar(50)
+	}
+
+	[Table(Schema="dbo", Name="TimeTable")]
+	public partial class TimeTable
+	{
+		[PrimaryKey, NotNull] public int    ID             { get; set; } // int
+		[Column,     NotNull] public string Name           { get; set; } // varchar(50)
+		[Column,     NotNull] public int    WorkTimeZoneID { get; set; } // int
+		[Column,     NotNull] public int    TimeID         { get; set; } // int
+		[Column,     NotNull] public int    Config         { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="tKBPenals")]
+	public partial class TKBPenal
+	{
+		[Column(),             PrimaryKey,  NotNull] public int    ID                { get; set; } // int
+		[Column(),                          NotNull] public int    GIndex            { get; set; } // int
+		[Column("ID_Section"),              NotNull] public int    IdSection         { get; set; } // int
+		[Column(),                          NotNull] public int    BIndex            { get; set; } // int
+		[Column("Box_Name"),      Nullable         ] public string BoxName           { get; set; } // varchar(50)
+		[Column(),                Nullable         ] public int?   State             { get; set; } // int
+		[Column(),                Nullable         ] public string Comment           { get; set; } // varchar(255)
+		[Column(),                Nullable         ] public int?   IndexForContactID { get; set; } // int
+		[Column("pListID"),       Nullable         ] public int?   PListID           { get; set; } // int
+		[Column(),                Nullable         ] public int?   OperatorID        { get; set; } // int
+		[Column(),                Nullable         ] public string Workstation       { get; set; } // varchar(50)
+	}
+
+	[Table(Schema="dbo", Name="tKBSections")]
+	public partial class TKBSection
+	{
+		[Column(),            PrimaryKey,  NotNull] public int    ID          { get; set; } // int
+		[Column("ID_Keybox"),              NotNull] public int    IdKeybox    { get; set; } // int
+		[Column(),                         NotNull] public int    SType       { get; set; } // int
+		[Column(),               Nullable         ] public int?   Rows        { get; set; } // int
+		[Column(),               Nullable         ] public int?   Columns     { get; set; } // int
+		[Column(),               Nullable         ] public int?   SecNo       { get; set; } // int
+		[Column(),               Nullable         ] public int?   OperatorID  { get; set; } // int
+		[Column(),               Nullable         ] public string Workstation { get; set; } // varchar(50)
+	}
+
+	[Table(Schema="dbo", Name="tKeyBoxes")]
+	public partial class TKeyBox
+	{
+		[PrimaryKey, NotNull    ] public int    ID                { get; set; } // int
+		[Column,     NotNull    ] public int    GIndex            { get; set; } // int
+		[Column,     NotNull    ] public int    IdComPort         { get; set; } // int
+		[Column,        Nullable] public int?   Adress            { get; set; } // int
+		[Column,        Nullable] public string DevName           { get; set; } // varchar(50)
+		[Column,     NotNull    ] public int    SectionsQTY       { get; set; } // int
+		[Column,     NotNull    ] public string Ver               { get; set; } // varchar(50)
+		[Column,        Nullable] public string Comment           { get; set; } // varchar(255)
+		[Column,     NotNull    ] public int    CompID            { get; set; } // int
+		[Column,        Nullable] public string IPAddress         { get; set; } // varchar(16)
+		[Column,        Nullable] public int?   Port              { get; set; } // int
+		[Column,        Nullable] public string AccessKey         { get; set; } // varchar(27)
+		[Column,        Nullable] public int?   IndexForContactID { get; set; } // int
+		[Column,        Nullable] public int?   OperatorID        { get; set; } // int
+		[Column,        Nullable] public string Workstation       { get; set; } // varchar(50)
+	}
+
+	[Table(Schema="dbo", Name="tPersonalStuff")]
+	public partial class TPersonalStuff
+	{
+		[PrimaryKey, NotNull] public int ID              { get; set; } // int
+		[Column,     NotNull] public int PListID         { get; set; } // int
+		[Column,     NotNull] public int PenalID         { get; set; } // int
+		[Column,     NotNull] public int ReferenceBookID { get; set; } // int
+
+		#region Associations
+
+		/// <summary>
+		/// FK_PList_PStuff (dbo.pList)
+		/// </summary>
+		[Association(ThisKey="PListID", OtherKey="ID", CanBeNull=false)]
+		public PList PList { get; set; }
+
+		/// <summary>
+		/// FK_RefBook_PStuff (dbo.tReferenceBook)
+		/// </summary>
+		[Association(ThisKey="ReferenceBookID", OtherKey="ID", CanBeNull=false)]
+		public TReferenceBook ReferenceBook { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="tPStuffLogData")]
+	public partial class TPStuffLogData
+	{
+		[PrimaryKey, NotNull    ] public Guid     GUID            { get; set; } // uniqueidentifier
+		[Column,     NotNull    ] public int      PenalID         { get; set; } // int
+		[Column,     NotNull    ] public int      PListID         { get; set; } // int
+		[Column,     NotNull    ] public int      ReferenceBookID { get; set; } // int
+		[Column,        Nullable] public int?     Status          { get; set; } // int
+		[Column,        Nullable] public string   Comment         { get; set; } // varchar(240)
+		[Column,     NotNull    ] public DateTime TimeVal         { get; set; } // datetime
+		[Column,        Nullable] public string   FIO             { get; set; } // varchar(200)
+		[Column,        Nullable] public string   PStuffName      { get; set; } // varchar(240)
+	}
+
+	[Table(Schema="dbo", Name="tPStuffPhoto")]
+	public partial class TPStuffPhoto
+	{
+		[Column(),          PrimaryKey,  NotNull] public int    ID      { get; set; } // int
+		[Column(),                       NotNull] public int    IDPLIST { get; set; } // int
+		[Column("picture"),    Nullable         ] public byte[] Picture { get; set; } // image
+		[Column(),             Nullable         ] public int?   Spack   { get; set; } // int
+
+		#region Associations
+
+		/// <summary>
+		/// FK_PList_PStufPhoto (dbo.pList)
+		/// </summary>
+		[Association(ThisKey="IDPLIST", OtherKey="ID", CanBeNull=false)]
+		public PList PListPStufPhoto { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="TreeCtrl")]
+	public partial class TreeCtrl
+	{
+		[PrimaryKey, NotNull    ] public int    ID            { get; set; } // int
+		[Column,     NotNull    ] public int    AbsoluteIndex { get; set; } // int
+		[Column,     NotNull    ] public string Text          { get; set; } // varchar(200)
+		[Column,     NotNull    ] public int    GLevel        { get; set; } // int
+		[Column,        Nullable] public int?   OperatorID    { get; set; } // int
+		[Column,        Nullable] public string Workstation   { get; set; } // varchar(50)
+	}
+
+	[Table(Schema="dbo", Name="TreeNode")]
+	public partial class TreeNode
+	{
+		[PrimaryKey, NotNull    ] public int    Num         { get; set; } // int
+		[Column,     NotNull    ] public int    ID          { get; set; } // int
+		[Column,        Nullable] public string Comment     { get; set; } // varchar(200)
+		[Column,        Nullable] public int?   Icon        { get; set; } // int
+		[Column,        Nullable] public int?   Special     { get; set; } // int
+		[Column,        Nullable] public int?   OperatorID  { get; set; } // int
+		[Column,        Nullable] public string Workstation { get; set; } // varchar(50)
+	}
+
+	[Table(Schema="dbo", Name="tReferenceBook")]
+	public partial class TReferenceBook
+	{
+		[PrimaryKey, NotNull    ] public int    ID      { get; set; } // int
+		[Column,        Nullable] public string RefType { get; set; } // varchar(150)
+		[Column,        Nullable] public string Comment { get; set; } // varchar(150)
+
+		#region Associations
+
+		/// <summary>
+		/// FK_RefBook_PStuff_BackReference (dbo.tPersonalStuff)
+		/// </summary>
+		[Association(ThisKey="ID", OtherKey="ReferenceBookID", CanBeNull=true)]
+		public IEnumerable<TPersonalStuff> RefBookPStuffs { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="TypeDocList")]
+	public partial class TypeDocList
+	{
+		[PrimaryKey, NotNull] public int    ID            { get; set; } // int
+		[Column,     NotNull] public string IndentSh      { get; set; } // varchar(250)
+		[Column,     NotNull] public int    NumberType    { get; set; } // int
+		[Column,     NotNull] public string SibStringName { get; set; } // varchar(250)
+		[Column,     NotNull] public int    NumInList     { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="TypeShlDevice")]
+	public partial class TypeShlDevice
+	{
+		[PrimaryKey, NotNull    ] public int    ID             { get; set; } // int
+		[Column,     NotNull    ] public int    DeviceType     { get; set; } // int
+		[Column,        Nullable] public string DeviceTypeName { get; set; } // varchar(50)
+		[Column,        Nullable] public int?   DeviceVersion  { get; set; } // int
+		[Column,        Nullable] public int?   NumShBegin     { get; set; } // int
+		[Column,        Nullable] public int?   NumShStop      { get; set; } // int
+		[Column,        Nullable] public int?   ElementType    { get; set; } // int
+		[Column,        Nullable] public int?   ShlType        { get; set; } // int
+		[Column,        Nullable] public int?   Owner          { get; set; } // int
+		[Column,        Nullable] public int?   OwnerD         { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="ValueDevItemsScenarios")]
+	public partial class ValueDevItemsScenario
+	{
+		[Column(),                  Identity              ] public int    ID             { get; set; } // int
+		[Column("ID_Device"),       PrimaryKey(1), NotNull] public int    IdDevice       { get; set; } // int
+		[Column("ID_DeviceType"),   PrimaryKey(2), NotNull] public int    IdDeviceType   { get; set; } // int
+		[Column("ID_RefItemsScen"), PrimaryKey(3), NotNull] public int    IdRefItemsScen { get; set; } // int
+		[Column(),                     Nullable           ] public object Value          { get; set; } // sql_variant
+
+		#region Associations
+
+		/// <summary>
+		/// FK_ValueDevItemsScenarios_ID_RefItemsScen (dbo.ReferenceItemsScenarios)
+		/// </summary>
+		[Association(ThisKey="IdRefItemsScen", OtherKey="ID", CanBeNull=false)]
+		public ReferenceItemsScenario IDRefItemsScen { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="ValueItemsScenarios")]
+	public partial class ValueItemsScenario
+	{
+		[Column(),                  Identity              ] public int    ID             { get; set; } // int
+		[Column("ID_ScenDevice"),   PrimaryKey(1), NotNull] public int    IdScenDevice   { get; set; } // int
+		[Column("ID_RefItemsScen"), PrimaryKey(2), NotNull] public int    IdRefItemsScen { get; set; } // int
+		[Column(),                     Nullable           ] public object Value          { get; set; } // sql_variant
+
+		#region Associations
+
+		/// <summary>
+		/// FK_ValueItemsScenarios_ID_RefItemsScen (dbo.ReferenceItemsScenarios)
+		/// </summary>
+		[Association(ThisKey="IdRefItemsScen", OtherKey="ID", CanBeNull=false)]
+		public ReferenceItemsScenario IDRefItemsScen { get; set; }
+
+		/// <summary>
+		/// FK_ValueItemsScenarios_ID_ScenDevice (dbo.ScenariosDevice)
+		/// </summary>
+		[Association(ThisKey="IdScenDevice", OtherKey="ID", CanBeNull=false)]
+		public ScenariosDevice IDScenDevice { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="ValueItemsZonePT")]
+	public partial class ValueItemsZonePT
+	{
+		[Column(),                          Identity              ] public int    ID                     { get; set; } // int
+		[Column("ID_ReferenceItemsZonePT"), PrimaryKey(3), NotNull] public int    IdReferenceItemsZonePT { get; set; } // int
+		[Column("ID_Parent"),               PrimaryKey(1), NotNull] public int    IdParent               { get; set; } // int
+		[Column(),                          PrimaryKey(2), NotNull] public int    SiriusGroupType        { get; set; } // int
+		[Column(),                             Nullable           ] public object Value                  { get; set; } // sql_variant
+
+		#region Associations
+
+		/// <summary>
+		/// FK_ValueItemsZonePT_ID_ReferenceItemsZonePT (dbo.ReferenceItemsZonePT)
+		/// </summary>
+		[Association(ThisKey="IdReferenceItemsZonePT", OtherKey="ID", CanBeNull=false)]
+		public ReferenceItemsZonePT IDReferenceItemsZonePT { get; set; }
+
+		#endregion
+	}
+
+	[Table(Schema="dbo", Name="v_ChangeLogForDB", IsView=true)]
+	public partial class VChangeLogForDB
+	{
+		[Column(),               NotNull    ] public Guid     ID           { get; set; } // uniqueidentifier
+		[Column("timeVal"),      NotNull    ] public DateTime TimeVal      { get; set; } // datetime
+		[Column("state_record"), NotNull    ] public int      StateRecord  { get; set; } // int
+		[Column("table_name"),   NotNull    ] public string   TableName    { get; set; } // varchar(60)
+		[Column(),               NotNull    ] public int      ValueId      { get; set; } // int
+		[Column(),               NotNull    ] public int      OperatorId   { get; set; } // int
+		[Column(),               NotNull    ] public string   InsideSystem { get; set; } // varchar(30)
+		[Column("xml_data"),        Nullable] public string   XmlData      { get; set; } // varchar(max)
+		[Column(),               Identity   ] public int      Num          { get; set; } // int
+		[Column(),                  Nullable] public string   Workstation  { get; set; } // varchar(50)
+	}
+
+	[Table(Schema="dbo", Name="VersionDB")]
+	public partial class VersionDB
+	{
+		[Column(),              PrimaryKey,  NotNull] public int    Num             { get; set; } // int
+		[Column(),                           NotNull] public string Version         { get; set; } // varchar(10)
+		[Column(),                           NotNull] public string VersionDataBase { get; set; } // varchar(20)
+		[Column(),                           NotNull] public int    CountTable      { get; set; } // int
+		[Column(),                           NotNull] public string Info            { get; set; } // varchar(40)
+		[Column(),                           NotNull] public int    Rezerv1         { get; set; } // int
+		[Column("GUID_DB"),        Nullable         ] public string GuidDb          { get; set; } // varchar(100)
+		[Column("GUID_origin"),    Nullable         ] public string GuidOrigin      { get; set; } // varchar(100)
+	}
+
+	[Table(Schema="dbo", Name="VideoArchive")]
+	public partial class VideoArchive
+	{
+		[PrimaryKey, NotNull    ] public Guid     GUID       { get; set; } // uniqueidentifier
+		[Column,     NotNull    ] public string   Path       { get; set; } // varchar(256)
+		[Column,     NotNull    ] public int      ObjType    { get; set; } // int
+		[Column,     NotNull    ] public int      GIndex     { get; set; } // int
+		[Column,        Nullable] public int?     Param      { get; set; } // int
+		[Column,     NotNull    ] public DateTime CreateTime { get; set; } // datetime
+	}
+
+	[Table(Schema="dbo", Name="VideoCamShots")]
+	public partial class VideoCamShot
+	{
+		[PrimaryKey, NotNull    ] public int      Id        { get; set; } // int
+		[Column,     NotNull    ] public int      CameraID  { get; set; } // int
+		[Column,     NotNull    ] public DateTime EventTime { get; set; } // datetime
+		[Column,        Nullable] public byte[]   Picture   { get; set; } // image
+		[Column,        Nullable] public int?     Reserv    { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="VideoEvents")]
+	public partial class VideoEvent
+	{
+		[PrimaryKey, NotNull    ] public Guid      GUID         { get; set; } // uniqueidentifier
+		[Column,     NotNull    ] public int       TypeObj      { get; set; } // int
+		[Column,     NotNull    ] public int       GIndex       { get; set; } // int
+		[Column,     NotNull    ] public int       Event        { get; set; } // int
+		[Column,     NotNull    ] public DateTime  StartTime    { get; set; } // datetime
+		[Column,        Nullable] public DateTime? EndTime      { get; set; } // datetime
+		[Column,     NotNull    ] public int       FileSize     { get; set; } // int
+		[Column,        Nullable] public string    FileName     { get; set; } // varchar(128)
+		[Column,        Nullable] public int?      Param        { get; set; } // int
+		[Column,     NotNull    ] public Guid      PathID       { get; set; } // uniqueidentifier
+		[Column,        Nullable] public int?      NumRec       { get; set; } // int
+		[Column,        Nullable] public int?      NumPart      { get; set; } // int
+		[Column,        Nullable] public byte?     ProtectedRec { get; set; } // tinyint
+	}
+
+	[Table(Schema="dbo", Name="VideoRecognizeAccessPoint")]
+	public partial class VideoRecognizeAccessPoint
+	{
+		[PrimaryKey, NotNull    ] public int    ID            { get; set; } // int
+		[Column,     NotNull    ] public int    ReaderID      { get; set; } // int
+		[Column,     NotNull    ] public int    Mode          { get; set; } // int
+		[Column,     NotNull    ] public int    AccessPointID { get; set; } // int
+		[Column,     NotNull    ] public int    ModeAccess    { get; set; } // int
+		[Column,     NotNull    ] public int    ReaderMode    { get; set; } // int
+		[Column,        Nullable] public int?   OperatorID    { get; set; } // int
+		[Column,        Nullable] public string Workstation   { get; set; } // varchar(50)
+	}
+
+	[Table(Schema="dbo", Name="VideoRecognizeChannels")]
+	public partial class VideoRecognizeChannel
+	{
+		[PrimaryKey, NotNull    ] public int    ID               { get; set; } // int
+		[Column,        Nullable] public string Name             { get; set; } // varchar(40)
+		[Column,     NotNull    ] public int    VideoInspectorID { get; set; } // int
+		[Column,     NotNull    ] public int    Number           { get; set; } // int
+		[Column,     NotNull    ] public int    GIndex           { get; set; } // int
+		[Column,     NotNull    ] public int    ProfileID        { get; set; } // int
+		[Column,     NotNull    ] public int    CameraID         { get; set; } // int
+		[Column,        Nullable] public int?   ChannelMode      { get; set; } // int
+		[Column,        Nullable] public int?   OperatorID       { get; set; } // int
+		[Column,        Nullable] public string Workstation      { get; set; } // varchar(50)
+		[Column,        Nullable] public int?   LiteGIndex       { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="VideoRecognizeProfiles")]
+	public partial class VideoRecognizeProfile
+	{
+		[PrimaryKey, NotNull    ] public int    ID          { get; set; } // int
+		[Column,        Nullable] public string Name        { get; set; } // varchar(40)
+		[Column,     NotNull    ] public int    Type        { get; set; } // int
+		[Column,        Nullable] public byte[] Settings    { get; set; } // image
+		[Column,        Nullable] public int?   OperatorID  { get; set; } // int
+		[Column,        Nullable] public string Workstation { get; set; } // varchar(50)
+	}
+
+	[Table(Schema="dbo", Name="vInsp")]
+	public partial class VInsp
+	{
+		[Column(),              PrimaryKey,  NotNull] public int    ID          { get; set; } // int
+		[Column(),                           NotNull] public int    ComputerID  { get; set; } // int
+		[Column(),                 Nullable         ] public string Name        { get; set; } // varchar(30)
+		[Column("TCP_IP"),         Nullable         ] public string TcpIp       { get; set; } // varchar(15)
+		[Column(),                 Nullable         ] public int?   VinspType   { get; set; } // int
+		[Column(),                 Nullable         ] public int?   ActiveX     { get; set; } // int
+		[Column(),                 Nullable         ] public string CompName    { get; set; } // varchar(30)
+		[Column(),                 Nullable         ] public int?   GIndex      { get; set; } // int
+		[Column("vInspParams"),    Nullable         ] public string VInspParams { get; set; } // varchar(128)
+		[Column(),                 Nullable         ] public string ArchivePath { get; set; } // varchar(128)
+		[Column(),                 Nullable         ] public int?   IsSecure    { get; set; } // int
+		[Column(),                 Nullable         ] public byte[] Settings    { get; set; } // image
+		[Column(),                 Nullable         ] public int?   OperatorID  { get; set; } // int
+		[Column(),                 Nullable         ] public string Workstation { get; set; } // varchar(50)
+		[Column(),                 Nullable         ] public int?   LiteGIndex  { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="vInspTypes")]
+	public partial class VInspType
+	{
+		[Column(),            PrimaryKey,  NotNull] public int    ID              { get; set; } // int
+		[Column(),               Nullable         ] public string Name            { get; set; } // varchar(80)
+		[Column("vInspType"),    Nullable         ] public int?   VInspTypeColumn { get; set; } // int
+		[Column(),               Nullable         ] public string Icon            { get; set; } // varchar(80)
+		[Column(),               Nullable         ] public int?   Flags           { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="weightcamera")]
+	public partial class Weightcamera
+	{
+		[Column(),                        PrimaryKey, NotNull] public int ID                    { get; set; } // int
+		[Column("door"),                              NotNull] public int Door                  { get; set; } // int
+		[Column("weightterminal"),                    NotNull] public int Weightterminal        { get; set; } // int
+		[Column("weight0"),                           NotNull] public int Weight0               { get; set; } // int
+		[Column("weightdiscret"),                     NotNull] public int Weightdiscret         { get; set; } // int
+		[Column("deltaweightstable"),                 NotNull] public int Deltaweightstable     { get; set; } // int
+		[Column("durationdooropen"),                  NotNull] public int Durationdooropen      { get; set; } // int
+		[Column("durationdooropenclose"),             NotNull] public int Durationdooropenclose { get; set; } // int
+		[Column("timefilter"),                        NotNull] public int Timefilter            { get; set; } // int
+		[Column("timestep"),                          NotNull] public int Timestep              { get; set; } // int
+		[Column("minpersonweight"),                   NotNull] public int Minpersonweight       { get; set; } // int
+	}
+
+	[Table(Schema="dbo", Name="WorkTimeZone")]
+	public partial class WorkTimeZone
+	{
+		[PrimaryKey, NotNull] public int    ID      { get; set; } // int
+		[Column,     NotNull] public string Name    { get; set; } // varchar(25)
+		[Column,     NotNull] public string Comment { get; set; } // varchar(200)
+		[Column,     NotNull] public int    GIndex  { get; set; } // int
+	}
+
+	public static partial class Demobase12037DBStoredProcedures
+	{
+		#region AddValueToADC
+
+		public static int AddValueToADC(this Demobase12037DB dataConnection, int? @IndexZone, int? @ComputerId, int? @LogId, int? @Status, int? @AdcType, double? @Adc)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@IndexZone",  @IndexZone,  LinqToDB.DataType.Int32),
+				new DataParameter("@ComputerId", @ComputerId, LinqToDB.DataType.Int32),
+				new DataParameter("@LogId",      @LogId,      LinqToDB.DataType.Int32),
+				new DataParameter("@Status",     @Status,     LinqToDB.DataType.Int32),
+				new DataParameter("@AdcType",    @AdcType,    LinqToDB.DataType.Int32),
+				new DataParameter("@Adc",        @Adc,        LinqToDB.DataType.Double)
+			};
+
+			return dataConnection.ExecuteProc("[dbo].[AddValueToADC]", parameters);
+		}
+
+		#endregion
+
+		#region BackUpDB
+
+		public static int BackUpDB(this Demobase12037DB dataConnection, string @path)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@path", @path, LinqToDB.DataType.NVarChar)
+				{
+					Size = 255
+				}
+			};
+
+			return dataConnection.ExecuteProc("[dbo].[BackUpDB]", parameters);
+		}
+
+		#endregion
+
+		#region CalcCRC
+
+		public static int CalcCRC(this Demobase12037DB dataConnection, string @InputValue, ref long? @CRC)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@InputValue", @InputValue, LinqToDB.DataType.VarChar)
+				{
+					Size = -1
+				},
+				new DataParameter("@CRC", @CRC, LinqToDB.DataType.Int64)
+				{
+					Direction = ParameterDirection.InputOutput
+				}
+			};
+
+			var ret = dataConnection.ExecuteProc("[dbo].[CalcCRC]", parameters);
+
+			@CRC = Converter.ChangeTypeTo<long?>(parameters[1].Value);
+
+			return ret;
+		}
+
+		#endregion
+
+		#region CalcCRCEmptyHash
+
+		public static int CalcCRCEmptyHash(this Demobase12037DB dataConnection)
+		{
+			return dataConnection.ExecuteProc("[dbo].[CalcCRCEmptyHash]");
+		}
+
+		#endregion
+
+		#region ChangeLogForDatabase
+
+		public static int ChangeLogForDatabase(this Demobase12037DB dataConnection, string @tableName, int? @stateRecord, int? @valueId, int? @operatorId, string @xmlLogs, string @Workstation)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@table_name",   @tableName,   LinqToDB.DataType.VarChar)
+				{
+					Size = 60
+				},
+				new DataParameter("@state_record", @stateRecord, LinqToDB.DataType.Int32),
+				new DataParameter("@value_id",     @valueId,     LinqToDB.DataType.Int32),
+				new DataParameter("@operator_id",  @operatorId,  LinqToDB.DataType.Int32),
+				new DataParameter("@xml_logs",     @xmlLogs,     LinqToDB.DataType.VarChar)
+				{
+					Size = 400
+				},
+				new DataParameter("@Workstation",  @Workstation, LinqToDB.DataType.VarChar)
+				{
+					Size = 50
+				}
+			};
+
+			return dataConnection.ExecuteProc("[dbo].[change_log_for_database]", parameters);
+		}
+
+		#endregion
+
+		#region ChangeStateItem
+
+		public static int ChangeStateItem(this Demobase12037DB dataConnection, int? @idType, int? @idItem, int? @stateItem, int? @compsId, int? @idOwner)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@id_type",    @idType,    LinqToDB.DataType.Int32),
+				new DataParameter("@id_item",    @idItem,    LinqToDB.DataType.Int32),
+				new DataParameter("@state_item", @stateItem, LinqToDB.DataType.Int32),
+				new DataParameter("@comps_id",   @compsId,   LinqToDB.DataType.Int32),
+				new DataParameter("@id_owner",   @idOwner,   LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.ExecuteProc("[dbo].[change_state_item]", parameters);
+		}
+
+		#endregion
+
+		#region ChangeToVersionFromDevice
+
+		public static int ChangeToVersionFromDevice(this Demobase12037DB dataConnection, int? @IdDev, int? @DevVersion)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@IdDev",      @IdDev,      LinqToDB.DataType.Int32),
+				new DataParameter("@DevVersion", @DevVersion, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.ExecuteProc("[dbo].[ChangeToVersionFromDevice]", parameters);
+		}
+
+		#endregion
+
+		#region CheckChangeFields
+
+		public static int CheckChangeFields(this Demobase12037DB dataConnection, byte[] @Columns, string @TableName, string @FieldName, ref int? @ResultCheck)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@Columns",      @Columns,     LinqToDB.DataType.VarBinary)
+				{
+					Size = -1
+				},
+				new DataParameter("@TableName",    @TableName,   LinqToDB.DataType.NVarChar)
+				{
+					Size = 80
+				},
+				new DataParameter("@FieldName",    @FieldName,   LinqToDB.DataType.NVarChar)
+				{
+					Size = 80
+				},
+				new DataParameter("@Result_check", @ResultCheck, LinqToDB.DataType.Int32)
+				{
+					Direction = ParameterDirection.InputOutput
+				}
+			};
+
+			var ret = dataConnection.ExecuteProc("[dbo].[CheckChangeFields]", parameters);
+
+			@ResultCheck = Converter.ChangeTypeTo<int?>(parameters[3].Value);
+
+			return ret;
+		}
+
+		#endregion
+
+		#region CheckNoOutPersonalNotquitting
+
+		public static IEnumerable<CheckNoOutPersonalNotquittingResult> CheckNoOutPersonalNotquitting(this Demobase12037DB dataConnection, int? @DayOut)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@DayOut", @DayOut, LinqToDB.DataType.Int32)
+			};
+
+			var ms = dataConnection.MappingSchema;
+
+			return dataConnection.QueryProc(dataReader =>
+				new CheckNoOutPersonalNotquittingResult
+				{
+					Column1 = Converter.ChangeTypeTo<int?>(dataReader.GetValue(0), ms),
+				},
+				"[dbo].[CheckNoOutPersonalNotquitting]", parameters);
+		}
+
+		public partial class CheckNoOutPersonalNotquittingResult
+		{
+			[Column("")] public int? Column1 { get; set; }
+		}
+
+		#endregion
+
+		#region CheckPassOwner
+
+		public static IEnumerable<CheckPassOwnerResult> CheckPassOwner(this Demobase12037DB dataConnection, int? @IdPass)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@IdPass", @IdPass, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<CheckPassOwnerResult>("[dbo].[CheckPassOwner]", parameters);
+		}
+
+		public partial class CheckPassOwnerResult
+		{
+			[Column("result")] public int    Result  { get; set; }
+			                   public string ResText { get; set; }
+		}
+
+		#endregion
+
+		#region ClearEmployee
+
+		public static int ClearEmployee(this Demobase12037DB dataConnection, int? @days)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@days", @days, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.ExecuteProc("[dbo].[ClearEmployee]", parameters);
+		}
+
+		#endregion
+
+		#region DeleteUser
+
+		public static int DeleteUser(this Demobase12037DB dataConnection, int? @aUserID, ref int? @res)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@aUserID", @aUserID, LinqToDB.DataType.Int32),
+				new DataParameter("@res", @res, LinqToDB.DataType.Int32)
+				{
+					Direction = ParameterDirection.InputOutput
+				}
+			};
+
+			var ret = dataConnection.ExecuteProc("[dbo].[deleteUser]", parameters);
+
+			@res = Converter.ChangeTypeTo<int?>(parameters[1].Value);
+
+			return ret;
+		}
+
+		#endregion
+
+		#region GetLogChange
+
+		public static IEnumerable<LogsChangeBd> GetLogChange(this Demobase12037DB dataConnection, int? @oldId, DateTime? @dmtm)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@old_id", @oldId, LinqToDB.DataType.Int32),
+				new DataParameter("@dmtm",   @dmtm,  LinqToDB.DataType.DateTime)
+			};
+
+			return dataConnection.QueryProc<LogsChangeBd>("[dbo].[get_log_change]", parameters);
+		}
+
+		#endregion
+
+		#region GetLogChange2
+
+		public static IEnumerable<GetLogChange2Result> GetLogChange2(this Demobase12037DB dataConnection, int? @oldId, DateTime? @dmtm, string @oldGuidDb)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@old_id",      @oldId,     LinqToDB.DataType.Int32),
+				new DataParameter("@dmtm",        @dmtm,      LinqToDB.DataType.DateTime),
+				new DataParameter("@old_guid_db", @oldGuidDb, LinqToDB.DataType.VarChar)
+				{
+					Size = -1
+				}
+			};
+
+			return dataConnection.QueryProc<GetLogChange2Result>("[dbo].[get_log_change2]", parameters);
+		}
+
+		public partial class GetLogChange2Result
+		{
+			                    public int    ErrResult { get; set; }
+			[Column("guid_db")] public string Guid_db   { get; set; }
+			[Column("num")    ] public int?   Num       { get; set; }
+		}
+
+		#endregion
+
+		#region GetControlItems
+
+		public static IEnumerable<ControlItem> GetControlItems(this Demobase12037DB dataConnection, int? @CompId)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@CompId", @CompId, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<ControlItem>("[dbo].[getControlItems]", parameters);
+		}
+
+		#endregion
+
+		#region GetDeviceInnerLines
+
+		public static IEnumerable<GetDeviceInnerLinesResult> GetDeviceInnerLines(this Demobase12037DB dataConnection, int? @pDeviceTypeID)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@pDeviceTypeID", @pDeviceTypeID, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<GetDeviceInnerLinesResult>("[dbo].[getDeviceInnerLines]", parameters);
+		}
+
+		public partial class GetDeviceInnerLinesResult
+		{
+			public int?   InterfaceID { get; set; }
+			public int?   ProtocolID  { get; set; }
+			public string NameLine    { get; set; }
+			public int?   Number      { get; set; }
+		}
+
+		#endregion
+
+		#region GetDeviceInterface
+
+		public static IEnumerable<GetDeviceInterfaceResult> GetDeviceInterface(this Demobase12037DB dataConnection, int? @deviceId)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@device_id", @deviceId, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<GetDeviceInterfaceResult>("[dbo].[getDeviceInterface]", parameters);
+		}
+
+		public partial class GetDeviceInterfaceResult
+		{
+			public int? InterfaceID { get; set; }
+		}
+
+		#endregion
+
+		#region GetDeviceProtocol
+
+		public static IEnumerable<GetDeviceProtocolResult> GetDeviceProtocol(this Demobase12037DB dataConnection, int? @deviceId)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@device_id", @deviceId, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<GetDeviceProtocolResult>("[dbo].[getDeviceProtocol]", parameters);
+		}
+
+		public partial class GetDeviceProtocolResult
+		{
+			public int? ProtocolID { get; set; }
+		}
+
+		#endregion
+
+		#region GetDeviceProtocolByDeviceTypeAndLineType
+
+		public static IEnumerable<GetDeviceProtocolByDeviceTypeAndLineTypeResult> GetDeviceProtocolByDeviceTypeAndLineType(this Demobase12037DB dataConnection, int? @deviceType, int? @lineType)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@device_type", @deviceType, LinqToDB.DataType.Int32),
+				new DataParameter("@line_type",   @lineType,   LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<GetDeviceProtocolByDeviceTypeAndLineTypeResult>("[dbo].[getDeviceProtocolByDeviceTypeAndLineType]", parameters);
+		}
+
+		public partial class GetDeviceProtocolByDeviceTypeAndLineTypeResult
+		{
+			public int? ProtocolID { get; set; }
+		}
+
+		#endregion
+
+		#region GetDeviceTypeId
+
+		public static IEnumerable<GetDeviceTypeIdResult> GetDeviceTypeId(this Demobase12037DB dataConnection, int? @deviceId)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@device_id", @deviceId, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<GetDeviceTypeIdResult>("[dbo].[getDeviceTypeId]", parameters);
+		}
+
+		public partial class GetDeviceTypeIdResult
+		{
+			[Column("id")] public int Id { get; set; }
+		}
+
+		#endregion
+
+		#region GetInterfaceProtocols
+
+		public static IEnumerable<GetInterfaceProtocolsResult> GetInterfaceProtocols(this Demobase12037DB dataConnection, int? @interfaceId, int? @ownedDeviceType)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@interface_id",      @interfaceId,     LinqToDB.DataType.Int32),
+				new DataParameter("@owned_device_type", @ownedDeviceType, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<GetInterfaceProtocolsResult>("[dbo].[getInterfaceProtocols]", parameters);
+		}
+
+		public partial class GetInterfaceProtocolsResult
+		{
+			[Column("id")  ] public int    Id   { get; set; }
+			[Column("name")] public string Name { get; set; }
+		}
+
+		#endregion
+
+		#region GetLineInterfaces
+
+		public static IEnumerable<GetLineInterfacesResult> GetLineInterfaces(this Demobase12037DB dataConnection, int? @ownedDeviceType)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@owned_device_type", @ownedDeviceType, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<GetLineInterfacesResult>("[dbo].[getLineInterfaces]", parameters);
+		}
+
+		public partial class GetLineInterfacesResult
+		{
+			[Column("id")  ] public int    Id   { get; set; }
+			[Column("name")] public string Name { get; set; }
+		}
+
+		#endregion
+
+		#region GetLineOwnedDeviceType
+
+		public static IEnumerable<GetLineOwnedDeviceTypeResult> GetLineOwnedDeviceType(this Demobase12037DB dataConnection, int? @lineId)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@line_id", @lineId, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<GetLineOwnedDeviceTypeResult>("[dbo].[getLineOwnedDeviceType]", parameters);
+		}
+
+		public partial class GetLineOwnedDeviceTypeResult
+		{
+			public int? DeviceType { get; set; }
+		}
+
+		#endregion
+
+		#region GetLineOwnedDeviceTypeID
+
+		public static IEnumerable<GetLineOwnedDeviceTypeIDResult> GetLineOwnedDeviceTypeID(this Demobase12037DB dataConnection, int? @lineId)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@line_id", @lineId, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<GetLineOwnedDeviceTypeIDResult>("[dbo].[getLineOwnedDeviceTypeID]", parameters);
+		}
+
+		public partial class GetLineOwnedDeviceTypeIDResult
+		{
+			public int OwnerID { get; set; }
+		}
+
+		#endregion
+
+		#region GetLinePossibleDevices
+
+		public static IEnumerable<GetLinePossibleDevicesResult> GetLinePossibleDevices(this Demobase12037DB dataConnection, int? @pLineId, int? @OwnerD)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@p_line_id", @pLineId, LinqToDB.DataType.Int32),
+				new DataParameter("@OwnerD",    @OwnerD,  LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<GetLinePossibleDevicesResult>("[dbo].[getLinePossibleDevices]", parameters);
+		}
+
+		public partial class GetLinePossibleDevicesResult
+		{
+			public int    DeviceType    { get; set; }
+			public string DeviceName    { get; set; }
+			public int?   DeviceVersion { get; set; }
+		}
+
+		#endregion
+
+		#region GetparamsForLine
+
+		public static IEnumerable<ComPort> GetparamsForLine(this Demobase12037DB dataConnection, int? @idComp)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@id_comp", @idComp, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<ComPort>("[dbo].[getparamsForLine]", parameters);
+		}
+
+		#endregion
+
+		#region GetParentDeviceID
+
+		public static IEnumerable<GetParentDeviceIDResult> GetParentDeviceID(this Demobase12037DB dataConnection, int? @deviceId)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@device_id", @deviceId, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<GetParentDeviceIDResult>("[dbo].[getParentDeviceID]", parameters);
+		}
+
+		public partial class GetParentDeviceIDResult
+		{
+			public int ID { get; set; }
+		}
+
+		#endregion
+
+		#region GustIsRelease
+
+		public static int GustIsRelease(this Demobase12037DB dataConnection, int? @aHozOrgan)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@aHozOrgan", @aHozOrgan, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.ExecuteProc("[dbo].[GustIsRelease]", parameters);
+		}
+
+		#endregion
+
+		#region IsAddLinePossible
+
+		public static IEnumerable<DeviceTypesLine> IsAddLinePossible(this Demobase12037DB dataConnection, int? @deviceId)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@device_id", @deviceId, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<DeviceTypesLine>("[dbo].[IsAddLinePossible]", parameters);
+		}
+
+		#endregion
+
+		#region PAccessCheck
+
+		public static IEnumerable<PAccessCheckResult> PAccessCheck(this Demobase12037DB dataConnection, DateTime? @DateBegin, DateTime? @DateEnd, int? @NumberDoor, int? @idUser)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@DateBegin",  @DateBegin,  LinqToDB.DataType.DateTime),
+				new DataParameter("@DateEnd",    @DateEnd,    LinqToDB.DataType.DateTime),
+				new DataParameter("@NumberDoor", @NumberDoor, LinqToDB.DataType.Int32),
+				new DataParameter("@ID_User",    @idUser,     LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<PAccessCheckResult>("[dbo].[p_AccessCheck]", parameters);
+		}
+
+		public partial class PAccessCheckResult
+		{
+			[Column("Âðåìÿ è äàòà ñîáûòèÿ")] public DateTime ÂðåìÿÈÄàòàÑîáûòèÿ { get; set; }
+			[Column("Êîä ñîáûòèÿ")         ] public int      ÊîäÑîáûòèÿ        { get; set; }
+			[Column("Òî÷êà äîñòóïà")       ] public int?     Òî÷êàÄîñòóïà      { get; set; }
+			[Column("Èìÿ òî÷êè äîñòóïà")   ] public string   ÈìÿÒî÷êèÄîñòóïà   { get; set; }
+			[Column("Ðåæèì ïðîõîäà")       ] public int?     ÐåæèìÏðîõîäà      { get; set; }
+			[Column("Id ñîòðóäíèêà")       ] public int?     IdÑîòðóäíèêà      { get; set; }
+			[Column("ÔÈÎ ñîòðóäíèêà")      ] public string   ÔÈÎÑîòðóäíèêà     { get; set; }
+			[Column("Id ïàðîëÿ")           ] public int?     IdÏàðîëÿ          { get; set; }
+			[Column("Îïèñàíèå íàðóøåíèÿ")  ] public string   ÎïèñàíèåÍàðóøåíèÿ { get; set; }
+		}
+
+		#endregion
+
+		#region PAddDefaultDevicesBySirius
+
+		public static IEnumerable<PAddDefaultDevicesBySiriusResult> PAddDefaultDevicesBySirius(this Demobase12037DB dataConnection, string @Data, int? @OperatorID, string @Workstation)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@Data",        @Data,        LinqToDB.DataType.VarChar)
+				{
+					Size = -1
+				},
+				new DataParameter("@OperatorID",  @OperatorID,  LinqToDB.DataType.Int32),
+				new DataParameter("@Workstation", @Workstation, LinqToDB.DataType.VarChar)
+				{
+					Size = 50
+				}
+			};
+
+			return dataConnection.QueryProc<PAddDefaultDevicesBySiriusResult>("[abd].[p_AddDefaultDevicesBySirius]", parameters);
+		}
+
+		public partial class PAddDefaultDevicesBySiriusResult
+		{
+			public int DeviceID { get; set; }
+			public int LineID   { get; set; }
+		}
+
+		#endregion
+
+		#region PCheckingDataBaseObjects
+
+		public static IEnumerable<PCheckingDataBaseObjectsResult> PCheckingDataBaseObjects(this Demobase12037DB dataConnection, string @Data)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@Data", @Data, LinqToDB.DataType.Xml)
+				{
+					Size = -1
+				}
+			};
+
+			return dataConnection.QueryProc<PCheckingDataBaseObjectsResult>("[dbo].[p_CheckingDataBaseObjects]", parameters);
+		}
+
+		public partial class PCheckingDataBaseObjectsResult
+		{
+			public string FSchema { get; set; }
+			public string FType   { get; set; }
+			public string FName   { get; set; }
+		}
+
+		#endregion
+
+		#region PCheckingZonePTTransfer
+
+		public static IEnumerable<PCheckingZonePTTransferResult> PCheckingZonePTTransfer(this Demobase12037DB dataConnection, string @DevicesID)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@DevicesID", @DevicesID, LinqToDB.DataType.VarChar)
+				{
+					Size = -1
+				}
+			};
+
+			return dataConnection.QueryProc<PCheckingZonePTTransferResult>("[abd].[p_CheckingZonePTTransfer]", parameters);
+		}
+
+		public partial class PCheckingZonePTTransferResult
+		{
+			public int    DeviceID   { get; set; }
+			public string ObjectName { get; set; }
+			public int    ObjectID   { get; set; }
+			public int    GIndex     { get; set; }
+		}
+
+		#endregion
+
+		#region PCheckRepeatGIndexSubj
+
+		public static IEnumerable<PCheckRepeatGIndexSubjResult> PCheckRepeatGIndexSubj(this Demobase12037DB dataConnection, string @Subj, int? @GIndex)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@Subj",   @Subj,   LinqToDB.DataType.VarChar)
+				{
+					Size = 25
+				},
+				new DataParameter("@GIndex", @GIndex, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<PCheckRepeatGIndexSubjResult>("[abd].[p_CheckRepeatGIndexSubj]", parameters);
+		}
+
+		public partial class PCheckRepeatGIndexSubjResult
+		{
+			public int? OldGIndex { get; set; }
+			public int? NewGIndex { get; set; }
+		}
+
+		#endregion
+
+		#region PClearScenariosForDevices
+
+		public static IEnumerable<PClearScenariosForDevicesResult> PClearScenariosForDevices(this Demobase12037DB dataConnection, string @Data)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@Data", @Data, LinqToDB.DataType.VarChar)
+				{
+					Size = -1
+				}
+			};
+
+			return dataConnection.QueryProc<PClearScenariosForDevicesResult>("[abd].[p_ClearScenariosForDevices]", parameters);
+		}
+
+		public partial class PClearScenariosForDevicesResult
+		{
+			public int   UpdateStatus { get; set; }
+			public int   RealID       { get; set; }
+			public int   AppID        { get; set; }
+			public int?  Num          { get; set; }
+			public byte? NumMode      { get; set; }
+		}
+
+		#endregion
+
+		#region PCloneScenariosDevice
+
+		public static IEnumerable<PCloneScenariosDeviceResult> PCloneScenariosDevice(this Demobase12037DB dataConnection, int? @idScenDevice)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ID_ScenDevice", @idScenDevice, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<PCloneScenariosDeviceResult>("[abd].[p_CloneScenariosDevice]", parameters);
+		}
+
+		public partial class PCloneScenariosDeviceResult
+		{
+			public int UpdateStatus    { get; set; }
+			public int ID_Value        { get; set; }
+			public int ID_ScenDevice   { get; set; }
+			public int ID_RefItemsScen { get; set; }
+		}
+
+		#endregion
+
+		#region PDeleteAccessZone
+
+		public static int PDeleteAccessZone(this Demobase12037DB dataConnection, int? @Mode, int? @AccessID, int? @OperatorID, string @Workstation)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@Mode",        @Mode,        LinqToDB.DataType.Int32),
+				new DataParameter("@AccessID",    @AccessID,    LinqToDB.DataType.Int32),
+				new DataParameter("@OperatorID",  @OperatorID,  LinqToDB.DataType.Int32),
+				new DataParameter("@Workstation", @Workstation, LinqToDB.DataType.VarChar)
+				{
+					Size = 50
+				}
+			};
+
+			return dataConnection.ExecuteProc("[abd].[p_DeleteAccessZone]", parameters);
+		}
+
+		#endregion
+
+		#region PDeleteGrObjCont
+
+		public static int PDeleteGrObjCont(this Demobase12037DB dataConnection, string @ObjID, int? @GrObjID, int? @OperatorID, string @Workstation)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ObjID",       @ObjID,       LinqToDB.DataType.VarChar)
+				{
+					Size = -1
+				},
+				new DataParameter("@GrObjID",     @GrObjID,     LinqToDB.DataType.Int32),
+				new DataParameter("@OperatorID",  @OperatorID,  LinqToDB.DataType.Int32),
+				new DataParameter("@Workstation", @Workstation, LinqToDB.DataType.VarChar)
+				{
+					Size = 50
+				}
+			};
+
+			return dataConnection.ExecuteProc("[abd].[p_DeleteGrObjCont]", parameters);
+		}
+
+		#endregion
+
+		#region PDeleteGroupObj
+
+		public static int PDeleteGroupObj(this Demobase12037DB dataConnection, int? @GroupObjID, int? @Mode, int? @OperatorID, string @Workstation)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@GroupObjID",  @GroupObjID,  LinqToDB.DataType.Int32),
+				new DataParameter("@Mode",        @Mode,        LinqToDB.DataType.Int32),
+				new DataParameter("@OperatorID",  @OperatorID,  LinqToDB.DataType.Int32),
+				new DataParameter("@Workstation", @Workstation, LinqToDB.DataType.VarChar)
+				{
+					Size = 50
+				}
+			};
+
+			return dataConnection.ExecuteProc("[abd].[p_DeleteGroupObj]", parameters);
+		}
+
+		#endregion
+
+		#region PDeleteKeybox
+
+		public static int PDeleteKeybox(this Demobase12037DB dataConnection, int? @idKeybox, int? @idSection, int? @OperatorID, string @Workstation)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ID_keybox",   @idKeybox,    LinqToDB.DataType.Int32),
+				new DataParameter("@ID_Section",  @idSection,   LinqToDB.DataType.Int32),
+				new DataParameter("@OperatorID",  @OperatorID,  LinqToDB.DataType.Int32),
+				new DataParameter("@Workstation", @Workstation, LinqToDB.DataType.VarChar)
+				{
+					Size = 50
+				}
+			};
+
+			return dataConnection.ExecuteProc("[abd].[p_DeleteKeybox]", parameters);
+		}
+
+		#endregion
+
+		#region PDeleteReaderGroupObjects
+
+		public static int PDeleteReaderGroupObjects(this Demobase12037DB dataConnection, int? @ReaderID, int? @Mode, int? @AccessPointID, int? @PenalID, int? @OperatorID, string @Workstation)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ReaderID",      @ReaderID,      LinqToDB.DataType.Int32),
+				new DataParameter("@Mode",          @Mode,          LinqToDB.DataType.Int32),
+				new DataParameter("@AccessPointID", @AccessPointID, LinqToDB.DataType.Int32),
+				new DataParameter("@PenalID",       @PenalID,       LinqToDB.DataType.Int32),
+				new DataParameter("@OperatorID",    @OperatorID,    LinqToDB.DataType.Int32),
+				new DataParameter("@Workstation",   @Workstation,   LinqToDB.DataType.VarChar)
+				{
+					Size = 50
+				}
+			};
+
+			return dataConnection.ExecuteProc("[abd].[p_DeleteReaderGroupObjects]", parameters);
+		}
+
+		#endregion
+
+		#region PExportScenariosForPKY
+
+		public static IEnumerable<PExportScenariosForPKYResult> PExportScenariosForPKY(this Demobase12037DB dataConnection, int? @idDevice, int? @DeviceType, string @ObjectsID)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ID_Device",  @idDevice,   LinqToDB.DataType.Int32),
+				new DataParameter("@DeviceType", @DeviceType, LinqToDB.DataType.Int32),
+				new DataParameter("@ObjectsID",  @ObjectsID,  LinqToDB.DataType.VarChar)
+				{
+					Size = -1
+				}
+			};
+
+			return dataConnection.QueryProc<PExportScenariosForPKYResult>("[abd].[p_ExportScenariosForPKY]", parameters);
+		}
+
+		public partial class PExportScenariosForPKYResult
+		{
+			public string Scenarios { get; set; }
+		}
+
+		#endregion
+
+		#region PFindePersonByCode
+
+		public static IEnumerable<PFindePersonByCodeResult> PFindePersonByCode(this Demobase12037DB dataConnection, int? @GTypeCode, byte? @CodeVariant, string @Code)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@GTypeCode",   @GTypeCode,   LinqToDB.DataType.Int32),
+				new DataParameter("@CodeVariant", @CodeVariant, LinqToDB.DataType.Byte),
+				new DataParameter("@Code",        @Code,        LinqToDB.DataType.VarChar)
+				{
+					Size = 50
+				}
+			};
+
+			return dataConnection.QueryProc<PFindePersonByCodeResult>("[abd].[p_FindePersonByCode]", parameters);
+		}
+
+		public partial class PFindePersonByCodeResult
+		{
+			public int PersonID { get; set; }
+			public int MarkID   { get; set; }
+		}
+
+		#endregion
+
+		#region PGetBindingAdditionalPassword
+
+		public static IEnumerable<PGetBindingAdditionalPasswordResult> PGetBindingAdditionalPassword(this Demobase12037DB dataConnection)
+		{
+			return dataConnection.QueryProc<PGetBindingAdditionalPasswordResult>("[abd].[p_GetBindingAdditionalPassword]");
+		}
+
+		public partial class PGetBindingAdditionalPasswordResult
+		{
+			public int    ID   { get; set; }
+			public string Name { get; set; }
+		}
+
+		#endregion
+
+		#region PGetCarPersons
+
+		public static IEnumerable<PGetCarPersonsResult> PGetCarPersons(this Demobase12037DB dataConnection, int? @IDList)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@IDList", @IDList, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<PGetCarPersonsResult>("[abd].[p_GetCarPersons]", parameters);
+		}
+
+		public partial class PGetCarPersonsResult
+		{
+			public int    ID     { get; set; }
+			public string Name   { get; set; }
+			public int    IdList { get; set; }
+		}
+
+		#endregion
+
+		#region PGetCompanyList
+
+		public static IEnumerable<PGetCompanyListResult> PGetCompanyList(this Demobase12037DB dataConnection, int? @isGuest)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@isGuest", @isGuest, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<PGetCompanyListResult>("[urv].[p_GetCompanyList]", parameters);
+		}
+
+		public partial class PGetCompanyListResult
+		{
+			public int    ID   { get; set; }
+			public string Name { get; set; }
+		}
+
+		#endregion
+
+		#region PGetDivisionList
+
+		public static IEnumerable<PGetDivisionListResult> PGetDivisionList(this Demobase12037DB dataConnection)
+		{
+			return dataConnection.QueryProc<PGetDivisionListResult>("[urv].[p_GetDivisionList]");
+		}
+
+		public partial class PGetDivisionListResult
+		{
+			public int    ID   { get; set; }
+			public string Name { get; set; }
+		}
+
+		#endregion
+
+		#region PGetGIndexAndHardNumForObject
+
+		public static IEnumerable<PGetGIndexAndHardNumForObjectResult> PGetGIndexAndHardNumForObject(this Demobase12037DB dataConnection, int? @CompID, int? @DeviceID)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@CompID",   @CompID,   LinqToDB.DataType.Int32),
+				new DataParameter("@DeviceID", @DeviceID, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<PGetGIndexAndHardNumForObjectResult>("[abd].[p_GetGIndexAndHardNumForObject ]", parameters);
+		}
+
+		public partial class PGetGIndexAndHardNumForObjectResult
+		{
+			public int? NewGIndex         { get; set; }
+			public int? NewHardwareNumber { get; set; }
+		}
+
+		#endregion
+
+		#region PGetGroupExit
+
+		public static IEnumerable<PGetGroupExitResult> PGetGroupExit(this Demobase12037DB dataConnection)
+		{
+			return dataConnection.QueryProc<PGetGroupExitResult>("[abd].[p_GetGroupExit]");
+		}
+
+		public partial class PGetGroupExitResult
+		{
+			public int    ID   { get; set; }
+			public string NAme { get; set; }
+		}
+
+		#endregion
+
+		#region PGetGroups
+
+		public static IEnumerable<PGetGroupsResult> PGetGroups(this Demobase12037DB dataConnection, int? @TypeGroup)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@TypeGroup", @TypeGroup, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<PGetGroupsResult>("[abd].[p_GetGroups]", parameters);
+		}
+
+		public partial class PGetGroupsResult
+		{
+			public int?   ID   { get; set; }
+			public string Name { get; set; }
+		}
+
+		#endregion
+
+		#region PGetGTime
+
+		public static IEnumerable<PGetGTimeResult> PGetGTime(this Demobase12037DB dataConnection)
+		{
+			return dataConnection.QueryProc<PGetGTimeResult>("[abd].[p_GetGTime]");
+		}
+
+		public partial class PGetGTimeResult
+		{
+			public int    ID   { get; set; }
+			public string Name { get; set; }
+		}
+
+		#endregion
+
+		#region PGetListStatus
+
+		public static IEnumerable<PGetListStatusResult> PGetListStatus(this Demobase12037DB dataConnection, int? @LangID, string @NotStatusID)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@LangID",      @LangID,      LinqToDB.DataType.Int32),
+				new DataParameter("@NotStatusID", @NotStatusID, LinqToDB.DataType.VarChar)
+				{
+					Size = 250
+				}
+			};
+
+			return dataConnection.QueryProc<PGetListStatusResult>("[abd].[p_GetListStatus]", parameters);
+		}
+
+		public partial class PGetListStatusResult
+		{
+			public int    ID   { get; set; }
+			public string Name { get; set; }
+		}
+
+		#endregion
+
+		#region PGetMaxIndexSubj
+
+		public static IEnumerable<PGetMaxIndexSubjResult> PGetMaxIndexSubj(this Demobase12037DB dataConnection, string @Subj)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@Subj", @Subj, LinqToDB.DataType.VarChar)
+				{
+					Size = 25
+				}
+			};
+
+			return dataConnection.QueryProc<PGetMaxIndexSubjResult>("[abd].[p_GetMaxIndexSubj]", parameters);
+		}
+
+		public partial class PGetMaxIndexSubjResult
+		{
+			public int? MaxIndex { get; set; }
+		}
+
+		#endregion
+
+		#region PGetNewPersonsID
+
+		public static IEnumerable<PGetNewPersonsIDResult> PGetNewPersonsID(this Demobase12037DB dataConnection)
+		{
+			return dataConnection.QueryProc<PGetNewPersonsIDResult>("[abd].[p_GetNewPersonsID]");
+		}
+
+		public partial class PGetNewPersonsIDResult
+		{
+			public int? NewPersonsID { get; set; }
+		}
+
+		#endregion
+
+		#region PGetPasswordTypes
+
+		public static IEnumerable<PGetPasswordTypesResult> PGetPasswordTypes(this Demobase12037DB dataConnection)
+		{
+			return dataConnection.QueryProc<PGetPasswordTypesResult>("[abd].[p_GetPasswordTypes]");
+		}
+
+		public partial class PGetPasswordTypesResult
+		{
+			public int    ID   { get; set; }
+			public string Name { get; set; }
+		}
+
+		#endregion
+
+		#region PGetPossbleMultySelected
+
+		public static IEnumerable<PGetPossbleMultySelectedResult> PGetPossbleMultySelected(this Demobase12037DB dataConnection, int? @ParentID1, int? @ParentID2)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ParentID1", @ParentID1, LinqToDB.DataType.Int32),
+				new DataParameter("@ParentID2", @ParentID2, LinqToDB.DataType.Int32)
+			};
+
+			var ms = dataConnection.MappingSchema;
+
+			return dataConnection.QueryProc(dataReader =>
+				new PGetPossbleMultySelectedResult
+				{
+					Lineid  = Converter.ChangeTypeTo<int>(dataReader.GetValue(0), ms),
+					Column2 = Converter.ChangeTypeTo<int>(dataReader.GetValue(1), ms),
+				},
+				"[dbo].[p_GetPossbleMultySelected]", parameters);
+		}
+
+		public partial class PGetPossbleMultySelectedResult
+		{
+			[Column("lineid")] public int Lineid  { get; set; }
+			[Column("lineid")] public int Column2 { get; set; }
+		}
+
+		#endregion
+
+		#region PGetPostList
+
+		public static IEnumerable<PGetPostListResult> PGetPostList(this Demobase12037DB dataConnection)
+		{
+			return dataConnection.QueryProc<PGetPostListResult>("[urv].[p_GetPostList]");
+		}
+
+		public partial class PGetPostListResult
+		{
+			public int    ID   { get; set; }
+			public string Name { get; set; }
+		}
+
+		#endregion
+
+		#region PGetRoomList
+
+		public static IEnumerable<PGetRoomListResult> PGetRoomList(this Demobase12037DB dataConnection)
+		{
+			return dataConnection.QueryProc<PGetRoomListResult>("[urv].[p_GetRoomList]");
+		}
+
+		public partial class PGetRoomListResult
+		{
+			public int    ID   { get; set; }
+			public string Name { get; set; }
+		}
+
+		#endregion
+
+		#region PGetStatusParamsForTree
+
+		public static IEnumerable<PGetStatusParamsForTreeResult> PGetStatusParamsForTree(this Demobase12037DB dataConnection, int? @ID)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ID", @ID, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<PGetStatusParamsForTreeResult>("[dbo].[p_GetStatusParamsForTree]", parameters);
+		}
+
+		public partial class PGetStatusParamsForTreeResult
+		{
+			public int    ID        { get; set; }
+			public string Authority { get; set; }
+		}
+
+		#endregion
+
+		#region PGetTempStaffName
+
+		public static IEnumerable<PGetTempStaffNameResult> PGetTempStaffName(this Demobase12037DB dataConnection, int? @isPassword)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@isPassword", @isPassword, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<PGetTempStaffNameResult>("[abd].[p_GetTempStaffName]", parameters);
+		}
+
+		public partial class PGetTempStaffNameResult
+		{
+			public int    ID   { get; set; }
+			public string Name { get; set; }
+		}
+
+		#endregion
+
+		#region PGetTimeZoneFromDoors
+
+		public static IEnumerable<PGetTimeZoneFromDoorsResult> PGetTimeZoneFromDoors(this Demobase12037DB dataConnection, int? @IDTimeZone)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@IDTimeZone", @IDTimeZone, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<PGetTimeZoneFromDoorsResult>("[dbo].[p_GetTimeZoneFromDoors]", parameters);
+		}
+
+		public partial class PGetTimeZoneFromDoorsResult
+		{
+			public int? CountGr { get; set; }
+		}
+
+		#endregion
+
+		#region PGetTypeDoc
+
+		public static IEnumerable<PGetTypeDocResult> PGetTypeDoc(this Demobase12037DB dataConnection)
+		{
+			return dataConnection.QueryProc<PGetTypeDocResult>("[abd].[p_GetTypeDoc]");
+		}
+
+		public partial class PGetTypeDocResult
+		{
+			public int    ID         { get; set; }
+			public string Name       { get; set; }
+			public string IndentSh   { get; set; }
+			public int    NumberType { get; set; }
+		}
+
+		#endregion
+
+		#region PGetTypeShlDev
+
+		public static IEnumerable<PGetTypeShlDevResult> PGetTypeShlDev(this Demobase12037DB dataConnection, int? @DeviceType, int? @DeviceVersion, int? @ElementType, int? @NumShl, int? @OwnerD)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@DeviceType",    @DeviceType,    LinqToDB.DataType.Int32),
+				new DataParameter("@DeviceVersion", @DeviceVersion, LinqToDB.DataType.Int32),
+				new DataParameter("@ElementType",   @ElementType,   LinqToDB.DataType.Int32),
+				new DataParameter("@NumShl",        @NumShl,        LinqToDB.DataType.Int32),
+				new DataParameter("@OwnerD",        @OwnerD,        LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<PGetTypeShlDevResult>("[dbo].[p_GetTypeShlDev]", parameters);
+		}
+
+		public partial class PGetTypeShlDevResult
+		{
+			public string Name { get; set; }
+			public int?   ID   { get; set; }
+		}
+
+		#endregion
+
+		#region PImportItemsDevScenarios
+
+		public static IEnumerable<PImportItemsDevScenariosResult> PImportItemsDevScenarios(this Demobase12037DB dataConnection, string @Data)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@Data", @Data, LinqToDB.DataType.VarChar)
+				{
+					Size = -1
+				}
+			};
+
+			return dataConnection.QueryProc<PImportItemsDevScenariosResult>("[abd].[p_ImportItemsDevScenarios]", parameters);
+		}
+
+		public partial class PImportItemsDevScenariosResult
+		{
+			public int ID            { get; set; }
+			public int ID_Device     { get; set; }
+			public int ID_DeviceType { get; set; }
+		}
+
+		#endregion
+
+		#region PImportItemsScenarios
+
+		public static IEnumerable<PImportItemsScenariosResult> PImportItemsScenarios(this Demobase12037DB dataConnection, string @Data)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@Data", @Data, LinqToDB.DataType.VarChar)
+				{
+					Size = -1
+				}
+			};
+
+			return dataConnection.QueryProc<PImportItemsScenariosResult>("[abd].[p_ImportItemsScenarios]", parameters);
+		}
+
+		public partial class PImportItemsScenariosResult
+		{
+			public int UpdateStatus    { get; set; }
+			public int ID_Value        { get; set; }
+			public int ID_ScenDevice   { get; set; }
+			public int ID_RefItemsScen { get; set; }
+		}
+
+		#endregion
+
+		#region PPersonsDataValidation
+
+		public static IEnumerable<PPersonsDataValidationResult> PPersonsDataValidation(this Demobase12037DB dataConnection, int? @OperatorID, int? @ChekToAction, int? @CodeQuestion, string @DataCheckValid)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@OperatorID",     @OperatorID,     LinqToDB.DataType.Int32),
+				new DataParameter("@ChekToAction",   @ChekToAction,   LinqToDB.DataType.Int32),
+				new DataParameter("@CodeQuestion",   @CodeQuestion,   LinqToDB.DataType.Int32),
+				new DataParameter("@DataCheckValid", @DataCheckValid, LinqToDB.DataType.Xml)
+				{
+					Size = -1
+				}
+			};
+
+			return dataConnection.QueryProc<PPersonsDataValidationResult>("[abd].[p_PersonsDataValidation]", parameters);
+		}
+
+		public partial class PPersonsDataValidationResult
+		{
+			public int  ElementID    { get; set; }
+			public byte ChekToAction { get; set; }
+			public byte CodeQuestion { get; set; }
+			public int  FIndex       { get; set; }
+			public int? IntReturn    { get; set; }
+		}
+
+		#endregion
+
+		#region PSaveBindingScenStep
+
+		public static IEnumerable<PSaveBindingScenStepResult> PSaveBindingScenStep(this Demobase12037DB dataConnection, string @Data)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@Data", @Data, LinqToDB.DataType.VarChar)
+				{
+					Size = -1
+				}
+			};
+
+			return dataConnection.QueryProc<PSaveBindingScenStepResult>("[abd].[p_SaveBindingScenStep]", parameters);
+		}
+
+		public partial class PSaveBindingScenStepResult
+		{
+			public int  BindingType   { get; set; }
+			public int  ID_ScenDevice { get; set; }
+			public bool Access        { get; set; }
+			public int  ID_Value      { get; set; }
+		}
+
+		#endregion
+
+		#region PSaveDvsIconPlan
+
+		public static IEnumerable<PSaveDvsIconPlanResult> PSaveDvsIconPlan(this Demobase12037DB dataConnection, int? @ID, int? @ResWidth, int? @ResHeight, int? @ResCountIco, byte[] @ResourceIco)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ID",          @ID,          LinqToDB.DataType.Int32),
+				new DataParameter("@ResWidth",    @ResWidth,    LinqToDB.DataType.Int32),
+				new DataParameter("@ResHeight",   @ResHeight,   LinqToDB.DataType.Int32),
+				new DataParameter("@ResCountIco", @ResCountIco, LinqToDB.DataType.Int32),
+				new DataParameter("@ResourceIco", @ResourceIco, LinqToDB.DataType.VarBinary)
+				{
+					Size = -1
+				}
+			};
+
+			return dataConnection.QueryProc<PSaveDvsIconPlanResult>("[abd].[p_SaveDvsIconPlan]", parameters);
+		}
+
+		public partial class PSaveDvsIconPlanResult
+		{
+			public int? ID { get; set; }
+		}
+
+		#endregion
+
+		#region PSaveEntityAutosStaff
+
+		public static IEnumerable<PSaveEntityAutosStaffResult> PSaveEntityAutosStaff(this Demobase12037DB dataConnection, int? @OperatorID, string @Workstation, string @DataXML)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@OperatorID",  @OperatorID,  LinqToDB.DataType.Int32),
+				new DataParameter("@Workstation", @Workstation, LinqToDB.DataType.VarChar)
+				{
+					Size = 50
+				},
+				new DataParameter("@DataXML",     @DataXML,     LinqToDB.DataType.Xml)
+				{
+					Size = -1
+				}
+			};
+
+			return dataConnection.QueryProc<PSaveEntityAutosStaffResult>("[abd].[p_SaveEntityAutosStaff]", parameters);
+		}
+
+		public partial class PSaveEntityAutosStaffResult
+		{
+			public int    UpdateStatus { get; set; }
+			public int    AppID        { get; set; }
+			public int    RealID       { get; set; }
+			public byte?  ErrorCode    { get; set; }
+			public string ErrorMessage { get; set; }
+			public int    ObjectPoint  { get; set; }
+		}
+
+		#endregion
+
+		#region PSaveEntityCompany
+
+		public static IEnumerable<PSaveEntityCompanyResult> PSaveEntityCompany(this Demobase12037DB dataConnection, int? @OperatorID, string @Workstation, string @DataXML)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@OperatorID",  @OperatorID,  LinqToDB.DataType.Int32),
+				new DataParameter("@Workstation", @Workstation, LinqToDB.DataType.VarChar)
+				{
+					Size = 50
+				},
+				new DataParameter("@DataXML",     @DataXML,     LinqToDB.DataType.Xml)
+				{
+					Size = -1
+				}
+			};
+
+			return dataConnection.QueryProc<PSaveEntityCompanyResult>("[abd].[p_SaveEntityCompany]", parameters);
+		}
+
+		public partial class PSaveEntityCompanyResult
+		{
+			public int    UpdateStatus { get; set; }
+			public int    AppID        { get; set; }
+			public int    RealID       { get; set; }
+			public byte?  ErrorCode    { get; set; }
+			public string ErrorMessage { get; set; }
+			public int    ObjectPoint  { get; set; }
+		}
+
+		#endregion
+
+		#region PSaveEntityDivision
+
+		public static IEnumerable<PSaveEntityDivisionResult> PSaveEntityDivision(this Demobase12037DB dataConnection, int? @OperatorID, string @Workstation, string @DataXML)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@OperatorID",  @OperatorID,  LinqToDB.DataType.Int32),
+				new DataParameter("@Workstation", @Workstation, LinqToDB.DataType.VarChar)
+				{
+					Size = 50
+				},
+				new DataParameter("@DataXML",     @DataXML,     LinqToDB.DataType.Xml)
+				{
+					Size = -1
+				}
+			};
+
+			return dataConnection.QueryProc<PSaveEntityDivisionResult>("[abd].[p_SaveEntityDivision]", parameters);
+		}
+
+		public partial class PSaveEntityDivisionResult
+		{
+			public int    UpdateStatus { get; set; }
+			public int    AppID        { get; set; }
+			public int    RealID       { get; set; }
+			public byte?  ErrorCode    { get; set; }
+			public string ErrorMessage { get; set; }
+			public int    ObjectPoint  { get; set; }
+		}
+
+		#endregion
+
+		#region PSaveEntityEvacuationGroup
+
+		public static IEnumerable<PSaveEntityEvacuationGroupResult> PSaveEntityEvacuationGroup(this Demobase12037DB dataConnection, int? @OperatorID, string @Workstation, string @DataXML)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@OperatorID",  @OperatorID,  LinqToDB.DataType.Int32),
+				new DataParameter("@Workstation", @Workstation, LinqToDB.DataType.VarChar)
+				{
+					Size = 50
+				},
+				new DataParameter("@DataXML",     @DataXML,     LinqToDB.DataType.Xml)
+				{
+					Size = -1
+				}
+			};
+
+			return dataConnection.QueryProc<PSaveEntityEvacuationGroupResult>("[abd].[p_SaveEntityEvacuationGroup]", parameters);
+		}
+
+		public partial class PSaveEntityEvacuationGroupResult
+		{
+			public int    UpdateStatus { get; set; }
+			public int    AppID        { get; set; }
+			public int    RealID       { get; set; }
+			public byte?  ErrorCode    { get; set; }
+			public string ErrorMessage { get; set; }
+			public int    ObjectPoint  { get; set; }
+		}
+
+		#endregion
+
+		#region PSaveEntityPost
+
+		public static IEnumerable<PSaveEntityPostResult> PSaveEntityPost(this Demobase12037DB dataConnection, int? @OperatorID, string @Workstation, string @DataXML)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@OperatorID",  @OperatorID,  LinqToDB.DataType.Int32),
+				new DataParameter("@Workstation", @Workstation, LinqToDB.DataType.VarChar)
+				{
+					Size = 50
+				},
+				new DataParameter("@DataXML",     @DataXML,     LinqToDB.DataType.Xml)
+				{
+					Size = -1
+				}
+			};
+
+			return dataConnection.QueryProc<PSaveEntityPostResult>("[abd].[p_SaveEntityPost]", parameters);
+		}
+
+		public partial class PSaveEntityPostResult
+		{
+			public int    UpdateStatus { get; set; }
+			public int    AppID        { get; set; }
+			public int    RealID       { get; set; }
+			public byte?  ErrorCode    { get; set; }
+			public string ErrorMessage { get; set; }
+			public int    ObjectPoint  { get; set; }
+		}
+
+		#endregion
+
+		#region PSaveEntityRoom
+
+		public static IEnumerable<PSaveEntityRoomResult> PSaveEntityRoom(this Demobase12037DB dataConnection, int? @OperatorID, string @Workstation, string @DataXML)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@OperatorID",  @OperatorID,  LinqToDB.DataType.Int32),
+				new DataParameter("@Workstation", @Workstation, LinqToDB.DataType.VarChar)
+				{
+					Size = 50
+				},
+				new DataParameter("@DataXML",     @DataXML,     LinqToDB.DataType.Xml)
+				{
+					Size = -1
+				}
+			};
+
+			return dataConnection.QueryProc<PSaveEntityRoomResult>("[abd].[p_SaveEntityRoom]", parameters);
+		}
+
+		public partial class PSaveEntityRoomResult
+		{
+			public int    UpdateStatus { get; set; }
+			public int    AppID        { get; set; }
+			public int    RealID       { get; set; }
+			public byte?  ErrorCode    { get; set; }
+			public string ErrorMessage { get; set; }
+			public int    ObjectPoint  { get; set; }
+		}
+
+		#endregion
+
+		#region PSaveGuest
+
+		public static IEnumerable<PSaveGuestResult> PSaveGuest(this Demobase12037DB dataConnection, int? @OperatorID, string @Workstation, string @DataXML)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@OperatorID",  @OperatorID,  LinqToDB.DataType.Int32),
+				new DataParameter("@Workstation", @Workstation, LinqToDB.DataType.VarChar)
+				{
+					Size = 50
+				},
+				new DataParameter("@DataXML",     @DataXML,     LinqToDB.DataType.Xml)
+				{
+					Size = -1
+				}
+			};
+
+			return dataConnection.QueryProc<PSaveGuestResult>("[abd].[p_SaveGuest]", parameters);
+		}
+
+		public partial class PSaveGuestResult
+		{
+			public int    UpdateStatus { get; set; }
+			public int    AppID        { get; set; }
+			public int    RealID       { get; set; }
+			public byte?  ErrorCode    { get; set; }
+			public string ErrorMessage { get; set; }
+			public int    ObjectPoint  { get; set; }
+		}
+
+		#endregion
+
+		#region PSaveInfoMarkerData
+
+		public static IEnumerable<PSaveInfoMarkerDataResult> PSaveInfoMarkerData(this Demobase12037DB dataConnection, int? @idMapElem, int? @idMap, byte[] @Image, string @Text, Guid? @AppGuid)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ID_MapElem", @idMapElem, LinqToDB.DataType.Int32),
+				new DataParameter("@ID_Map",     @idMap,     LinqToDB.DataType.Int32),
+				new DataParameter("@Image",      @Image,     LinqToDB.DataType.Image)
+				{
+					Size = 2147483647
+				},
+				new DataParameter("@Text",       @Text,      LinqToDB.DataType.VarChar)
+				{
+					Size = 500
+				},
+				new DataParameter("@AppGuid",    @AppGuid,   LinqToDB.DataType.Guid)
+			};
+
+			return dataConnection.QueryProc<PSaveInfoMarkerDataResult>("[abd].[p_SaveInfoMarkerData]", parameters);
+		}
+
+		public partial class PSaveInfoMarkerDataResult
+		{
+			public int? ID_MapElem  { get; set; }
+			public int? AppUpdateID { get; set; }
+		}
+
+		#endregion
+
+		#region PSaveMapElem
+
+		public static IEnumerable<PSaveMapElemResult> PSaveMapElem(this Demobase12037DB dataConnection, int? @UpdateStatus, int? @idMap, string @Data, Guid? @AppGuid)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@UpdateStatus", @UpdateStatus, LinqToDB.DataType.Int32),
+				new DataParameter("@ID_Map",       @idMap,        LinqToDB.DataType.Int32),
+				new DataParameter("@Data",         @Data,         LinqToDB.DataType.VarChar)
+				{
+					Size = -1
+				},
+				new DataParameter("@AppGuid",      @AppGuid,      LinqToDB.DataType.Guid)
+			};
+
+			return dataConnection.QueryProc<PSaveMapElemResult>("[abd].[p_SaveMapElem]", parameters);
+		}
+
+		public partial class PSaveMapElemResult
+		{
+			public int? AppUpdateID { get; set; }
+		}
+
+		#endregion
+
+		#region PSaveMapIndicatorsDefault
+
+		public static IEnumerable<MapIndicatorsDefault> PSaveMapIndicatorsDefault(this Demobase12037DB dataConnection, string @Data, bool? @ResetSettings)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@Data",          @Data,          LinqToDB.DataType.VarChar)
+				{
+					Size = -1
+				},
+				new DataParameter("@ResetSettings", @ResetSettings, LinqToDB.DataType.Boolean)
+			};
+
+			return dataConnection.QueryProc<MapIndicatorsDefault>("[abd].[p_SaveMapIndicatorsDefault]", parameters);
+		}
+
+		#endregion
+
+		#region PSaveMapInfoMark
+
+		public static IEnumerable<PSaveMapInfoMarkResult> PSaveMapInfoMark(this Demobase12037DB dataConnection, ref int? @idElement, int? @idMap, int? @Count, string @UnitType, byte[] @PositionIco, Guid? @AppGuid)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ID_Element", @idElement, LinqToDB.DataType.Int32)
+				{
+					Direction = ParameterDirection.InputOutput
+				},
+				new DataParameter("@ID_Map",     @idMap,     LinqToDB.DataType.Int32),
+				new DataParameter("@Count",      @Count,     LinqToDB.DataType.Int32),
+				new DataParameter("@UnitType",   @UnitType,  LinqToDB.DataType.VarChar)
+				{
+					Size = 25
+				},
+				new DataParameter("@PositionIco", @PositionIco, LinqToDB.DataType.Image)
+				{
+					Size = 2147483647
+				},
+				new DataParameter("@AppGuid",    @AppGuid,   LinqToDB.DataType.Guid)
+			};
+
+			var ret = dataConnection.QueryProc<PSaveMapInfoMarkResult>("[abd].[p_SaveMapInfoMark]", parameters).ToList();
+
+			@idElement = Converter.ChangeTypeTo<int?>(parameters[0].Value);
+
+			return ret;
+		}
+
+		public partial class PSaveMapInfoMarkResult
+		{
+			public int? ID_Element  { get; set; }
+			public int? Gtype       { get; set; }
+			public int? AppUpdateID { get; set; }
+		}
+
+		#endregion
+
+		#region PSaveMapPicture
+
+		public static IEnumerable<PSaveMapPictureResult> PSaveMapPicture(this Demobase12037DB dataConnection, int? @ID, int? @PictureCount, byte[] @Pictures, Guid? @AppGuid, double? @RangeMin, double? @RangeMax)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ID",           @ID,           LinqToDB.DataType.Int32),
+				new DataParameter("@PictureCount", @PictureCount, LinqToDB.DataType.Int32),
+				new DataParameter("@Pictures",     @Pictures,     LinqToDB.DataType.Image)
+				{
+					Size = 2147483647
+				},
+				new DataParameter("@AppGuid",      @AppGuid,      LinqToDB.DataType.Guid),
+				new DataParameter("@RangeMin",     @RangeMin,     LinqToDB.DataType.Double),
+				new DataParameter("@RangeMax",     @RangeMax,     LinqToDB.DataType.Double)
+			};
+
+			return dataConnection.QueryProc<PSaveMapPictureResult>("[abd].[p_SaveMapPicture]", parameters);
+		}
+
+		public partial class PSaveMapPictureResult
+		{
+			public int? ID          { get; set; }
+			public int? AppUpdateID { get; set; }
+		}
+
+		#endregion
+
+		#region PSavePersonAccess
+
+		public static IEnumerable<PSavePersonAccessResult> PSavePersonAccess(this Demobase12037DB dataConnection, int? @OperatorID, string @Workstation, string @DataXML)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@OperatorID",  @OperatorID,  LinqToDB.DataType.Int32),
+				new DataParameter("@Workstation", @Workstation, LinqToDB.DataType.VarChar)
+				{
+					Size = 50
+				},
+				new DataParameter("@DataXML",     @DataXML,     LinqToDB.DataType.Xml)
+				{
+					Size = -1
+				}
+			};
+
+			return dataConnection.QueryProc<PSavePersonAccessResult>("[abd].[p_SavePersonAccess]", parameters);
+		}
+
+		public partial class PSavePersonAccessResult
+		{
+			public int    UpdateStatus { get; set; }
+			public int    AppID        { get; set; }
+			public int    RealID       { get; set; }
+			public byte?  ErrorCode    { get; set; }
+			public string ErrorMessage { get; set; }
+			public int    ObjectPoint  { get; set; }
+			public int    GroupID      { get; set; }
+		}
+
+		#endregion
+
+		#region PSavePersonPasswords
+
+		public static IEnumerable<PSavePersonPasswordsResult> PSavePersonPasswords(this Demobase12037DB dataConnection, int? @OperatorID, string @Workstation, string @DataXML)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@OperatorID",  @OperatorID,  LinqToDB.DataType.Int32),
+				new DataParameter("@Workstation", @Workstation, LinqToDB.DataType.VarChar)
+				{
+					Size = 50
+				},
+				new DataParameter("@DataXML",     @DataXML,     LinqToDB.DataType.Xml)
+				{
+					Size = -1
+				}
+			};
+
+			return dataConnection.QueryProc<PSavePersonPasswordsResult>("[abd].[p_SavePersonPasswords]", parameters);
+		}
+
+		public partial class PSavePersonPasswordsResult
+		{
+			public int    UpdateStatus { get; set; }
+			public int    AppID        { get; set; }
+			public int    RealID       { get; set; }
+			public byte?  ErrorCode    { get; set; }
+			public string ErrorMessage { get; set; }
+			public int    ObjectPoint  { get; set; }
+		}
+
+		#endregion
+
+		#region PSavePersonsCustomFields
+
+		public static IEnumerable<PSavePersonsCustomFieldsResult> PSavePersonsCustomFields(this Demobase12037DB dataConnection, int? @OperatorID, string @Workstation, string @DataXML)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@OperatorID",  @OperatorID,  LinqToDB.DataType.Int32),
+				new DataParameter("@Workstation", @Workstation, LinqToDB.DataType.VarChar)
+				{
+					Size = 50
+				},
+				new DataParameter("@DataXML",     @DataXML,     LinqToDB.DataType.Xml)
+				{
+					Size = -1
+				}
+			};
+
+			return dataConnection.QueryProc<PSavePersonsCustomFieldsResult>("[abd].[p_SavePersonsCustomFields]", parameters);
+		}
+
+		public partial class PSavePersonsCustomFieldsResult
+		{
+			public int    UpdateStatus { get; set; }
+			public int    AppID        { get; set; }
+			public int    RealID       { get; set; }
+			public byte?  ErrorCode    { get; set; }
+			public string ErrorMessage { get; set; }
+		}
+
+		#endregion
+
+		#region PSavePersonsPictures
+
+		public static IEnumerable<PSavePersonsPicturesResult> PSavePersonsPictures(this Demobase12037DB dataConnection, int? @OperatorID, string @Workstation, string @DataXML)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@OperatorID",  @OperatorID,  LinqToDB.DataType.Int32),
+				new DataParameter("@Workstation", @Workstation, LinqToDB.DataType.VarChar)
+				{
+					Size = 50
+				},
+				new DataParameter("@DataXML",     @DataXML,     LinqToDB.DataType.Xml)
+				{
+					Size = -1
+				}
+			};
+
+			return dataConnection.QueryProc<PSavePersonsPicturesResult>("[abd].[p_SavePersonsPictures]", parameters);
+		}
+
+		public partial class PSavePersonsPicturesResult
+		{
+			public int    UpdateStatus { get; set; }
+			public int    AppID        { get; set; }
+			public int    RealID       { get; set; }
+			public byte?  ErrorCode    { get; set; }
+			public string ErrorMessage { get; set; }
+			public int    ImageType    { get; set; }
+			public int    ObjectPoint  { get; set; }
+		}
+
+		#endregion
+
+		#region PSavePlan
+
+		public static IEnumerable<PSavePlanResult> PSavePlan(this Demobase12037DB dataConnection, int? @UpdateStatus, ref int? @ID, int? @ComputerID, string @Name, string @Comment, int? @GIndex, byte[] @Contents, Guid? @AppGuid)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@UpdateStatus", @UpdateStatus, LinqToDB.DataType.Int32),
+				new DataParameter("@ID", @ID, LinqToDB.DataType.Int32)
+				{
+					Direction = ParameterDirection.InputOutput
+				},
+				new DataParameter("@ComputerID", @ComputerID, LinqToDB.DataType.Int32),
+				new DataParameter("@Name", @Name, LinqToDB.DataType.VarChar)
+				{
+					Size = 25
+				},
+				new DataParameter("@Comment", @Comment, LinqToDB.DataType.VarChar)
+				{
+					Size = 200
+				},
+				new DataParameter("@GIndex", @GIndex, LinqToDB.DataType.Int32),
+				new DataParameter("@Contents", @Contents, LinqToDB.DataType.Image)
+				{
+					Size = 2147483647
+				},
+				new DataParameter("@AppGuid", @AppGuid, LinqToDB.DataType.Guid)
+			};
+
+			var ret = dataConnection.QueryProc<PSavePlanResult>("[abd].[p_SavePlan]", parameters).ToList();
+
+			@ID = Converter.ChangeTypeTo<int?>(parameters[1].Value);
+
+			return ret;
+		}
+
+		public partial class PSavePlanResult
+		{
+			public int? ID          { get; set; }
+			public int? AppUpdateID { get; set; }
+		}
+
+		#endregion
+
+		#region PSavePropertiesNode
+
+		public static IEnumerable<PSavePropertiesNodeResult> PSavePropertiesNode(this Demobase12037DB dataConnection, int? @UpdateStatus, string @UnitType, string @Data, Guid? @AppGuid)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@UpdateStatus", @UpdateStatus, LinqToDB.DataType.Int32),
+				new DataParameter("@UnitType",     @UnitType,     LinqToDB.DataType.VarChar)
+				{
+					Size = 500
+				},
+				new DataParameter("@Data",         @Data,         LinqToDB.DataType.VarChar)
+				{
+					Size = -1
+				},
+				new DataParameter("@AppGuid",      @AppGuid,      LinqToDB.DataType.Guid)
+			};
+
+			return dataConnection.QueryProc<PSavePropertiesNodeResult>("[abd].[p_SavePropertiesNode]", parameters);
+		}
+
+		public partial class PSavePropertiesNodeResult
+		{
+			public int? AppUpdateID { get; set; }
+		}
+
+		#endregion
+
+		#region PSaveRangeIndicators
+
+		public static IEnumerable<PSaveRangeIndicatorsResult> PSaveRangeIndicators(this Demobase12037DB dataConnection, string @Data, bool? @Restore)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@Data",    @Data,    LinqToDB.DataType.VarChar)
+				{
+					Size = -1
+				},
+				new DataParameter("@Restore", @Restore, LinqToDB.DataType.Boolean)
+			};
+
+			return dataConnection.QueryProc<PSaveRangeIndicatorsResult>("[abd].[p_SaveRangeIndicators]", parameters);
+		}
+
+		public partial class PSaveRangeIndicatorsResult
+		{
+			public Guid    AppID       { get; set; }
+			public int     ID          { get; set; }
+			public int     StatusRange { get; set; }
+			public int?    RangeColor  { get; set; }
+			public double? RangeMin    { get; set; }
+			public double? RangeMax    { get; set; }
+		}
+
+		#endregion
+
+		#region PSaveScenariosDevice
+
+		public static IEnumerable<PSaveScenariosDeviceResult> PSaveScenariosDevice(this Demobase12037DB dataConnection, string @Data)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@Data", @Data, LinqToDB.DataType.VarChar)
+				{
+					Size = -1
+				}
+			};
+
+			return dataConnection.QueryProc<PSaveScenariosDeviceResult>("[abd].[p_SaveScenariosDevice]", parameters);
+		}
+
+		public partial class PSaveScenariosDeviceResult
+		{
+			public int   UpdateStatus { get; set; }
+			public int   RealID       { get; set; }
+			public int   AppID        { get; set; }
+			public int?  Num          { get; set; }
+			public byte? NumMode      { get; set; }
+		}
+
+		#endregion
+
+		#region PSaveSchemaPlan
+
+		public static IEnumerable<PSaveSchemaPlanResult> PSaveSchemaPlan(this Demobase12037DB dataConnection, int? @ID, byte[] @Contents, Guid? @AppGuid, string @SchemaExt)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ID",        @ID,        LinqToDB.DataType.Int32),
+				new DataParameter("@Contents",  @Contents,  LinqToDB.DataType.Image)
+				{
+					Size = 2147483647
+				},
+				new DataParameter("@AppGuid",   @AppGuid,   LinqToDB.DataType.Guid),
+				new DataParameter("@SchemaExt", @SchemaExt, LinqToDB.DataType.VarChar)
+				{
+					Size = 5
+				}
+			};
+
+			return dataConnection.QueryProc<PSaveSchemaPlanResult>("[abd].[p_SaveSchemaPlan]", parameters);
+		}
+
+		public partial class PSaveSchemaPlanResult
+		{
+			public int? ID          { get; set; }
+			public int? AppUpdateID { get; set; }
+		}
+
+		#endregion
+
+		#region PSaveStaff
+
+		public static IEnumerable<PSaveStaffResult> PSaveStaff(this Demobase12037DB dataConnection, int? @OperatorID, string @Workstation, string @DataXML)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@OperatorID",  @OperatorID,  LinqToDB.DataType.Int32),
+				new DataParameter("@Workstation", @Workstation, LinqToDB.DataType.VarChar)
+				{
+					Size = 50
+				},
+				new DataParameter("@DataXML",     @DataXML,     LinqToDB.DataType.Xml)
+				{
+					Size = -1
+				}
+			};
+
+			return dataConnection.QueryProc<PSaveStaffResult>("[abd].[p_SaveStaff]", parameters);
+		}
+
+		public partial class PSaveStaffResult
+		{
+			public int    UpdateStatus { get; set; }
+			public int    AppID        { get; set; }
+			public int    RealID       { get; set; }
+			public byte?  ErrorCode    { get; set; }
+			public string ErrorMessage { get; set; }
+			public int    ObjectPoint  { get; set; }
+		}
+
+		#endregion
+
+		#region PSaveTemplateStaff
+
+		public static IEnumerable<PSaveTemplateStaffResult> PSaveTemplateStaff(this Demobase12037DB dataConnection, int? @OperatorID, string @Workstation, string @DataXML)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@OperatorID",  @OperatorID,  LinqToDB.DataType.Int32),
+				new DataParameter("@Workstation", @Workstation, LinqToDB.DataType.VarChar)
+				{
+					Size = 50
+				},
+				new DataParameter("@DataXML",     @DataXML,     LinqToDB.DataType.Xml)
+				{
+					Size = -1
+				}
+			};
+
+			return dataConnection.QueryProc<PSaveTemplateStaffResult>("[abd].[p_SaveTemplateStaff]", parameters);
+		}
+
+		public partial class PSaveTemplateStaffResult
+		{
+			public int    UpdateStatus { get; set; }
+			public int    AppID        { get; set; }
+			public int    RealID       { get; set; }
+			public byte?  ErrorCode    { get; set; }
+			public string ErrorMessage { get; set; }
+			public int    ObjectPoint  { get; set; }
+		}
+
+		#endregion
+
+		#region PSaveTreeCtrl
+
+		public static int PSaveTreeCtrl(this Demobase12037DB dataConnection, string @DataTreeCtrl, string @DataTreeNode, int? @OperatorID, string @Workstation)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@DataTreeCtrl", @DataTreeCtrl, LinqToDB.DataType.VarChar)
+				{
+					Size = -1
+				},
+				new DataParameter("@DataTreeNode", @DataTreeNode, LinqToDB.DataType.VarChar)
+				{
+					Size = -1
+				},
+				new DataParameter("@OperatorID",   @OperatorID,   LinqToDB.DataType.Int32),
+				new DataParameter("@Workstation",  @Workstation,  LinqToDB.DataType.VarChar)
+				{
+					Size = 50
+				}
+			};
+
+			return dataConnection.ExecuteProc("[abd].[p_SaveTreeCtrl]", parameters);
+		}
+
+		#endregion
+
+		#region PSaveValueItemsScenarios
+
+		public static IEnumerable<PSaveValueItemsScenariosResult> PSaveValueItemsScenarios(this Demobase12037DB dataConnection, string @Data, bool? @ResultSet)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@Data",      @Data,      LinqToDB.DataType.VarChar)
+				{
+					Size = -1
+				},
+				new DataParameter("@ResultSet", @ResultSet, LinqToDB.DataType.Boolean)
+			};
+
+			return dataConnection.QueryProc<PSaveValueItemsScenariosResult>("[abd].[p_SaveValueItemsScenarios]", parameters);
+		}
+
+		public partial class PSaveValueItemsScenariosResult
+		{
+			public int UpdateStatus    { get; set; }
+			public int ID_Value        { get; set; }
+			public int ID_ScenDevice   { get; set; }
+			public int ID_RefItemsScen { get; set; }
+		}
+
+		#endregion
+
+		#region PSaveValuesDevItemsScript
+
+		public static IEnumerable<PSaveValuesDevItemsScriptResult> PSaveValuesDevItemsScript(this Demobase12037DB dataConnection, string @Data)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@Data", @Data, LinqToDB.DataType.VarChar)
+				{
+					Size = -1
+				}
+			};
+
+			return dataConnection.QueryProc<PSaveValuesDevItemsScriptResult>("[abd].[p_SaveValuesDevItemsScript]", parameters);
+		}
+
+		public partial class PSaveValuesDevItemsScriptResult
+		{
+			public int  UpdateStatus    { get; set; }
+			public int  ID_Value        { get; set; }
+			public int  ID_Device       { get; set; }
+			public int  ID_DeviceType   { get; set; }
+			public int  ID_RefItemsScen { get; set; }
+			public int? CheckCode       { get; set; }
+		}
+
+		#endregion
+
+		#region PSaveValueteImsZonePT
+
+		public static IEnumerable<PSaveValueteImsZonePTResult> PSaveValueteImsZonePT(this Demobase12037DB dataConnection, string @Data, int? @OperatorID, string @Workstation)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@Data",        @Data,        LinqToDB.DataType.VarChar)
+				{
+					Size = -1
+				},
+				new DataParameter("@OperatorID",  @OperatorID,  LinqToDB.DataType.Int32),
+				new DataParameter("@Workstation", @Workstation, LinqToDB.DataType.VarChar)
+				{
+					Size = 50
+				}
+			};
+
+			return dataConnection.QueryProc<PSaveValueteImsZonePTResult>("[abd].[p_SaveValueteImsZonePT]", parameters);
+		}
+
+		public partial class PSaveValueteImsZonePTResult
+		{
+			public int    UpdateStatus { get; set; }
+			public int    ID           { get; set; }
+			public int    PointObject  { get; set; }
+			public int?   ErrorCode    { get; set; }
+			public string ErrorText    { get; set; }
+		}
+
+		#endregion
+
+		#region PSaveZonePTItems
+
+		public static IEnumerable<PSaveZonePTItemsResult> PSaveZonePTItems(this Demobase12037DB dataConnection, string @Data, int? @OperatorID, string @Workstation, bool? @ResultSet)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@Data",        @Data,        LinqToDB.DataType.VarChar)
+				{
+					Size = -1
+				},
+				new DataParameter("@OperatorID",  @OperatorID,  LinqToDB.DataType.Int32),
+				new DataParameter("@Workstation", @Workstation, LinqToDB.DataType.VarChar)
+				{
+					Size = 50
+				},
+				new DataParameter("@ResultSet",   @ResultSet,   LinqToDB.DataType.Boolean)
+			};
+
+			return dataConnection.QueryProc<PSaveZonePTItemsResult>("[abd].[p_SaveZonePTItems]", parameters);
+		}
+
+		public partial class PSaveZonePTItemsResult
+		{
+			public int UpdateStatus    { get; set; }
+			public int ID              { get; set; }
+			public int ID_Parent       { get; set; }
+			public int PointObject     { get; set; }
+			public int SiriusGroupType { get; set; }
+			public int TableID         { get; set; }
+		}
+
+		#endregion
+
+		#region PScenariosCheckingErrors
+
+		public static IEnumerable<PScenariosCheckingErrorsResult> PScenariosCheckingErrors(this Demobase12037DB dataConnection, int? @idLang)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ID_Lang", @idLang, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<PScenariosCheckingErrorsResult>("[abd].[p_ScenariosCheckingErrors]", parameters);
+		}
+
+		public partial class PScenariosCheckingErrorsResult
+		{
+			public int    WarningCode { get; set; }
+			public string WarningText { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectAutoElementsForZonePT
+
+		public static IEnumerable<PSelectAutoElementsForZonePTResult> PSelectAutoElementsForZonePT(this Demobase12037DB dataConnection, int? @ParentDeviceID)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ParentDeviceID", @ParentDeviceID, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<PSelectAutoElementsForZonePTResult>("[abd].[p_SelectAutoElementsForZonePT]", parameters);
+		}
+
+		public partial class PSelectAutoElementsForZonePTResult
+		{
+			public int    ID   { get; set; }
+			public string Name { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectBaseEntitys
+
+		public static IEnumerable<PSelectBaseEntitysResult> PSelectBaseEntitys(this Demobase12037DB dataConnection, int? @OperatorID, string @Workstation, string @EntityClass, int? @ParentID)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@OperatorID",  @OperatorID,  LinqToDB.DataType.Int32),
+				new DataParameter("@Workstation", @Workstation, LinqToDB.DataType.VarChar)
+				{
+					Size = 50
+				},
+				new DataParameter("@EntityClass", @EntityClass, LinqToDB.DataType.VarChar)
+				{
+					Size = 50
+				},
+				new DataParameter("@ParentID",    @ParentID,    LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<PSelectBaseEntitysResult>("[abd].[p_SelectBaseEntitys]", parameters);
+		}
+
+		public partial class PSelectBaseEntitysResult
+		{
+			public int    ID                { get; set; }
+			public string Name              { get; set; }
+			public string Phone             { get; set; }
+			public string Address           { get; set; }
+			public string GUID_1C           { get; set; }
+			public string Id_Number_Company { get; set; }
+			public int    IsGuest           { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectBindingScenStep
+
+		public static IEnumerable<PSelectBindingScenStepResult> PSelectBindingScenStep(this Demobase12037DB dataConnection, int? @idScenDevice)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ID_ScenDevice", @idScenDevice, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<PSelectBindingScenStepResult>("[abd].[p_SelectBindingScenStep]", parameters);
+		}
+
+		public partial class PSelectBindingScenStepResult
+		{
+			public int?   BindingType   { get; set; }
+			public int    ID            { get; set; }
+			public int    ID_ScenDevice { get; set; }
+			public bool   Access        { get; set; }
+			public int    ID_Value      { get; set; }
+			public string Name          { get; set; }
+			public int    GIndex        { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectBindingZoneScenarios
+
+		public static IEnumerable<PSelectBindingZoneScenariosResult> PSelectBindingZoneScenarios(this Demobase12037DB dataConnection, int? @idScenDevice, bool? @Access)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ID_ScenDevice", @idScenDevice, LinqToDB.DataType.Int32),
+				new DataParameter("@Access",        @Access,       LinqToDB.DataType.Boolean)
+			};
+
+			return dataConnection.QueryProc<PSelectBindingZoneScenariosResult>("[abd].[p_SelectBindingZoneScenarios]", parameters);
+		}
+
+		public partial class PSelectBindingZoneScenariosResult
+		{
+			[Column("isGrObj") ] public bool?  IsGrObj       { get; set; }
+			                     public int    ID_Zone       { get; set; }
+			                     public int    ID_Binding    { get; set; }
+			                     public bool   Access        { get; set; }
+			                     public int    ID_ScenDevice { get; set; }
+			                     public string Name          { get; set; }
+			[Column("minPKUID")] public int?   MinPKUID      { get; set; }
+			[Column("maxPKUID")] public int?   MaxPKUID      { get; set; }
+			                     public int    GIndex        { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectCodeEasierAccessTree
+
+		public static IEnumerable<PSelectCodeEasierAccessTreeResult> PSelectCodeEasierAccessTree(this Demobase12037DB dataConnection)
+		{
+			return dataConnection.QueryProc<PSelectCodeEasierAccessTreeResult>("[abd].[p_SelectCodeEasierAccessTree]");
+		}
+
+		public partial class PSelectCodeEasierAccessTreeResult
+		{
+			public int    ID           { get; set; }
+			public string Name         { get; set; }
+			public int    OrdUnitType  { get; set; }
+			public int    GIndex       { get; set; }
+			public int    ImageIndex   { get; set; }
+			public int    GrAccessMode { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectCommandScenarios
+
+		public static IEnumerable<PSelectCommandScenariosResult> PSelectCommandScenarios(this Demobase12037DB dataConnection, int? @idLang)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ID_Lang", @idLang, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<PSelectCommandScenariosResult>("[abd].[p_SelectCommandScenarios]", parameters);
+		}
+
+		public partial class PSelectCommandScenariosResult
+		{
+			                     public int    ID                { get; set; }
+			                     public int    ID_ItemsScenarios { get; set; }
+			                     public int    Sort              { get; set; }
+			[Column("isNumber")] public bool   IsNumber          { get; set; }
+			                     public string Name              { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectConditions
+
+		public static IEnumerable<PSelectConditionsResult> PSelectConditions(this Demobase12037DB dataConnection, int? @idLang, int? @DeviceID)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ID_Lang",  @idLang,   LinqToDB.DataType.Int32),
+				new DataParameter("@DeviceID", @DeviceID, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<PSelectConditionsResult>("[abd].[p_SelectConditions]", parameters);
+		}
+
+		public partial class PSelectConditionsResult
+		{
+			public int    ID       { get; set; }
+			public int    ParentID { get; set; }
+			public string Name     { get; set; }
+			public string Version  { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectConditionStepScenarios
+
+		public static IEnumerable<PSelectConditionStepScenariosResult> PSelectConditionStepScenarios(this Demobase12037DB dataConnection, int? @idLang, string @Version, int? @idScenDevice, bool? @Access)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ID_Lang",       @idLang,       LinqToDB.DataType.Int32),
+				new DataParameter("@Version",       @Version,      LinqToDB.DataType.VarChar)
+				{
+					Size = 10
+				},
+				new DataParameter("@ID_ScenDevice", @idScenDevice, LinqToDB.DataType.Int32),
+				new DataParameter("@Access",        @Access,       LinqToDB.DataType.Boolean)
+			};
+
+			return dataConnection.QueryProc<PSelectConditionStepScenariosResult>("[abd].[p_SelectConditionStepScenarios]", parameters);
+		}
+
+		public partial class PSelectConditionStepScenariosResult
+		{
+			public int    ID       { get; set; }
+			public string Name     { get; set; }
+			public int    ParentID { get; set; }
+			public string Version  { get; set; }
+			public bool?  Checked  { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectCustomMapElements
+
+		public static IEnumerable<PSelectCustomMapElementsResult> PSelectCustomMapElements(this Demobase12037DB dataConnection, string @ElementsID, string @GTypes)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ElementsID", @ElementsID, LinqToDB.DataType.VarChar)
+				{
+					Size = -1
+				},
+				new DataParameter("@GTypes",     @GTypes,     LinqToDB.DataType.VarChar)
+				{
+					Size = 250
+				}
+			};
+
+			return dataConnection.QueryProc<PSelectCustomMapElementsResult>("[abd].[p_SelectCustomMapElements]", parameters);
+		}
+
+		public partial class PSelectCustomMapElementsResult
+		{
+			public int    MapID           { get; set; }
+			public int    UnitID          { get; set; }
+			public string UnitType        { get; set; }
+			public string Text            { get; set; }
+			public string MACAddress      { get; set; }
+			public int?   LineNo          { get; set; }
+			public string ItemUnitType    { get; set; }
+			public int?   ImageIndex      { get; set; }
+			public int?   IdDevice        { get; set; }
+			public int?   ObjectID        { get; set; }
+			public int    ID              { get; set; }
+			public int    GType           { get; set; }
+			public int?   DeviceType      { get; set; }
+			public int?   DeviceInterface { get; set; }
+			public int?   Data            { get; set; }
+			public int?   D2              { get; set; }
+			public char?  D1              { get; set; }
+			public int    ComputerID      { get; set; }
+			public int    PictureCount    { get; set; }
+			public int?   ObjMapID        { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectDetailGuests
+
+		public static IEnumerable<PSelectDetailGuestsResult> PSelectDetailGuests(this Demobase12037DB dataConnection, int? @idLang, string @IDPersons)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ID_Lang",   @idLang,    LinqToDB.DataType.Int32),
+				new DataParameter("@IDPersons", @IDPersons, LinqToDB.DataType.Xml)
+				{
+					Size = -1
+				}
+			};
+
+			return dataConnection.QueryProc<PSelectDetailGuestsResult>("[abd].[p_SelectDetailGuests]", parameters);
+		}
+
+		public partial class PSelectDetailGuestsResult
+		{
+			                      public int       ID                { get; set; }
+			                      public string    WorkPhone         { get; set; }
+			                      public string    HomePhone         { get; set; }
+			                      public string    BlackComment      { get; set; }
+			                      public int?      Post              { get; set; }
+			                      public DateTime? BirthDate         { get; set; }
+			                      public string    Address           { get; set; }
+			                      public int?      IndexForContactId { get; set; }
+			                      public string    EmailList         { get; set; }
+			                      public string    Kem               { get; set; }
+			                      public DateTime? DocumDate         { get; set; }
+			                      public DateTime? DateEnd           { get; set; }
+			                      public string    BirthPlace        { get; set; }
+			                      public string    KodPodr           { get; set; }
+			                      public int       SexGuest          { get; set; }
+			                      public string    AutoColor         { get; set; }
+			                      public int?      AutoNigth         { get; set; }
+			                      public int?      CompanyReceive    { get; set; }
+			                      public int?      SectionReceive    { get; set; }
+			                      public string    RFullName         { get; set; }
+			                      public DateTime? DateVisit         { get; set; }
+			                      public DateTime? DateVisitEnd      { get; set; }
+			[Column("goalvisit")] public string    Goalvisit         { get; set; }
+			                      public int?      RuleAccess        { get; set; }
+			                      public int?      IDNoFace          { get; set; }
+			                      public int       ReceiveListId     { get; set; }
+			                      public int?      RecRoomID         { get; set; }
+			                      public int       CountClientFields { get; set; }
+			                      public int       PObject           { get; set; }
+			                      public int?      Spack             { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectDetailStaffs
+
+		public static IEnumerable<PSelectDetailStaffsResult> PSelectDetailStaffs(this Demobase12037DB dataConnection, int? @idLang, string @IDPersons)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ID_Lang",   @idLang,    LinqToDB.DataType.Int32),
+				new DataParameter("@IDPersons", @IDPersons, LinqToDB.DataType.Xml)
+				{
+					Size = -1
+				}
+			};
+
+			return dataConnection.QueryProc<PSelectDetailStaffsResult>("[abd].[p_SelectDetailStaffs]", parameters);
+		}
+
+		public partial class PSelectDetailStaffsResult
+		{
+			public int       ID                { get; set; }
+			public string    WorkPhone         { get; set; }
+			public string    HomePhone         { get; set; }
+			public int?      Post              { get; set; }
+			public int?      Schedule          { get; set; }
+			public DateTime? BirthDate         { get; set; }
+			public string    Address           { get; set; }
+			public string    EmailList         { get; set; }
+			public string    BlackComment      { get; set; }
+			public string    FireComment       { get; set; }
+			public int?      IndexForContactId { get; set; }
+			public int?      RoomID            { get; set; }
+			public int?      IDGroupExit       { get; set; }
+			public string    Kem               { get; set; }
+			public DateTime? DocumDate         { get; set; }
+			public DateTime? DateEnd           { get; set; }
+			public string    BirthPlace        { get; set; }
+			public string    KodPodr           { get; set; }
+			public int       SexGuest          { get; set; }
+			public int?      Spack             { get; set; }
+			public int       CountClientFields { get; set; }
+			public int       PObject           { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectDetailTemplGuests
+
+		public static IEnumerable<PSelectDetailTemplGuestsResult> PSelectDetailTemplGuests(this Demobase12037DB dataConnection, int? @idLang, string @IDPersons)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ID_Lang",   @idLang,    LinqToDB.DataType.Int32),
+				new DataParameter("@IDPersons", @IDPersons, LinqToDB.DataType.Xml)
+				{
+					Size = -1
+				}
+			};
+
+			return dataConnection.QueryProc<PSelectDetailTemplGuestsResult>("[abd].[p_SelectDetailTemplGuests]", parameters);
+		}
+
+		public partial class PSelectDetailTemplGuestsResult
+		{
+			public int    ID                { get; set; }
+			public int    PObject           { get; set; }
+			public int    NoFaceGuestID     { get; set; }
+			public int?   NoFaceGuestStatus { get; set; }
+			public string NoFaceGuestName   { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectDevicesForScenarios
+
+		public static IEnumerable<PSelectDevicesForScenariosResult> PSelectDevicesForScenarios(this Demobase12037DB dataConnection, int? @DeviceType, int? @idScenTypes, string @NotDevices)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@DeviceType",   @DeviceType,  LinqToDB.DataType.Int32),
+				new DataParameter("@ID_ScenTypes", @idScenTypes, LinqToDB.DataType.Int32),
+				new DataParameter("@NotDevices",   @NotDevices,  LinqToDB.DataType.VarChar)
+				{
+					Size = -1
+				}
+			};
+
+			return dataConnection.QueryProc<PSelectDevicesForScenariosResult>("[abd].[p_SelectDevicesForScenarios]", parameters);
+		}
+
+		public partial class PSelectDevicesForScenariosResult
+		{
+			public int    ID           { get; set; }
+			public string NameDevice   { get; set; }
+			public int?   ID_ScenTypes { get; set; }
+			public int?   DeviceType   { get; set; }
+			public int    ImageIndex   { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectDuplicatePasswords
+
+		public static IEnumerable<PSelectDuplicatePasswordsResult> PSelectDuplicatePasswords(this Demobase12037DB dataConnection, string @Codes, int? @ID, int? @idPList, int? @GTypeCode)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@Codes",     @Codes,     LinqToDB.DataType.VarChar)
+				{
+					Size = -1
+				},
+				new DataParameter("@ID",        @ID,        LinqToDB.DataType.Int32),
+				new DataParameter("@ID_pList",  @idPList,   LinqToDB.DataType.Int32),
+				new DataParameter("@GTypeCode", @GTypeCode, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<PSelectDuplicatePasswordsResult>("[abd].[p_SelectDuplicatePasswords]", parameters);
+		}
+
+		public partial class PSelectDuplicatePasswordsResult
+		{
+			public int    ID  { get; set; }
+			public string FIO { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectDvsMass
+
+		public static IEnumerable<PSelectDvsMassResult> PSelectDvsMass(this Demobase12037DB dataConnection)
+		{
+			return dataConnection.QueryProc<PSelectDvsMassResult>("[abd].[p_SelectDvsMass]");
+		}
+
+		public partial class PSelectDvsMassResult
+		{
+			public int   Number           { get; set; }
+			public int   Left             { get; set; }
+			public int   Top              { get; set; }
+			public int   Width            { get; set; }
+			public int   Height           { get; set; }
+			public bool  LargeIcon        { get; set; }
+			public int?  NumberRelation   { get; set; }
+			public bool? DefaultLargeIcon { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectElementsForZonePT
+
+		public static IEnumerable<PSelectElementsForZonePTResult> PSelectElementsForZonePT(this Demobase12037DB dataConnection, int? @DeviceID, int? @ObjectID, int? @DevItemType, string @LocalElemets, string @ElementType)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@DeviceID",     @DeviceID,     LinqToDB.DataType.Int32),
+				new DataParameter("@ObjectID",     @ObjectID,     LinqToDB.DataType.Int32),
+				new DataParameter("@DevItemType",  @DevItemType,  LinqToDB.DataType.Int32),
+				new DataParameter("@LocalElemets", @LocalElemets, LinqToDB.DataType.VarChar)
+				{
+					Size = -1
+				},
+				new DataParameter("@ElementType",  @ElementType,  LinqToDB.DataType.VarChar)
+				{
+					Size = 50
+				}
+			};
+
+			return dataConnection.QueryProc<PSelectElementsForZonePTResult>("[abd].[p_SelectElementsForZonePT]", parameters);
+		}
+
+		public partial class PSelectElementsForZonePTResult
+		{
+			public int    ID             { get; set; }
+			public int    ParentID       { get; set; }
+			public string Name           { get; set; }
+			public int    ElementType    { get; set; }
+			public int?   ElementSubType { get; set; }
+			public int?   GType          { get; set; }
+			public int?   ShlType        { get; set; }
+			public int    ColumnSort     { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectElementsNameByMap
+
+		public static IEnumerable<PSelectElementsNameByMapResult> PSelectElementsNameByMap(this Demobase12037DB dataConnection, int? @idMap)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ID_Map", @idMap, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<PSelectElementsNameByMapResult>("[abd].[p_SelectElementsNameByMap]", parameters);
+		}
+
+		public partial class PSelectElementsNameByMapResult
+		{
+			public int    MapElementID { get; set; }
+			public int?   Address      { get; set; }
+			public string NameElement  { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectElementsToTree
+
+		public static IEnumerable<PSelectElementsToTreeResult> PSelectElementsToTree(this Demobase12037DB dataConnection, int? @idComp, int? @idMap, string @GType, int? @idObject, bool? @isMap)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ID_Comp",   @idComp,   LinqToDB.DataType.Int32),
+				new DataParameter("@ID_Map",    @idMap,    LinqToDB.DataType.Int32),
+				new DataParameter("@GType",     @GType,    LinqToDB.DataType.VarChar)
+				{
+					Size = 500
+				},
+				new DataParameter("@ID_Object", @idObject, LinqToDB.DataType.Int32),
+				new DataParameter("@isMap",     @isMap,    LinqToDB.DataType.Boolean)
+			};
+
+			return dataConnection.QueryProc<PSelectElementsToTreeResult>("[abd].[p_SelectElementsToTree]", parameters);
+		}
+
+		public partial class PSelectElementsToTreeResult
+		{
+			public int    ID           { get; set; }
+			public int?   GType        { get; set; }
+			public string ElementName  { get; set; }
+			public int?   MapID        { get; set; }
+			public int    PictureCount { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectElementsZonePTByDevice
+
+		public static IEnumerable<PSelectElementsZonePTByDeviceResult> PSelectElementsZonePTByDevice(this Demobase12037DB dataConnection, int? @DeviceID, int? @ObjectID)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@DeviceID", @DeviceID, LinqToDB.DataType.Int32),
+				new DataParameter("@ObjectID", @ObjectID, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<PSelectElementsZonePTByDeviceResult>("[abd].[p_SelectElementsZonePTByDevice]", parameters);
+		}
+
+		public partial class PSelectElementsZonePTByDeviceResult
+		{
+			public int    ID              { get; set; }
+			public int?   ParentID        { get; set; }
+			public int?   SiriusGroupType { get; set; }
+			public int    ElementType     { get; set; }
+			public string Name            { get; set; }
+			public int    BindingID       { get; set; }
+			public int?   GType           { get; set; }
+			public int?   ColumnSort      { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectGrRootMapElements
+
+		public static IEnumerable<PSelectGrRootMapElementsResult> PSelectGrRootMapElements(this Demobase12037DB dataConnection, int? @idParent, string @GTypes)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ID_Parent", @idParent, LinqToDB.DataType.Int32),
+				new DataParameter("@GTypes",    @GTypes,   LinqToDB.DataType.VarChar)
+				{
+					Size = 250
+				}
+			};
+
+			return dataConnection.QueryProc<PSelectGrRootMapElementsResult>("[abd].[p_SelectGrRootMapElements]", parameters);
+		}
+
+		public partial class PSelectGrRootMapElementsResult
+		{
+			public string ParentUnitType { get; set; }
+			public string ChildUnitType  { get; set; }
+			public int    MapID          { get; set; }
+			public string Text           { get; set; }
+			public int    ComputerID     { get; set; }
+			public int    GIndex         { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectIconsPlan
+
+		public static IEnumerable<PSelectIconsPlanResult> PSelectIconsPlan(this Demobase12037DB dataConnection)
+		{
+			return dataConnection.QueryProc<PSelectIconsPlanResult>("[abd].[p_SelectIconsPlan]");
+		}
+
+		public partial class PSelectIconsPlanResult
+		{
+			public int    ID             { get; set; }
+			public byte   IconGroup      { get; set; }
+			public int    Number         { get; set; }
+			public bool   LargeIcon      { get; set; }
+			public int?   NumberRelation { get; set; }
+			public string Description    { get; set; }
+			public byte[] ResourceIco    { get; set; }
+			public int?   ResWidth       { get; set; }
+			public int?   ResHeight      { get; set; }
+			public int?   ResCountIco    { get; set; }
+			public int    Width          { get; set; }
+			public int    Height         { get; set; }
+			public int    Left           { get; set; }
+			public int    Top            { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectInfoByPerson
+
+		public static IEnumerable<PSelectInfoByPersonResult> PSelectInfoByPerson(this Demobase12037DB dataConnection, int? @PersonID)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@PersonID", @PersonID, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<PSelectInfoByPersonResult>("[abd].[p_SelectInfoByPerson]", parameters);
+		}
+
+		public partial class PSelectInfoByPersonResult
+		{
+			public int  ID         { get; set; }
+			public int? CompanyID  { get; set; }
+			public int? DivisionID { get; set; }
+			public int? PostID     { get; set; }
+			public int? RoomID     { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectInfoMarkerData
+
+		public static IEnumerable<PSelectInfoMarkerDataResult> PSelectInfoMarkerData(this Demobase12037DB dataConnection, int? @idMapElem, int? @idMap)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ID_MapElem", @idMapElem, LinqToDB.DataType.Int32),
+				new DataParameter("@ID_Map",     @idMap,     LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<PSelectInfoMarkerDataResult>("[abd].[p_SelectInfoMarkerData]", parameters);
+		}
+
+		public partial class PSelectInfoMarkerDataResult
+		{
+			public int    ID_MapInfMark { get; set; }
+			public byte[] Image         { get; set; }
+			public string Text          { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectIsCanUpdate
+
+		public static IEnumerable<PSelectIsCanUpdateResult> PSelectIsCanUpdate(this Demobase12037DB dataConnection, string @Date, Guid? @AppGuid, string @ApplicationCode, string @MyChangesID)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@Date",            @Date,            LinqToDB.DataType.VarChar)
+				{
+					Size = 23
+				},
+				new DataParameter("@AppGuid",         @AppGuid,         LinqToDB.DataType.Guid),
+				new DataParameter("@ApplicationCode", @ApplicationCode, LinqToDB.DataType.VarChar)
+				{
+					Size = 25
+				},
+				new DataParameter("@MyChangesID",     @MyChangesID,     LinqToDB.DataType.VarChar)
+				{
+					Size = -1
+				}
+			};
+
+			return dataConnection.QueryProc<PSelectIsCanUpdateResult>("[abd].[p_SelectIsCanUpdate]", parameters);
+		}
+
+		public partial class PSelectIsCanUpdateResult
+		{
+			public int?      ID_Subj      { get; set; }
+			public string    Subj         { get; set; }
+			public int       UpdateStatus { get; set; }
+			public DateTime? ChangeDate   { get; set; }
+			public string    AData        { get; set; }
+			public byte[]    Contents     { get; set; }
+			public string    LastUpdDate  { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectItemsScenarios
+
+		public static IEnumerable<PSelectItemsScenariosResult> PSelectItemsScenarios(this Demobase12037DB dataConnection)
+		{
+			return dataConnection.QueryProc<PSelectItemsScenariosResult>("[abd].[p_SelectItemsScenarios]");
+		}
+
+		public partial class PSelectItemsScenariosResult
+		{
+			public int    ID              { get; set; }
+			public int    ID_RefItemsScen { get; set; }
+			public int    ID_ScenDevice   { get; set; }
+			public object Value           { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectItemsScenariosRegExp
+
+		public static IEnumerable<PSelectItemsScenariosRegExpResult> PSelectItemsScenariosRegExp(this Demobase12037DB dataConnection, int? @idLang)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ID_Lang", @idLang, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<PSelectItemsScenariosRegExpResult>("[abd].[p_SelectItemsScenariosRegExp]", parameters);
+		}
+
+		public partial class PSelectItemsScenariosRegExpResult
+		{
+			public int    ID_Item   { get; set; }
+			public string RegExp    { get; set; }
+			public string TypeValue { get; set; }
+			public int    ID_Level  { get; set; }
+			public string TypeName  { get; set; }
+			public int    TypeID    { get; set; }
+			public string ItemName  { get; set; }
+			public string Code      { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectItemsZonePTTemplate
+
+		public static IEnumerable<PSelectItemsZonePTTemplateResult> PSelectItemsZonePTTemplate(this Demobase12037DB dataConnection)
+		{
+			return dataConnection.QueryProc<PSelectItemsZonePTTemplateResult>("[abd].[p_SelectItemsZonePTTemplate]");
+		}
+
+		public partial class PSelectItemsZonePTTemplateResult
+		{
+			                      public string   ItemType   { get; set; }
+			                      public string   Code       { get; set; }
+			                      public string   Name       { get; set; }
+			                      public int      ID         { get; set; }
+			                      public string   TypeValue  { get; set; }
+			                      public string   TypeContrl { get; set; }
+			                      public decimal? MaxValue   { get; set; }
+			                      public decimal? MinValue   { get; set; }
+			[Column("isRefresh")] public bool     IsRefresh  { get; set; }
+			                      public decimal  Increment  { get; set; }
+			                      public bool     IncrFixed  { get; set; }
+			                      public string   DefValue   { get; set; }
+			                      public bool     Visible    { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectListComponents
+
+		public static IEnumerable<PSelectListComponentsResult> PSelectListComponents(this Demobase12037DB dataConnection, int? @MarkID)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@MarkID", @MarkID, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<PSelectListComponentsResult>("[abd].[p_SelectListComponents]", parameters);
+		}
+
+		public partial class PSelectListComponentsResult
+		{
+			public int   ID       { get; set; }
+			public int?  TypePage { get; set; }
+			public bool? Visible  { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectMapContent
+
+		public static IEnumerable<PSelectMapContentResult> PSelectMapContent(this Demobase12037DB dataConnection, int? @idMap)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ID_Map", @idMap, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<PSelectMapContentResult>("[abd].[p_SelectMapContent]", parameters);
+		}
+
+		public partial class PSelectMapContentResult
+		{
+			public string Comment    { get; set; }
+			public int    GIndex     { get; set; }
+			public byte[] Contents   { get; set; }
+			public int    ComputerID { get; set; }
+			public string SchemaExt  { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectMapElements
+
+		public static IEnumerable<PSelectMapElementsResult> PSelectMapElements(this Demobase12037DB dataConnection, int? @idMap, int? @idSection, string @GTypes)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ID_Map",     @idMap,     LinqToDB.DataType.Int32),
+				new DataParameter("@ID_Section", @idSection, LinqToDB.DataType.Int32),
+				new DataParameter("@GTypes",     @GTypes,    LinqToDB.DataType.VarChar)
+				{
+					Size = 250
+				}
+			};
+
+			return dataConnection.QueryProc<PSelectMapElementsResult>("[abd].[p_SelectMapElements]", parameters);
+		}
+
+		public partial class PSelectMapElementsResult
+		{
+			public int    MapID           { get; set; }
+			public int    UnitID          { get; set; }
+			public string UnitType        { get; set; }
+			public string Text            { get; set; }
+			public string MACAddress      { get; set; }
+			public int?   LineNo          { get; set; }
+			public string ItemUnitType    { get; set; }
+			public int?   ImageIndex      { get; set; }
+			public int?   IdDevice        { get; set; }
+			public int    ID              { get; set; }
+			public int    GType           { get; set; }
+			public int?   DeviceType      { get; set; }
+			public int?   DeviceInterface { get; set; }
+			public int?   Data            { get; set; }
+			public int?   D2              { get; set; }
+			public char?  D1              { get; set; }
+			public int    PictureCount    { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectMapIndicatorsDefault
+
+		public static IEnumerable<PSelectMapIndicatorsDefaultResult> PSelectMapIndicatorsDefault(this Demobase12037DB dataConnection)
+		{
+			return dataConnection.QueryProc<PSelectMapIndicatorsDefaultResult>("[abd].[p_SelectMapIndicatorsDefault]");
+		}
+
+		public partial class PSelectMapIndicatorsDefaultResult
+		{
+			public int    ID_Indicator { get; set; }
+			public int    RangeColor   { get; set; }
+			public double RangeMax     { get; set; }
+			public double RangeMin     { get; set; }
+			public int    StatusRange  { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectMapObjects
+
+		public static IEnumerable<PSelectMapObjectsResult> PSelectMapObjects(this Demobase12037DB dataConnection, int? @idMap, string @TypeElements)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ID_Map",       @idMap,        LinqToDB.DataType.Int32),
+				new DataParameter("@TypeElements", @TypeElements, LinqToDB.DataType.VarChar)
+				{
+					Size = 200
+				}
+			};
+
+			return dataConnection.QueryProc<PSelectMapObjectsResult>("[abd].[p_SelectMapObjects]", parameters);
+		}
+
+		public partial class PSelectMapObjectsResult
+		{
+			public int       ID           { get; set; }
+			public int       MapID        { get; set; }
+			public int       GType        { get; set; }
+			public int?      Num          { get; set; }
+			public int       UnitID       { get; set; }
+			public int       PictureCount { get; set; }
+			public byte[]    Pictures     { get; set; }
+			public DateTime? ChangeTime   { get; set; }
+			public int?      Link2Obj     { get; set; }
+			public int?      Flags        { get; set; }
+			public string    ClientType   { get; set; }
+			public int?      ObjectID     { get; set; }
+			public double?   IndMaxValue  { get; set; }
+			public double?   IndMinValue  { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectMapsIndicators
+
+		public static IEnumerable<PSelectMapsIndicatorsResult> PSelectMapsIndicators(this Demobase12037DB dataConnection, string @Subj, int? @idSubj)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@Subj",    @Subj,   LinqToDB.DataType.VarChar)
+				{
+					Size = 25
+				},
+				new DataParameter("@ID_Subj", @idSubj, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<PSelectMapsIndicatorsResult>("[abd].[p_SelectMapsIndicators]", parameters);
+		}
+
+		public partial class PSelectMapsIndicatorsResult
+		{
+			public int     ID_Comp         { get; set; }
+			public string  CompName        { get; set; }
+			public int     ID_Map          { get; set; }
+			public string  MapName         { get; set; }
+			public int     IndicatorType   { get; set; }
+			public int     IndicatorMapID  { get; set; }
+			public int     ID_Zone         { get; set; }
+			public string  ZoneName        { get; set; }
+			public int?    Low_RangeID     { get; set; }
+			public double? Low_RangeMax    { get; set; }
+			public double? Low_RangeMin    { get; set; }
+			public int?    Low_RangeColor  { get; set; }
+			public int     Norm_RangeID    { get; set; }
+			public double? Norm_RangeMax   { get; set; }
+			public double? Norm_RangeMin   { get; set; }
+			public int     Norm_RangeColor { get; set; }
+			public int     High_RangeID    { get; set; }
+			public double? High_RangeMax   { get; set; }
+			public double? High_RangeMin   { get; set; }
+			public int     High_RangeColor { get; set; }
+			public int?    Low_Status      { get; set; }
+			public int     Norm_Status     { get; set; }
+			public int     High_Status     { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectMaxIDHeadScen
+
+		public static IEnumerable<PSelectMaxIDHeadScenResult> PSelectMaxIDHeadScen(this Demobase12037DB dataConnection, int? @DeviceID, int? @DeviceType)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@DeviceID",   @DeviceID,   LinqToDB.DataType.Int32),
+				new DataParameter("@DeviceType", @DeviceType, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<PSelectMaxIDHeadScenResult>("[abd].[p_SelectMaxIDHeadScen]", parameters);
+		}
+
+		public partial class PSelectMaxIDHeadScenResult
+		{
+			public int Num { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectNameDevElementsPlan
+
+		public static IEnumerable<PSelectNameDevElementsPlanResult> PSelectNameDevElementsPlan(this Demobase12037DB dataConnection, string @Elements)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@Elements", @Elements, LinqToDB.DataType.Xml)
+				{
+					Size = -1
+				}
+			};
+
+			return dataConnection.QueryProc<PSelectNameDevElementsPlanResult>("[abd].[p_SelectNameDevElementsPlan]", parameters);
+		}
+
+		public partial class PSelectNameDevElementsPlanResult
+		{
+			public int    ID          { get; set; }
+			public int    ComputerID  { get; set; }
+			public int    GType       { get; set; }
+			public int    UnitID      { get; set; }
+			public string ElementName { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectPersons
+
+		public static IEnumerable<PSelectPersonsResult> PSelectPersons(this Demobase12037DB dataConnection, int? @idLang, string @ListType, int? @SubjType)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ID_Lang",  @idLang,   LinqToDB.DataType.Int32),
+				new DataParameter("@ListType", @ListType, LinqToDB.DataType.VarChar)
+				{
+					Size = 25
+				},
+				new DataParameter("@SubjType", @SubjType, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<PSelectPersonsResult>("[abd].[p_SelectPersons]", parameters);
+		}
+
+		public partial class PSelectPersonsResult
+		{
+			                          public int    ID            { get; set; }
+			                          public string Name          { get; set; }
+			                          public string FirstName     { get; set; }
+			                          public string MidName       { get; set; }
+			                          public string TabNumber     { get; set; }
+			                          public int    Status        { get; set; }
+			                          public string Avto          { get; set; }
+			                          public string CompanyName   { get; set; }
+			                          public int    TypeDocum     { get; set; }
+			                          public string DokumNumber   { get; set; }
+			                          public string DokumSeries   { get; set; }
+			                          public string INN           { get; set; }
+			                          public string StatusName    { get; set; }
+			                          public int?   DivisionID    { get; set; }
+			                          public int?   CompanyID     { get; set; }
+			                          public string Automarka     { get; set; }
+			                          public string AutoNumber    { get; set; }
+			[Column("isBlackList")  ] public bool?  IsBlackList   { get; set; }
+			[Column("isFiredList")  ] public bool?  IsFiredList   { get; set; }
+			[Column("isNotCard")    ] public bool?  IsNotCard     { get; set; }
+			                          public int    StatusRecord  { get; set; }
+			[Column("isPhotoPerson")] public int    IsPhotoPerson { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectPersonsCustomFields
+
+		public static IEnumerable<PSelectPersonsCustomFieldsResult> PSelectPersonsCustomFields(this Demobase12037DB dataConnection, int? @idLang, string @IDPersons)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ID_Lang",   @idLang,    LinqToDB.DataType.Int32),
+				new DataParameter("@IDPersons", @IDPersons, LinqToDB.DataType.Xml)
+				{
+					Size = -1
+				}
+			};
+
+			return dataConnection.QueryProc<PSelectPersonsCustomFieldsResult>("[abd].[p_SelectPersonsCustomFields]", parameters);
+		}
+
+		public partial class PSelectPersonsCustomFieldsResult
+		{
+			                  public int    Owner        { get; set; }
+			                  public int    IDFieldName  { get; set; }
+			                  public string FieldName    { get; set; }
+			                  public int    IDFieldValue { get; set; }
+			[Column("value")] public string Value        { get; set; }
+			                  public int    PObject      { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectPersonsPasswords
+
+		public static IEnumerable<PSelectPersonsPasswordsResult> PSelectPersonsPasswords(this Demobase12037DB dataConnection, int? @OperatorID, int? @idLang, string @IDPersons)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@OperatorID", @OperatorID, LinqToDB.DataType.Int32),
+				new DataParameter("@ID_Lang",    @idLang,     LinqToDB.DataType.Int32),
+				new DataParameter("@IDPersons",  @IDPersons,  LinqToDB.DataType.Xml)
+				{
+					Size = -1
+				}
+			};
+
+			return dataConnection.QueryProc<PSelectPersonsPasswordsResult>("[abd].[p_SelectPersonsPasswords]", parameters);
+		}
+
+		public partial class PSelectPersonsPasswordsResult
+		{
+			public int?   ID      { get; set; }
+			public int?   IDMark  { get; set; }
+			public int?   GType   { get; set; }
+			public string CodeP   { get; set; }
+			public int    PObject { get; set; }
+			public int?   Config  { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectPersonsQuickList
+
+		public static IEnumerable<PSelectPersonsQuickListResult> PSelectPersonsQuickList(this Demobase12037DB dataConnection, string @QuickListType)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@QuickListType", @QuickListType, LinqToDB.DataType.VarChar)
+				{
+					Size = 100
+				}
+			};
+
+			return dataConnection.QueryProc<PSelectPersonsQuickListResult>("[abd].[p_SelectPersonsQuickList]", parameters);
+		}
+
+		public partial class PSelectPersonsQuickListResult
+		{
+			                     public int    ID        { get; set; }
+			                     public string Caption   { get; set; }
+			                     public bool?  BlackList { get; set; }
+			[Column("isActive")] public bool?  IsActive  { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectPersScanDoc
+
+		public static IEnumerable<PSelectPersScanDocResult> PSelectPersScanDoc(this Demobase12037DB dataConnection, int? @ID)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ID", @ID, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<PSelectPersScanDocResult>("[abd].[p_SelectPersScanDoc]", parameters);
+		}
+
+		public partial class PSelectPersScanDocResult
+		{
+			public int    ID      { get; set; }
+			public int    Spack   { get; set; }
+			public byte[] Picture { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectPKUDeviceScenarios
+
+		public static IEnumerable<PSelectPKUDeviceScenariosResult> PSelectPKUDeviceScenarios(this Demobase12037DB dataConnection, int? @PKUID, int? @DeviceType)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@PKUID",      @PKUID,      LinqToDB.DataType.Int32),
+				new DataParameter("@DeviceType", @DeviceType, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<PSelectPKUDeviceScenariosResult>("[abd].[p_SelectPKUDeviceScenarios]", parameters);
+		}
+
+		public partial class PSelectPKUDeviceScenariosResult
+		{
+			public int?   LocalNumber    { get; set; }
+			public int    ID_Scenario    { get; set; }
+			public int    ID_Device      { get; set; }
+			public int?   DeviceType     { get; set; }
+			public string Name           { get; set; }
+			public int    PKUID          { get; set; }
+			public int?   LocalType      { get; set; }
+			public int?   ParentDeviceID { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectPropertiesNode
+
+		public static IEnumerable<PSelectPropertiesNodeResult> PSelectPropertiesNode(this Demobase12037DB dataConnection, int? @MapID, int? @UnitID, string @UnitType)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@MapID",    @MapID,    LinqToDB.DataType.Int32),
+				new DataParameter("@UnitID",   @UnitID,   LinqToDB.DataType.Int32),
+				new DataParameter("@UnitType", @UnitType, LinqToDB.DataType.VarChar)
+				{
+					Size = 500
+				}
+			};
+
+			return dataConnection.QueryProc<PSelectPropertiesNodeResult>("[abd].[p_SelectPropertiesNode]", parameters);
+		}
+
+		public partial class PSelectPropertiesNodeResult
+		{
+			public string Caption      { get; set; }
+			public string FieldName    { get; set; }
+			public int?   PropertyType { get; set; }
+			public int?   MaxInt       { get; set; }
+			public int?   MinInt       { get; set; }
+			public string Value        { get; set; }
+			public bool?  ReadOnly     { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectScenarios
+
+		public static IEnumerable<PSelectScenariosResult> PSelectScenarios(this Demobase12037DB dataConnection)
+		{
+			return dataConnection.QueryProc<PSelectScenariosResult>("[abd].[p_SelectScenarios]");
+		}
+
+		public partial class PSelectScenariosResult
+		{
+			public int    ID                { get; set; }
+			public int?   ID_Parent         { get; set; }
+			public int    ID_ScenariosTypes { get; set; }
+			public int    ID_Device         { get; set; }
+			public int    DeviceType        { get; set; }
+			public int    ID_Level          { get; set; }
+			public int?   Num               { get; set; }
+			public string ScenName          { get; set; }
+			public int    ImageIndex        { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectScenariosDevice
+
+		public static IEnumerable<PSelectScenariosDeviceResult> PSelectScenariosDevice(this Demobase12037DB dataConnection)
+		{
+			return dataConnection.QueryProc<PSelectScenariosDeviceResult>("[abd].[p_SelectScenariosDevice]");
+		}
+
+		public partial class PSelectScenariosDeviceResult
+		{
+			public int    ID_Device  { get; set; }
+			public int?   DeviceType { get; set; }
+			public string NameDevice { get; set; }
+			public int?   ComPortNum { get; set; }
+			public int?   CompNum    { get; set; }
+			public int    ImageIndex { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectScenariosTypes
+
+		public static IEnumerable<PSelectScenariosTypesResult> PSelectScenariosTypes(this Demobase12037DB dataConnection, int? @idLang)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ID_Lang", @idLang, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<PSelectScenariosTypesResult>("[abd].[p_SelectScenariosTypes]", parameters);
+		}
+
+		public partial class PSelectScenariosTypesResult
+		{
+			public int    ID          { get; set; }
+			public string Name        { get; set; }
+			public bool   Def         { get; set; }
+			public int    Sort        { get; set; }
+			public int    ImageIndex  { get; set; }
+			public int    ImageIDScen { get; set; }
+			public int    ImageIDStep { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectScenarioValues
+
+		public static IEnumerable<PSelectScenarioValuesResult> PSelectScenarioValues(this Demobase12037DB dataConnection, int? @idScenario)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ID_Scenario", @idScenario, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<PSelectScenarioValuesResult>("[abd].[p_SelectScenarioValues]", parameters);
+		}
+
+		public partial class PSelectScenarioValuesResult
+		{
+			public int    ID              { get; set; }
+			public int    ID_ScenDevice   { get; set; }
+			public int    ID_RefItemsScen { get; set; }
+			public string Value           { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectScriptDevPropertys
+
+		public static IEnumerable<PSelectScriptDevPropertysResult> PSelectScriptDevPropertys(this Demobase12037DB dataConnection, int? @idLang, int? @ID, int? @ObjectType, int? @idElementType)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ID_Lang",        @idLang,        LinqToDB.DataType.Int32),
+				new DataParameter("@ID",             @ID,            LinqToDB.DataType.Int32),
+				new DataParameter("@ObjectType",     @ObjectType,    LinqToDB.DataType.Int32),
+				new DataParameter("@ID_ElementType", @idElementType, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<PSelectScriptDevPropertysResult>("[abd].[p_SelectScriptDevPropertys]", parameters);
+		}
+
+		public partial class PSelectScriptDevPropertysResult
+		{
+			                      public int?     ID_Type    { get; set; }
+			                      public int      ID_Item    { get; set; }
+			                      public byte?    ID_Level   { get; set; }
+			                      public string   NameItem   { get; set; }
+			                      public string   TypeValue  { get; set; }
+			                      public string   TypeContrl { get; set; }
+			                      public bool     ReadOnly   { get; set; }
+			                      public string   DevValue   { get; set; }
+			                      public string   Code       { get; set; }
+			                      public decimal? MaxValue   { get; set; }
+			                      public decimal? MinValue   { get; set; }
+			[Column("isRefresh")] public bool     IsRefresh  { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectScriptTemplate
+
+		public static IEnumerable<PSelectScriptTemplateResult> PSelectScriptTemplate(this Demobase12037DB dataConnection, int? @idLang)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ID_Lang", @idLang, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<PSelectScriptTemplateResult>("[abd].[p_SelectScriptTemplate]", parameters);
+		}
+
+		public partial class PSelectScriptTemplateResult
+		{
+			                      public int      ID_Type    { get; set; }
+			                      public int      ID_Item    { get; set; }
+			                      public string   NameType   { get; set; }
+			                      public byte     ID_Level   { get; set; }
+			                      public string   NameItem   { get; set; }
+			                      public string   TypeValue  { get; set; }
+			                      public string   TypeContrl { get; set; }
+			                      public bool     ReadOnly   { get; set; }
+			                      public string   DevValue   { get; set; }
+			                      public string   Code       { get; set; }
+			                      public decimal? MaxValue   { get; set; }
+			                      public decimal? MinValue   { get; set; }
+			[Column("isRefresh")] public bool     IsRefresh  { get; set; }
+			                      public decimal  Increment  { get; set; }
+			                      public bool     IncrFixed  { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectScriptTreeDevices
+
+		public static IEnumerable<PSelectScriptTreeDevicesResult> PSelectScriptTreeDevices(this Demobase12037DB dataConnection)
+		{
+			return dataConnection.QueryProc<PSelectScriptTreeDevicesResult>("[abd].[p_SelectScriptTreeDevices]");
+		}
+
+		public partial class PSelectScriptTreeDevicesResult
+		{
+			                           public int    ID             { get; set; }
+			                           public int    ID_Parent      { get; set; }
+			                           public int    GIndex         { get; set; }
+			                           public int?   ElementTypeID  { get; set; }
+			                           public string ElementType    { get; set; }
+			                           public int    ComputerID     { get; set; }
+			                           public int?   GroupDevType   { get; set; }
+			                           public int?   Gtype          { get; set; }
+			                           public int    NumberDevItem  { get; set; }
+			                           public int?   ImageIndex     { get; set; }
+			                           public int    PKUID          { get; set; }
+			                           public int    ID_ScenDevice  { get; set; }
+			                           public int    DevAddress     { get; set; }
+			                           public int?   ComNumber      { get; set; }
+			                           public int?   Command        { get; set; }
+			                           public bool?  Voice          { get; set; }
+			                           public bool?  Relay          { get; set; }
+			                           public bool?  Loop           { get; set; }
+			                           public bool?  Access         { get; set; }
+			[Column("isFilterVoice") ] public bool?  IsFilterVoice  { get; set; }
+			[Column("isFilterRelay") ] public bool?  IsFilterRelay  { get; set; }
+			[Column("isFilterLoop")  ] public bool?  IsFilterLoop   { get; set; }
+			[Column("isFilterAccess")] public bool?  IsFilterAccess { get; set; }
+			                           public string Name           { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectStaffImage
+
+		public static IEnumerable<PSelectStaffImageResult> PSelectStaffImage(this Demobase12037DB dataConnection, int? @ID)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ID", @ID, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<PSelectStaffImageResult>("[abd].[p_SelectStaffImage]", parameters);
+		}
+
+		public partial class PSelectStaffImageResult
+		{
+			public int    ID      { get; set; }
+			public int?   Spack   { get; set; }
+			public byte[] Picture { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectTemplateGuestByCode
+
+		public static IEnumerable<PSelectTemplateGuestByCodeResult> PSelectTemplateGuestByCode(this Demobase12037DB dataConnection, string @Code, int? @idGuest)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@Code",     @Code,    LinqToDB.DataType.VarChar)
+				{
+					Size = -1
+				},
+				new DataParameter("@ID_Guest", @idGuest, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<PSelectTemplateGuestByCodeResult>("[abd].[p_SelectTemplateGuestByCode]", parameters);
+		}
+
+		public partial class PSelectTemplateGuestByCodeResult
+		{
+			public int    ID_Owner  { get; set; }
+			public string OwnerName { get; set; }
+			public int    IDNoFace  { get; set; }
+			public int    TypePers  { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectTreePlanNodes
+
+		public static IEnumerable<PSelectTreePlanNodesResult> PSelectTreePlanNodes(this Demobase12037DB dataConnection, string @idTypeNodes, int? @idComputer, int? @idPlan)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ID_TypeNodes", @idTypeNodes, LinqToDB.DataType.VarChar)
+				{
+					Size = 100
+				},
+				new DataParameter("@ID_Computer",  @idComputer,  LinqToDB.DataType.Int32),
+				new DataParameter("@ID_Plan",      @idPlan,      LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<PSelectTreePlanNodesResult>("[abd].[p_SelectTreePlanNodes]", parameters);
+		}
+
+		public partial class PSelectTreePlanNodesResult
+		{
+			public string UnitType     { get; set; }
+			public int    ID           { get; set; }
+			public string Text         { get; set; }
+			public int?   Parent_ID    { get; set; }
+			public int    Gindex       { get; set; }
+			public int?   PictureCount { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectValueItemsZonePT
+
+		public static IEnumerable<PSelectValueItemsZonePTResult> PSelectValueItemsZonePT(this Demobase12037DB dataConnection, int? @idParent, int? @SiriusGroupType)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ID_Parent",       @idParent,        LinqToDB.DataType.Int32),
+				new DataParameter("@SiriusGroupType", @SiriusGroupType, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<PSelectValueItemsZonePTResult>("[abd].[p_SelectValueItemsZonePT]", parameters);
+		}
+
+		public partial class PSelectValueItemsZonePTResult
+		{
+			public int    ID          { get; set; }
+			public int    ReferenceID { get; set; }
+			public string Code        { get; set; }
+			public string Value       { get; set; }
+		}
+
+		#endregion
+
+		#region PSelectValuesDevItemsScript
+
+		public static IEnumerable<PSelectValuesDevItemsScriptResult> PSelectValuesDevItemsScript(this Demobase12037DB dataConnection, int? @idDevice, int? @idDeviceType)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@ID_Device",     @idDevice,     LinqToDB.DataType.Int32),
+				new DataParameter("@ID_DeviceType", @idDeviceType, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.QueryProc<PSelectValuesDevItemsScriptResult>("[abd].[p_SelectValuesDevItemsScript]", parameters);
+		}
+
+		public partial class PSelectValuesDevItemsScriptResult
+		{
+			public int    ID              { get; set; }
+			public int    ID_Device       { get; set; }
+			public int    ID_RefItemsScen { get; set; }
+			public int    ID_DeviceType   { get; set; }
+			public string Value           { get; set; }
+		}
+
+		#endregion
+
+		#region PTransferringPlansToNewComp
+
+		public static IEnumerable<PTransferringPlansToNewCompResult> PTransferringPlansToNewComp(this Demobase12037DB dataConnection, int? @NewCompID, string @PlansID, Guid? @AppGuid)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@NewCompID", @NewCompID, LinqToDB.DataType.Int32),
+				new DataParameter("@PlansID",   @PlansID,   LinqToDB.DataType.VarChar)
+				{
+					Size = -1
+				},
+				new DataParameter("@AppGuid",   @AppGuid,   LinqToDB.DataType.Guid)
+			};
+
+			return dataConnection.QueryProc<PTransferringPlansToNewCompResult>("[abd].[p_TransferringPlansToNewComp]", parameters);
+		}
+
+		public partial class PTransferringPlansToNewCompResult
+		{
+			public int? NewCompID { get; set; }
+		}
+
+		#endregion
+
+		#region PGuestDeletedId
+
+		public static int PGuestDeletedId(this Demobase12037DB dataConnection, int? @aHozOrgan, int? @aRule, int? @IDNoFace)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@aHozOrgan", @aHozOrgan, LinqToDB.DataType.Int32),
+				new DataParameter("@aRule",     @aRule,     LinqToDB.DataType.Int32),
+				new DataParameter("@IDNoFace",  @IDNoFace,  LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.ExecuteProc("[dbo].[pGuestDeletedId]", parameters);
+		}
+
+		#endregion
+
+		#region RCheckLogin
+
+		public static IEnumerable<RCheckLoginResult> RCheckLogin(this Demobase12037DB dataConnection, string @md5Pass, string @login, ref int? @err)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@md5_pass", @md5Pass, LinqToDB.DataType.VarChar)
+				{
+					Size = 16
+				},
+				new DataParameter("@login", @login, LinqToDB.DataType.VarChar)
+				{
+					Size = 100
+				},
+				new DataParameter("@err", @err, LinqToDB.DataType.Int32)
+				{
+					Direction = ParameterDirection.InputOutput
+				}
+			};
+
+			var ms = dataConnection.MappingSchema;
+
+			var ret = dataConnection.QueryProc(dataReader =>
+				new RCheckLoginResult
+				{
+					Column1 = Converter.ChangeTypeTo<int>(dataReader.GetValue(0), ms),
+				},
+				"[dbo].[rCheckLogin]", parameters).ToList();
+
+			@err = Converter.ChangeTypeTo<int?>(parameters[2].Value);
+
+			return ret;
+		}
+
+		public partial class RCheckLoginResult
+		{
+			[Column("")] public int Column1 { get; set; }
+		}
+
+		#endregion
+
+		#region RControlItems
+
+		public static int RControlItems(this Demobase12037DB dataConnection, DataTable @controlItems, ref int? @Err)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@control_items", @controlItems, LinqToDB.DataType.Structured)
+				{
+					DbType = "[dbo].[control_itemstype]"
+				},
+				new DataParameter("@Err", @Err, LinqToDB.DataType.Int32)
+				{
+					Direction = ParameterDirection.InputOutput
+				}
+			};
+
+			var ret = dataConnection.ExecuteProc("[dbo].[rControlItems]", parameters);
+
+			@Err = Converter.ChangeTypeTo<int?>(parameters[1].Value);
+
+			return ret;
+		}
+
+		#endregion
+
+		#region RGetItemsForLogin
+
+		public static IEnumerable<RGetItemsForLoginResult> RGetItemsForLogin(this Demobase12037DB dataConnection, int? @passId, DataTable @listItems, ref int? @err)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@pass_id", @passId, LinqToDB.DataType.Int32),
+				new DataParameter("@list_items", @listItems, LinqToDB.DataType.Structured)
+				{
+					DbType = "[dbo].[list_itemstype]"
+				},
+				new DataParameter("@err", @err, LinqToDB.DataType.Int32)
+				{
+					Direction = ParameterDirection.InputOutput
+				}
+			};
+
+			var ret = dataConnection.QueryProc<RGetItemsForLoginResult>("[dbo].[rGetItemsForLogin]", parameters).ToList();
+
+			@err = Converter.ChangeTypeTo<int?>(parameters[2].Value);
+
+			return ret;
+		}
+
+		public partial class RGetItemsForLoginResult
+		{
+			[Column("item_id")  ] public int  Item_id   { get; set; }
+			[Column("item_type")] public int  Item_type { get; set; }
+			[Column("rights")   ] public int? Rights    { get; set; }
+		}
+
+		#endregion
+
+		#region RGetItemsStatesFromQuery
+
+		public static IEnumerable<RGetItemsStatesFromQueryResult> RGetItemsStatesFromQuery(this Demobase12037DB dataConnection, DataTable @listItems, ref int? @err)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@list_items", @listItems, LinqToDB.DataType.Structured)
+				{
+					DbType = "[dbo].[list_itemstype]"
+				},
+				new DataParameter("@err", @err, LinqToDB.DataType.Int32)
+				{
+					Direction = ParameterDirection.InputOutput
+				}
+			};
+
+			var ret = dataConnection.QueryProc<RGetItemsStatesFromQueryResult>("[dbo].[rGetItemsStatesFromQuery]", parameters).ToList();
+
+			@err = Converter.ChangeTypeTo<int?>(parameters[1].Value);
+
+			return ret;
+		}
+
+		public partial class RGetItemsStatesFromQueryResult
+		{
+			                            public int      Item_Id         { get; set; }
+			[Column("item_type")      ] public int      Item_type       { get; set; }
+			[Column("state_timestamp")] public DateTime State_timestamp { get; set; }
+			[Column("state_item")     ] public int      State_item      { get; set; }
+		}
+
+		#endregion
+
+		#region SelectMAlarm
+
+		public static IEnumerable<SelectMAlarmResult> SelectMAlarm(this Demobase12037DB dataConnection, DateTime? @StartDate, DateTime? @StopDate)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@StartDate", @StartDate, LinqToDB.DataType.DateTime),
+				new DataParameter("@StopDate",  @StopDate,  LinqToDB.DataType.DateTime)
+			};
+
+			return dataConnection.QueryProc<SelectMAlarmResult>("[dbo].[Select_mAlarm]", parameters);
+		}
+
+		public partial class SelectMAlarmResult
+		{
+			public DateTime? Time0        { get; set; }
+			public string    EventName    { get; set; }
+			public string    ZoneName     { get; set; }
+			public int?      Object       { get; set; }
+			public string    ObjectName   { get; set; }
+			public string    OperatorName { get; set; }
+			public string    Name         { get; set; }
+		}
+
+		#endregion
+
+		#region SelectMAlarmCurrentDay
+
+		public static IEnumerable<SelectMAlarmCurrentDayResult> SelectMAlarmCurrentDay(this Demobase12037DB dataConnection)
+		{
+			return dataConnection.QueryProc<SelectMAlarmCurrentDayResult>("[dbo].[Select_mAlarm_CurrentDay]");
+		}
+
+		public partial class SelectMAlarmCurrentDayResult
+		{
+			public DateTime? Time0        { get; set; }
+			public string    EventName    { get; set; }
+			public string    ZoneName     { get; set; }
+			public int?      Object       { get; set; }
+			public string    ObjectName   { get; set; }
+			public string    OperatorName { get; set; }
+			public string    Name         { get; set; }
+		}
+
+		#endregion
+
+		#region SelectMAlarmLastDay
+
+		public static IEnumerable<SelectMAlarmLastDayResult> SelectMAlarmLastDay(this Demobase12037DB dataConnection)
+		{
+			return dataConnection.QueryProc<SelectMAlarmLastDayResult>("[dbo].[Select_mAlarm_LastDay]");
+		}
+
+		public partial class SelectMAlarmLastDayResult
+		{
+			public DateTime? Time0        { get; set; }
+			public string    EventName    { get; set; }
+			public string    ZoneName     { get; set; }
+			public int?      Object       { get; set; }
+			public string    ObjectName   { get; set; }
+			public string    OperatorName { get; set; }
+			public string    Name         { get; set; }
+		}
+
+		#endregion
+
+		#region SpGetSirChangeLog
+
+		public static IEnumerable<SpGetSirChangeLogResult> SpGetSirChangeLog(this Demobase12037DB dataConnection)
+		{
+			return dataConnection.QueryProc<SpGetSirChangeLogResult>("[dbo].[sp_get_sir_change_log]");
+		}
+
+		public partial class SpGetSirChangeLogResult
+		{
+			[Column("id")             ] public int Id              { get; set; }
+			[Column("sir_object_type")] public int Sir_object_type { get; set; }
+			[Column("sir_dev_id")     ] public int Sir_dev_id      { get; set; }
+			[Column("index")          ] public int Index           { get; set; }
+			[Column("action")         ] public int Action          { get; set; }
+		}
+
+		#endregion
+
+		#region SpSetSirChangeLogItemIsDone
+
+		public static int SpSetSirChangeLogItemIsDone(this Demobase12037DB dataConnection, int? @id)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@id", @id, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.ExecuteProc("[dbo].[sp_set_sir_change_log_item_is_done]", parameters);
+		}
+
+		#endregion
+
+		#region UpAddLinkedServer
+
+		public static IEnumerable<UpAddLinkedServerResult> UpAddLinkedServer(this Demobase12037DB dataConnection, string @SrvName, string @UserName, string @Pwd)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@SrvName",  @SrvName,  LinqToDB.DataType.NVarChar)
+				{
+					Size = 128
+				},
+				new DataParameter("@UserName", @UserName, LinqToDB.DataType.NVarChar)
+				{
+					Size = 128
+				},
+				new DataParameter("@Pwd",      @Pwd,      LinqToDB.DataType.NVarChar)
+				{
+					Size = 128
+				}
+			};
+
+			var ms = dataConnection.MappingSchema;
+
+			return dataConnection.QueryProc(dataReader =>
+				new UpAddLinkedServerResult
+				{
+					Column1 = Converter.ChangeTypeTo<int>(dataReader.GetValue(0), ms),
+				},
+				"[dbo].[upAddLinkedServer]", parameters);
+		}
+
+		public partial class UpAddLinkedServerResult
+		{
+			[Column("")] public int Column1 { get; set; }
+		}
+
+		#endregion
+
+		#region UpClearForeignKeyConstraint
+
+		public static int UpClearForeignKeyConstraint(this Demobase12037DB dataConnection, string @Tbl)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@Tbl", @Tbl, LinqToDB.DataType.NVarChar)
+				{
+					Size = 50
+				}
+			};
+
+			return dataConnection.ExecuteProc("[dbo].[upClearForeignKeyConstraint]", parameters);
+		}
+
+		#endregion
+
+		#region UpDropMergeExtArticles
+
+		public static IEnumerable<UpDropMergeExtArticlesResult> UpDropMergeExtArticles(this Demobase12037DB dataConnection, string @PubName)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@PubName", @PubName, LinqToDB.DataType.NVarChar)
+				{
+					Size = 128
+				}
+			};
+
+			return dataConnection.QueryProc<UpDropMergeExtArticlesResult>("[dbo].[upDropMergeExtArticles]", parameters);
+		}
+
+		public partial class UpDropMergeExtArticlesResult
+		{
+			[Column("p_type")      ] public int  P_type       { get; set; }
+			[Column("publisher")   ] public char Publisher    { get; set; }
+			[Column("publisher_db")] public char Publisher_db { get; set; }
+		}
+
+		#endregion
+
+		#region UpFillDefaultSysParam
+
+		public static int UpFillDefaultSysParam(this Demobase12037DB dataConnection, int? @CompID)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@CompID", @CompID, LinqToDB.DataType.Int32)
+			};
+
+			return dataConnection.ExecuteProc("[dbo].[upFillDefaultSysParam]", parameters);
+		}
+
+		#endregion
+
+		#region WriteEventTopLogData
+
+		public static int WriteEventTopLogData(this Demobase12037DB dataConnection, int? @aEvent, string @aRemark)
+		{
+			var parameters = new []
+			{
+				new DataParameter("@aEvent",  @aEvent,  LinqToDB.DataType.Int32),
+				new DataParameter("@aRemark", @aRemark, LinqToDB.DataType.NVarChar)
+				{
+					Size = 50
+				}
+			};
+
+			return dataConnection.ExecuteProc("[dbo].[WriteEventTopLogData]", parameters);
+		}
+
+		#endregion
+	}
+
+	public static partial class SqlFunctions
+	{
+		#region AddState
+
+		[Sql.Function(Name="[dbo].[AddState]", ServerSideOnly=true)]
+		public static string AddState(int? @State)
+		{
+			throw new InvalidOperationException();
+		}
+
+		#endregion
+
+		#region FnGetDeviceImage
+
+		[Sql.Function(Name="[abd].[fn_GetDeviceImage]", ServerSideOnly=true)]
+		public static int? FnGetDeviceImage(int? @DeviceType, int? @ImageShift, bool? @TTreeHard)
+		{
+			throw new InvalidOperationException();
+		}
+
+		#endregion
+
+		#region FnGetDocTypeNameByDocTypeID
+
+		[Sql.Function(Name="[dbo].[fn_GetDocTypeNameByDocTypeID]", ServerSideOnly=true)]
+		public static string FnGetDocTypeNameByDocTypeID(int? @DocTypeID, int? @Language)
+		{
+			throw new InvalidOperationException();
+		}
+
+		#endregion
+
+		#region FnGetHumanStatusLabelForReport
+
+		[Sql.Function(Name="[Reporter].[fn_GetHumanStatusLabelForReport]", ServerSideOnly=true)]
+		public static string FnGetHumanStatusLabelForReport(int? @pListID)
+		{
+			throw new InvalidOperationException();
+		}
+
+		#endregion
+
+		#region FnGetPasswordTypeNameByPasswordTypeID
+
+		[Sql.Function(Name="[dbo].[fn_GetPasswordTypeNameByPasswordTypeID]", ServerSideOnly=true)]
+		public static string FnGetPasswordTypeNameByPasswordTypeID(int? @Gtype)
+		{
+			throw new InvalidOperationException();
+		}
+
+		#endregion
+
+		#region FnGetReportParamID
+
+		[Sql.Function(Name="[Reporter].[fn_GetReportParamID]", ServerSideOnly=true)]
+		public static int? FnGetReportParamID(string @ReportName, string @ParamName)
+		{
+			throw new InvalidOperationException();
+		}
+
+		#endregion
+
+		#region FnIsBitActive
+
+		[Sql.Function(Name="[dbo].[fn_isBitActive]", ServerSideOnly=true)]
+		public static bool? FnIsBitActive(int? @Int, int? @position)
+		{
+			throw new InvalidOperationException();
+		}
+
+		#endregion
+
+		#region GetAccessGroup
+
+		[Sql.Function(Name="[dbo].[GetAccessGroup]", ServerSideOnly=true)]
+		public static long? GetAccessGroup(long? @GrStatus, long? @GroupID)
+		{
+			throw new InvalidOperationException();
+		}
+
+		#endregion
+
+		#region GetAddress
+
+		[Sql.Function(Name="[dbo].[GetAddress]", ServerSideOnly=true)]
+		public static string GetAddress(int? @TypeIndex, int? @IndexZone)
+		{
+			throw new InvalidOperationException();
+		}
+
+		#endregion
+
+		#region GetDeviceName
+
+		[Sql.Function(Name="[dbo].[GetDeviceName]", ServerSideOnly=true)]
+		public static string GetDeviceName(long? @tpIndex, long? @IndexZone)
+		{
+			throw new InvalidOperationException();
+		}
+
+		#endregion
+
+		#region GetDevicePrefix
+
+		[Sql.Function(Name="[dbo].[GetDevicePrefix]", ServerSideOnly=true)]
+		public static string GetDevicePrefix(int? @DeviceID)
+		{
+			throw new InvalidOperationException();
+		}
+
+		#endregion
+
+		#region GetMeasureForAdc
+
+		[Sql.Function(Name="[dbo].[getMeasure_for_adc]", ServerSideOnly=true)]
+		public static string GetMeasureForAdc(Guid? @idAdc)
+		{
+			throw new InvalidOperationException();
+		}
+
+		#endregion
+
+		#region GetNameEvReply
+
+		[Sql.Function(Name="[dbo].[GetNameEvReply]", ServerSideOnly=true)]
+		public static string GetNameEvReply(int? @TypeEvReply, int? @UnitIDEvReply)
+		{
+			throw new InvalidOperationException();
+		}
+
+		#endregion
+
+		#region GetSectionTypesGroup
+
+		[Sql.Function(Name="[dbo].[GetSectionTypesGroup]", ServerSideOnly=true)]
+		public static int? GetSectionTypesGroup(int? @sectionId)
+		{
+			throw new InvalidOperationException();
+		}
+
+		#endregion
+
+		#region GetTypeEvReply
+
+		[Sql.Function(Name="[dbo].[GetTypeEvReply]", ServerSideOnly=true)]
+		public static string GetTypeEvReply(int? @TypeEvReply)
+		{
+			throw new InvalidOperationException();
+		}
+
+		#endregion
+
+		#region UsfISTemplateUD
+
+		[Sql.Function(Name="[dbo].[usfISTemplateUD]", ServerSideOnly=true)]
+		public static int? UsfISTemplateUD(int? @GroupID)
+		{
+			throw new InvalidOperationException();
+		}
+
+		#endregion
+	}
+
 	public static partial class TableExtensions
 	{
 		public static AccessZone Find(this ITable<AccessZone> table, int ID)
@@ -708,7 +8729,631 @@ namespace ACMSE
 				t.ID == ID);
 		}
 
+		public static Adc Find(this ITable<Adc> table, Guid GUID)
+		{
+			return table.FirstOrDefault(t =>
+				t.GUID == GUID);
+		}
+
+		public static ApplicationModifData Find(this ITable<ApplicationModifData> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static Authority Find(this ITable<Authority> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static BindingCommandScenario Find(this ITable<BindingCommandScenario> table, int IdItemsScenarios, int IdCommandScenarios, byte IdLevel)
+		{
+			return table.FirstOrDefault(t =>
+				t.IdItemsScenarios   == IdItemsScenarios   &&
+				t.IdCommandScenarios == IdCommandScenarios &&
+				t.IdLevel            == IdLevel);
+		}
+
+		public static BindingConditionStepScen Find(this ITable<BindingConditionStepScen> table, int IdScenDevice, bool Access, int IdConditionScen)
+		{
+			return table.FirstOrDefault(t =>
+				t.IdScenDevice    == IdScenDevice &&
+				t.Access          == Access       &&
+				t.IdConditionScen == IdConditionScen);
+		}
+
+		public static BindingGrObjectsStepScen Find(this ITable<BindingGrObjectsStepScen> table, int IdScenDevice, bool Access, int IdGrObject)
+		{
+			return table.FirstOrDefault(t =>
+				t.IdScenDevice == IdScenDevice &&
+				t.Access       == Access       &&
+				t.IdGrObject   == IdGrObject);
+		}
+
+		public static BindingItemsDevScenario Find(this ITable<BindingItemsDevScenario> table, int IdElementType, int IdItemsScenarios)
+		{
+			return table.FirstOrDefault(t =>
+				t.IdElementType    == IdElementType &&
+				t.IdItemsScenarios == IdItemsScenarios);
+		}
+
+		public static BindingItemsScenario Find(this ITable<BindingItemsScenario> table, int IdScenariosTypes, int IdItemsScenarios, byte IdLevel)
+		{
+			return table.FirstOrDefault(t =>
+				t.IdScenariosTypes == IdScenariosTypes &&
+				t.IdItemsScenarios == IdItemsScenarios &&
+				t.IdLevel          == IdLevel);
+		}
+
+		public static BindingItemsZonePT Find(this ITable<BindingItemsZonePT> table, int IdItemZonePT, string ItemType)
+		{
+			return table.FirstOrDefault(t =>
+				t.IdItemZonePT == IdItemZonePT &&
+				t.ItemType     == ItemType);
+		}
+
+		public static BindingObjectsStepScen Find(this ITable<BindingObjectsStepScen> table, int IdScenDevice, bool Access, int IdObject)
+		{
+			return table.FirstOrDefault(t =>
+				t.IdScenDevice == IdScenDevice &&
+				t.Access       == Access       &&
+				t.IdObject     == IdObject);
+		}
+
+		public static Camera Find(this ITable<Camera> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static CameraMatrix Find(this ITable<CameraMatrix> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static ClientFieldsName Find(this ITable<ClientFieldsName> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static ClientFieldsValue Find(this ITable<ClientFieldsValue> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static CodesList Find(this ITable<CodesList> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static Comp Find(this ITable<Comp> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static ComPort Find(this ITable<ComPort> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static CompTrn Find(this ITable<CompTrn> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static ConditionStepScenario Find(this ITable<ConditionStepScenario> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static ControlItem Find(this ITable<ControlItem> table, string GuidCmd)
+		{
+			return table.FirstOrDefault(t =>
+				t.GuidCmd == GuidCmd);
+		}
+
+		public static Counter Find(this ITable<Counter> table, string TableName, string FieldName)
+		{
+			return table.FirstOrDefault(t =>
+				t.TableName == TableName &&
+				t.FieldName == FieldName);
+		}
+
+		public static DevCamerasItem Find(this ITable<DevCamerasItem> table, Guid GUID)
+		{
+			return table.FirstOrDefault(t =>
+				t.GUID == GUID);
+		}
+
+		public static DevElm Find(this ITable<DevElm> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static Devicemasterslave Find(this ITable<Devicemasterslave> table, int Mastertype, int Slavetype)
+		{
+			return table.FirstOrDefault(t =>
+				t.Mastertype == Mastertype &&
+				t.Slavetype  == Slavetype);
+		}
+
+		public static DeviceToLine Find(this ITable<DeviceToLine> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static DeviceTypesLine Find(this ITable<DeviceTypesLine> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static DevItem Find(this ITable<DevItem> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static DirectoryParamSetting Find(this ITable<DirectoryParamSetting> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static Driver Find(this ITable<Driver> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static DriversComp Find(this ITable<DriversComp> table, int IdComputer, int IdDriver)
+		{
+			return table.FirstOrDefault(t =>
+				t.IdComputer == IdComputer &&
+				t.IdDriver   == IdDriver);
+		}
+
+		public static DType Find(this ITable<DType> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static DTypesElement Find(this ITable<DTypesElement> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static DvsMass Find(this ITable<DvsMass> table, byte IconGroup, int Number, bool LargeIcon)
+		{
+			return table.FirstOrDefault(t =>
+				t.IconGroup == IconGroup &&
+				t.Number    == Number    &&
+				t.LargeIcon == LargeIcon);
+		}
+
+		public static ElementsTypesGroup Find(this ITable<ElementsTypesGroup> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static Event Find(this ITable<Event> table, int EventColumn)
+		{
+			return table.FirstOrDefault(t =>
+				t.EventColumn == EventColumn);
+		}
+
+		public static EventGroup Find(this ITable<EventGroup> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static EventGroupCont Find(this ITable<EventGroupCont> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static EventOnModificationData Find(this ITable<EventOnModificationData> table, int ID, DateTime ChangeDate)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID         == ID &&
+				t.ChangeDate == ChangeDate);
+		}
+
+		public static EventsCategory Find(this ITable<EventsCategory> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static EventsCategoryToEvent Find(this ITable<EventsCategoryToEvent> table, int EventsCategoriesId, int EventId)
+		{
+			return table.FirstOrDefault(t =>
+				t.EventsCategoriesId == EventsCategoriesId &&
+				t.EventId            == EventId);
+		}
+
+		public static EvReply Find(this ITable<EvReply> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static ExternalEvent Find(this ITable<ExternalEvent> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static GrAccess Find(this ITable<GrAccess> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static GrObjCont Find(this ITable<GrObjCont> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static Group Find(this ITable<Group> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static GroupObj Find(this ITable<GroupObj> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static GroupsParamSetting Find(this ITable<GroupsParamSetting> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static GsmSetting Find(this ITable<GsmSetting> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static GTime Find(this ITable<GTime> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static Guest Find(this ITable<Guest> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static Holiday Find(this ITable<Holiday> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static Interface Find(this ITable<Interface> table, int Id)
+		{
+			return table.FirstOrDefault(t =>
+				t.Id == Id);
+		}
+
+		public static Interfaceprotocol Find(this ITable<Interfaceprotocol> table, int InterfaceId, int ProtocolId)
+		{
+			return table.FirstOrDefault(t =>
+				t.InterfaceId == InterfaceId &&
+				t.ProtocolId  == ProtocolId);
+		}
+
+		public static InterfaceSetting Find(this ITable<InterfaceSetting> table, int SettingID, int LineID)
+		{
+			return table.FirstOrDefault(t =>
+				t.SettingID == SettingID &&
+				t.LineID    == LineID);
+		}
+
+		public static InterfaceSettingsDictionary Find(this ITable<InterfaceSettingsDictionary> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static ItemEvent Find(this ITable<ItemEvent> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static KeyObj Find(this ITable<KeyObj> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static KoneAllAccessMask Find(this ITable<KoneAllAccessMask> table, int ID, short Floor)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID    == ID &&
+				t.Floor == Floor);
+		}
+
+		public static KoneCop Find(this ITable<KoneCop> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static KoneCopAccess Find(this ITable<KoneCopAccess> table, int IdElevator, int IdAccess)
+		{
+			return table.FirstOrDefault(t =>
+				t.IdElevator == IdElevator &&
+				t.IdAccess   == IdAccess);
+		}
+
+		public static KoneCOPGlobalDefaultAccessMask Find(this ITable<KoneCOPGlobalDefaultAccessMask> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static KoneCOPSpecificMask Find(this ITable<KoneCOPSpecificMask> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static KoneDestinationAccessMask Find(this ITable<KoneDestinationAccessMask> table, int ID, short Floor)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID    == ID &&
+				t.Floor == Floor);
+		}
+
+		public static KoneDopAccess Find(this ITable<KoneDopAccess> table, int IdDop, int IdAccess, short Floor)
+		{
+			return table.FirstOrDefault(t =>
+				t.IdDop    == IdDop    &&
+				t.IdAccess == IdAccess &&
+				t.Floor    == Floor);
+		}
+
+		public static KoneDOPGlobalDefaultAccessMask Find(this ITable<KoneDOPGlobalDefaultAccessMask> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static KoneDOPSpecificMask Find(this ITable<KoneDOPSpecificMask> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static KoneKg Find(this ITable<KoneKg> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static Line Find(this ITable<Line> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static LinesBroadcast Find(this ITable<LinesBroadcast> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static ListComment Find(this ITable<ListComment> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static ListComponent Find(this ITable<ListComponent> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static Log Find(this ITable<Log> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static LogsChangeBd Find(this ITable<LogsChangeBd> table, Guid ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static MAlarm Find(this ITable<MAlarm> table, Guid GUID)
+		{
+			return table.FirstOrDefault(t =>
+				t.GUID == GUID);
+		}
+
+		public static MapElement Find(this ITable<MapElement> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static MapElementsLink Find(this ITable<MapElementsLink> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static MapElementsRegion Find(this ITable<MapElementsRegion> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static MapElm Find(this ITable<MapElm> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static MapIndicator Find(this ITable<MapIndicator> table, int Id, int MapElmId)
+		{
+			return table.FirstOrDefault(t =>
+				t.Id       == Id &&
+				t.MapElmId == MapElmId);
+		}
+
+		public static MapIndicatorsDefault Find(this ITable<MapIndicatorsDefault> table, int IdIndicator, double RangeMin, double RangeMax)
+		{
+			return table.FirstOrDefault(t =>
+				t.IdIndicator == IdIndicator &&
+				t.RangeMin    == RangeMin    &&
+				t.RangeMax    == RangeMax);
+		}
+
+		public static MapInfoMarker Find(this ITable<MapInfoMarker> table, int IdMapInfMark)
+		{
+			return table.FirstOrDefault(t =>
+				t.IdMapInfMark == IdMapInfMark);
+		}
+
+		public static MasterKeyListDevice Find(this ITable<MasterKeyListDevice> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static MasterSlave Find(this ITable<MasterSlave> table, int MasterType, int SlaveType)
+		{
+			return table.FirstOrDefault(t =>
+				t.MasterType == MasterType &&
+				t.SlaveType  == SlaveType);
+		}
+
+		public static McpMasterKey Find(this ITable<McpMasterKey> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static McpUserKeyLink Find(this ITable<McpUserKeyLink> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static NodeRepl Find(this ITable<NodeRepl> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static OrionGlobalValue Find(this ITable<OrionGlobalValue> table, string IdValue)
+		{
+			return table.FirstOrDefault(t =>
+				t.IdValue == IdValue);
+		}
+
+		public static ParamsettingsValue Find(this ITable<ParamsettingsValue> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static PBioAccess Find(this ITable<PBioAccess> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static PBioParam Find(this ITable<PBioParam> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static PBioTypePassword Find(this ITable<PBioTypePassword> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static PCar Find(this ITable<PCar> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static PCompany Find(this ITable<PCompany> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static PDivision Find(this ITable<PDivision> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static PersonsPhoto Find(this ITable<PersonsPhoto> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static PGroupExit Find(this ITable<PGroupExit> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static PhoneNumber Find(this ITable<PhoneNumber> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
 		public static PList Find(this ITable<PList> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static PListNetPort Find(this ITable<PListNetPort> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static PListStatus Find(this ITable<PListStatus> table, int ID)
 		{
 			return table.FirstOrDefault(t =>
 				t.ID == ID);
@@ -718,6 +9363,535 @@ namespace ACMSE
 		{
 			return table.FirstOrDefault(t =>
 				t.GUID == GUID);
+		}
+
+		public static PMap Find(this ITable<PMap> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static PMark Find(this ITable<PMark> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static PObjCont Find(this ITable<PObjCont> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static PObject Find(this ITable<PObject> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static PPost Find(this ITable<PPost> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static PReason Find(this ITable<PReason> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static ProFile Find(this ITable<ProFile> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static PRoom Find(this ITable<PRoom> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static Protocol Find(this ITable<Protocol> table, int Id)
+		{
+			return table.FirstOrDefault(t =>
+				t.Id == Id);
+		}
+
+		public static Protocoldevice Find(this ITable<Protocoldevice> table, int ProtocolId, int DeviceTypeId)
+		{
+			return table.FirstOrDefault(t =>
+				t.ProtocolId   == ProtocolId &&
+				t.DeviceTypeId == DeviceTypeId);
+		}
+
+		public static ProtocolSetting Find(this ITable<ProtocolSetting> table, int SettingID, int LineID)
+		{
+			return table.FirstOrDefault(t =>
+				t.SettingID == SettingID &&
+				t.LineID    == LineID);
+		}
+
+		public static ProtocolSettingsDictionary Find(this ITable<ProtocolSettingsDictionary> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static QueryLog Find(this ITable<QueryLog> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static RdrAccessPoint Find(this ITable<RdrAccessPoint> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static Reason Find(this ITable<Reason> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static ReferenceCommandScenario Find(this ITable<ReferenceCommandScenario> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static ReferenceItemsScenario Find(this ITable<ReferenceItemsScenario> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static ReferenceItemsZonePT Find(this ITable<ReferenceItemsZonePT> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static ReferenceScenariosType Find(this ITable<ReferenceScenariosType> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static ReferenceTactic Find(this ITable<ReferenceTactic> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static RelatedCamera Find(this ITable<RelatedCamera> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static RelationDiv Find(this ITable<RelationDiv> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static RelationPhoneIdDev Find(this ITable<RelationPhoneIdDev> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static RelationsListCar Find(this ITable<RelationsListCar> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static RelParamGroupsparamsetting Find(this ITable<RelParamGroupsparamsetting> table, int ParamId, int GroupId)
+		{
+			return table.FirstOrDefault(t =>
+				t.ParamId == ParamId &&
+				t.GroupId == GroupId);
+		}
+
+		public static RelProf Find(this ITable<RelProf> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static RemoteControlCategory Find(this ITable<RemoteControlCategory> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static RemoteControlCategoryToDTypesElement Find(this ITable<RemoteControlCategoryToDTypesElement> table, int DTypesElementId, int CategoryId)
+		{
+			return table.FirstOrDefault(t =>
+				t.DTypesElementId == DTypesElementId &&
+				t.CategoryId      == CategoryId);
+		}
+
+		public static ReservLine Find(this ITable<ReservLine> table, int MainId, int ReservId)
+		{
+			return table.FirstOrDefault(t =>
+				t.MainId   == MainId &&
+				t.ReservId == ReservId);
+		}
+
+		public static RSLine Find(this ITable<RSLine> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static ScanDoc Find(this ITable<ScanDoc> table, int ID, int IDPLIST, int Spack)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID      == ID      &&
+				t.IDPLIST == IDPLIST &&
+				t.Spack   == Spack);
+		}
+
+		public static ScenariosDevice Find(this ITable<ScenariosDevice> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static ScenariosFilterDevice Find(this ITable<ScenariosFilterDevice> table, int DeviceType, int ElementType, int IdScenariosType, int DeviceVersion, int NumberDevItem, int ParentDevType)
+		{
+			return table.FirstOrDefault(t =>
+				t.DeviceType      == DeviceType      &&
+				t.ElementType     == ElementType     &&
+				t.IdScenariosType == IdScenariosType &&
+				t.DeviceVersion   == DeviceVersion   &&
+				t.NumberDevItem   == NumberDevItem   &&
+				t.ParentDevType   == ParentDevType);
+		}
+
+		public static Schedule Find(this ITable<Schedule> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static Script Find(this ITable<Script> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static Setting Find(this ITable<Setting> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static SettingsGroup Find(this ITable<SettingsGroup> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static SettingsValue Find(this ITable<SettingsValue> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static SirAccessGroup Find(this ITable<SirAccessGroup> table, int Id)
+		{
+			return table.FirstOrDefault(t =>
+				t.Id == Id);
+		}
+
+		public static SirChangeLog Find(this ITable<SirChangeLog> table, int Id)
+		{
+			return table.FirstOrDefault(t =>
+				t.Id == Id);
+		}
+
+		public static SirChannel Find(this ITable<SirChannel> table, int Id)
+		{
+			return table.FirstOrDefault(t =>
+				t.Id == Id);
+		}
+
+		public static SirController Find(this ITable<SirController> table, int Id)
+		{
+			return table.FirstOrDefault(t =>
+				t.Id == Id);
+		}
+
+		public static SirDevList Find(this ITable<SirDevList> table, int Id)
+		{
+			return table.FirstOrDefault(t =>
+				t.Id == Id);
+		}
+
+		public static SirInput Find(this ITable<SirInput> table, int Id)
+		{
+			return table.FirstOrDefault(t =>
+				t.Id == Id);
+		}
+
+		public static SirOutput Find(this ITable<SirOutput> table, int Id)
+		{
+			return table.FirstOrDefault(t =>
+				t.Id == Id);
+		}
+
+		public static SirReader Find(this ITable<SirReader> table, int Id)
+		{
+			return table.FirstOrDefault(t =>
+				t.Id == Id);
+		}
+
+		public static SirScript Find(this ITable<SirScript> table, int Id)
+		{
+			return table.FirstOrDefault(t =>
+				t.Id == Id);
+		}
+
+		public static SirSubdevList Find(this ITable<SirSubdevList> table, int Id)
+		{
+			return table.FirstOrDefault(t =>
+				t.Id == Id);
+		}
+
+		public static SirUser Find(this ITable<SirUser> table, int Id)
+		{
+			return table.FirstOrDefault(t =>
+				t.Id == Id);
+		}
+
+		public static SirZone Find(this ITable<SirZone> table, int Id)
+		{
+			return table.FirstOrDefault(t =>
+				t.Id == Id);
+		}
+
+		public static SirZoneGroup Find(this ITable<SirZoneGroup> table, int Id)
+		{
+			return table.FirstOrDefault(t =>
+				t.Id == Id);
+		}
+
+		public static SmsGatesParam Find(this ITable<SmsGatesParam> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static SSLCertificate Find(this ITable<SSLCertificate> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static StatesItem Find(this ITable<StatesItem> table, int ItemType, int ItemId)
+		{
+			return table.FirstOrDefault(t =>
+				t.ItemType == ItemType &&
+				t.ItemId   == ItemId);
+		}
+
+		public static Sy Find(this ITable<Sy> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static SysGroup Find(this ITable<SysGroup> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static SysParam Find(this ITable<SysParam> table, int Num)
+		{
+			return table.FirstOrDefault(t =>
+				t.Num == Num);
+		}
+
+		public static SystemObject Find(this ITable<SystemObject> table, int GIndex, int Type)
+		{
+			return table.FirstOrDefault(t =>
+				t.GIndex == GIndex &&
+				t.Type   == Type);
+		}
+
+		public static TimeCont Find(this ITable<TimeCont> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static TimeTable Find(this ITable<TimeTable> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static TKBPenal Find(this ITable<TKBPenal> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static TKBSection Find(this ITable<TKBSection> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static TKeyBox Find(this ITable<TKeyBox> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static TPersonalStuff Find(this ITable<TPersonalStuff> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static TPStuffLogData Find(this ITable<TPStuffLogData> table, Guid GUID)
+		{
+			return table.FirstOrDefault(t =>
+				t.GUID == GUID);
+		}
+
+		public static TPStuffPhoto Find(this ITable<TPStuffPhoto> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static TreeCtrl Find(this ITable<TreeCtrl> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static TreeNode Find(this ITable<TreeNode> table, int Num)
+		{
+			return table.FirstOrDefault(t =>
+				t.Num == Num);
+		}
+
+		public static TReferenceBook Find(this ITable<TReferenceBook> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static TypeDocList Find(this ITable<TypeDocList> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static TypeShlDevice Find(this ITable<TypeShlDevice> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static ValueDevItemsScenario Find(this ITable<ValueDevItemsScenario> table, int IdDevice, int IdDeviceType, int IdRefItemsScen)
+		{
+			return table.FirstOrDefault(t =>
+				t.IdDevice       == IdDevice     &&
+				t.IdDeviceType   == IdDeviceType &&
+				t.IdRefItemsScen == IdRefItemsScen);
+		}
+
+		public static ValueItemsScenario Find(this ITable<ValueItemsScenario> table, int IdScenDevice, int IdRefItemsScen)
+		{
+			return table.FirstOrDefault(t =>
+				t.IdScenDevice   == IdScenDevice &&
+				t.IdRefItemsScen == IdRefItemsScen);
+		}
+
+		public static ValueItemsZonePT Find(this ITable<ValueItemsZonePT> table, int IdReferenceItemsZonePT, int IdParent, int SiriusGroupType)
+		{
+			return table.FirstOrDefault(t =>
+				t.IdReferenceItemsZonePT == IdReferenceItemsZonePT &&
+				t.IdParent               == IdParent               &&
+				t.SiriusGroupType        == SiriusGroupType);
+		}
+
+		public static VersionDB Find(this ITable<VersionDB> table, int Num)
+		{
+			return table.FirstOrDefault(t =>
+				t.Num == Num);
+		}
+
+		public static VideoArchive Find(this ITable<VideoArchive> table, Guid GUID)
+		{
+			return table.FirstOrDefault(t =>
+				t.GUID == GUID);
+		}
+
+		public static VideoCamShot Find(this ITable<VideoCamShot> table, int Id)
+		{
+			return table.FirstOrDefault(t =>
+				t.Id == Id);
+		}
+
+		public static VideoEvent Find(this ITable<VideoEvent> table, Guid GUID)
+		{
+			return table.FirstOrDefault(t =>
+				t.GUID == GUID);
+		}
+
+		public static VideoRecognizeAccessPoint Find(this ITable<VideoRecognizeAccessPoint> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static VideoRecognizeChannel Find(this ITable<VideoRecognizeChannel> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static VideoRecognizeProfile Find(this ITable<VideoRecognizeProfile> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static VInsp Find(this ITable<VInsp> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static VInspType Find(this ITable<VInspType> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static Weightcamera Find(this ITable<Weightcamera> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
+		}
+
+		public static WorkTimeZone Find(this ITable<WorkTimeZone> table, int ID)
+		{
+			return table.FirstOrDefault(t =>
+				t.ID == ID);
 		}
 	}
 }

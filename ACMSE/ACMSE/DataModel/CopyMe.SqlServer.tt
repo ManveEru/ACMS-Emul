@@ -52,7 +52,7 @@
 */
 
 	NamespaceName                       = "ACMSE";           // DataContext class namespace name
-
+	
 	LoadSqlServerMetadata("172.19.10.166", "demobase1_20_3_7", "sa", "Wen76Coda");
 
 	GenerateModel();

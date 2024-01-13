@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ACMSE
@@ -16,14 +10,28 @@ namespace ACMSE
         private List<Location> Locations { get; set; }
         private DoorsViewModel Doors { get; set; }
         private DBHelper dbHelper;
+        private CurrentLocation CurLocation { get; set; }
 
         public Form1()
         {
             InitializeComponent();
-
             dbHelper = new DBHelper();
+            try
+            {
+                _ = dbHelper.db.Connection;
+            }
+            catch
+            {
+                MessageBox.Show(
+                "Ошибка соединения с БД",
+                "Сообщение",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Error);
+                this.Close();
+            }
             Employees = new EmployeesModelView();
             Locations = new List<Location>();
+            CurLocation = new CurrentLocation();
         }
 
         //фильтрация списка сотрудников при вводе символов в поле ввода над списком
@@ -38,9 +46,15 @@ namespace ACMSE
         {
             if (lbEmployees.SelectedValue is int)
             {
-                lblCurLocation.Text = dbHelper.GetCurrentLocation((int)lbEmployees.SelectedValue);
-                btnGoOut.Enabled = lblCurLocation.Text != "";
+                CurLocation = dbHelper.GetCurrentLocation((int)lbEmployees.SelectedValue);
+                ExitView(CurLocation.Name);
             }
+        }
+
+        private void ExitView(string locationName)
+        {
+            lblCurLocation.Text = locationName;
+            btnGoOut.Enabled = locationName != "";
         }
 
         private void cmbLocations_SelectedIndexChanged(object sender, EventArgs e)
@@ -52,11 +66,13 @@ namespace ACMSE
         {
             //Формирование списка сотрудников
             // модель отображения для модели Employees
-            Employees.EmpFullList = dbHelper.GetEmployeesList(1, 10);
-            for (int i = 10; i < 101; i += 10)
+            int i = 0;
+            Employees.EmpFullList = dbHelper.GetEmployeesList(i, i + 100);
+            while (Employees.EmpFullList.Count % 100 == 0)
             {
-                pbLoad.Value += 10;
-                Employees.EmpFullList.AddRange(dbHelper.GetEmployeesList(i - 1, i + 10));
+                pbLoad.Value = (i % 1000) / 10;
+                i += 100;
+                Employees.EmpFullList.AddRange(dbHelper.GetEmployeesList(i, i + 100));
             }
             Employees.EmpFilteredList = Employees.EmpFullList;
             Employees.SelectedId = 2;
@@ -86,6 +102,27 @@ namespace ACMSE
             ContentLayoutLeft.Visible = true;
             ContentLayoutMiddle.Visible = true;
             ContentLayoutRight.Visible = true;
+        }
+
+        private void btnGoOut_Click(object sender, EventArgs e)
+        {
+            dbHelper.Exit((int)lbEmployees.SelectedValue, CurLocation.Door, 2);
+            CurLocation.Name = "";
+            CurLocation.Door = 0;
+            ExitView(CurLocation.Name);
+        }
+
+        private void btnGoIn_Click(object sender, EventArgs e)
+        {
+            dbHelper.Exit((int)lbEmployees.SelectedValue, (int)cmbDoors.SelectedValue, 1);
+            CurLocation.Name = cmbLocations.Text;
+            CurLocation.Door = (int)cmbDoors.SelectedValue;
+            ExitView(CurLocation.Name);
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            dbHelper.db.Close();
         }
     }
 }
