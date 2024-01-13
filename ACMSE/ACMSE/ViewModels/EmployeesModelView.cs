@@ -12,7 +12,7 @@ namespace ACMSE
         // id выбранного объекта
         public int SelectedId { get; set; }
         // данные для отображения в списке
-        public List<Person> EmpFullList { get; }
+        public List<Person> EmpFullList { get; set; }
         List<Person> empFilteredList;
 
         //событие, высылаемое при изменении модели
@@ -30,13 +30,7 @@ namespace ACMSE
 
         public EmployeesModelView () 
         {
-            //заменить на запрос к БД
-            EmpFullList = new List<Person>();
-            EmpFullList.Add(new Person(1, "Иван", "Иванов", "Иванович"));
-            EmpFullList.Add(new Person(2, "Роман", "Батькович", "Девупсень"));
-            EmpFullList.Add(new Person(3, "Сергей", "Болтокрут", "Админович"));
-            EmpFilteredList = EmpFullList;
-            SelectedId = 2;
+            
         }
 
         public void Filter (string filter)
