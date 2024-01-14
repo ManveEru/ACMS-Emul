@@ -10,18 +10,22 @@ namespace ACMSE
         private List<Location> Locations { get; set; }
         private DoorsViewModel Doors { get; set; }
         private DBHelper dbHelper;
-        private CurrentLocation CurLocation { get; set; }
+        private CurrentLocation CurLocation { get; set; } //текущее местоположение выбранного сотрудника
+        private static readonly NLog.Logger Logger = NLog.LogManager.GetCurrentClassLogger();
 
         public Form1()
         {
+            Logger.Info("Emulator started.");
             InitializeComponent();
             dbHelper = new DBHelper();
             try
             {
+                Logger.Debug("Connecting to Data Base...");
                 _ = dbHelper.db.Connection;
             }
             catch
             {
+                Logger.Error("Data Base connection fail.");
                 MessageBox.Show(
                 "Ошибка соединения с БД",
                 "Сообщение",
@@ -29,6 +33,7 @@ namespace ACMSE
                 MessageBoxIcon.Error);
                 this.Close();
             }
+            Logger.Info("Data Base connection done.");
             Employees = new EmployeesModelView();
             Locations = new List<Location>();
             CurLocation = new CurrentLocation();
@@ -47,16 +52,18 @@ namespace ACMSE
             if (lbEmployees.SelectedValue is int)
             {
                 CurLocation = dbHelper.GetCurrentLocation((int)lbEmployees.SelectedValue);
-                ExitView(CurLocation.Name);
+                Logger.Debug("Employee's current location is " + CurLocation.Name);
+                CurrentLocationView(CurLocation.Name);
             }
         }
 
-        private void ExitView(string locationName)
+        private void CurrentLocationView(string locationName)
         {
             lblCurLocation.Text = locationName;
             btnGoOut.Enabled = locationName != "";
         }
 
+        //фильтрация списка дверей при смене выбора местополжения
         private void cmbLocations_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cmbLocations.SelectedValue is int) Doors.Filter((int)cmbLocations.SelectedValue);
@@ -65,14 +72,15 @@ namespace ACMSE
         private void Form1_Shown(object sender, EventArgs e)
         {
             //Формирование списка сотрудников
-            // модель отображения для модели Employees
             int i = 0;
             Employees.EmpFullList = dbHelper.GetEmployeesList(i, i + 100);
+            Logger.Debug(Employees.EmpFullList.Count + " employees received.");
             while (Employees.EmpFullList.Count % 100 == 0)
             {
                 pbLoad.Value = (i % 1000) / 10;
                 i += 100;
                 Employees.EmpFullList.AddRange(dbHelper.GetEmployeesList(i, i + 100));
+                Logger.Debug(Employees.EmpFullList.Count + " employees received.");
             }
             Employees.EmpFilteredList = Employees.EmpFullList;
             Employees.SelectedId = 2;
@@ -86,6 +94,7 @@ namespace ACMSE
             //Формирование списка местоположений
             // модель отображения для модели Employees
             Locations = dbHelper.GetLocationsList();
+            Logger.Debug("Locations received.");
             cmbLocations.DataSource = Locations;
             cmbLocations.DisplayMember = "Name";
             cmbLocations.ValueMember = "Id";
@@ -106,18 +115,20 @@ namespace ACMSE
 
         private void btnGoOut_Click(object sender, EventArgs e)
         {
-            dbHelper.Exit((int)lbEmployees.SelectedValue, CurLocation.Door, 2);
+            dbHelper.Move((int)lbEmployees.SelectedValue, CurLocation.Door, 2);
+            Logger.Debug(lbEmployees.Text + " left " + CurLocation.Name + ".");
             CurLocation.Name = "";
             CurLocation.Door = 0;
-            ExitView(CurLocation.Name);
+            CurrentLocationView(CurLocation.Name);
         }
 
         private void btnGoIn_Click(object sender, EventArgs e)
         {
-            dbHelper.Exit((int)lbEmployees.SelectedValue, (int)cmbDoors.SelectedValue, 1);
+            dbHelper.Move((int)lbEmployees.SelectedValue, (int)cmbDoors.SelectedValue, 1);
             CurLocation.Name = cmbLocations.Text;
             CurLocation.Door = (int)cmbDoors.SelectedValue;
-            ExitView(CurLocation.Name);
+            Logger.Info(lbEmployees.Text + " entered the " + CurLocation.Name + ".");
+            CurrentLocationView(CurLocation.Name);
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)

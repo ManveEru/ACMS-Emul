@@ -2,8 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ACMSE
 {
@@ -21,6 +19,7 @@ namespace ACMSE
             
         }
 
+        //Получаем ФИО и ID некоторой части сотрудников
         public List<Person> GetEmployeesList(int valueFrom, int valueTo)
         {
             var query = from c in db.PLists where (c.ID > valueFrom) && (c.ID <= valueTo) select new Person(c.ID, c.FirstName, c.Name, c.MidName);
@@ -58,7 +57,11 @@ namespace ACMSE
             return query.ToList();
         }
 
-        internal void Exit(int EmployeId, int door, int passMode)
+        //создаётся перемещение сотрудника с ID = EmployeId через "дверь" с идентификатором door
+        //passMode - направление прохода: 1 - вход, 2 - выход
+        //поле Evant дожно быть = 32, что соответствует событию "Проход осуществлён"
+        //остальные параметры не учитываются в работе модуля SKUDService
+        internal void Move(int EmployeId, int door, int passMode)
         {
             var record = new PLogData()
             {
